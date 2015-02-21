@@ -1,2 +1,12 @@
-<h1>Hexes#new</h1>
-<p>Find me in app/views/hexes/new.html.erb</p>
+<% if !@hex.errors.empty? %>
+      <% @hex.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+<% end %>
+<%= form_for @hex, html: { multipart: true } do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :attachment %>
+  <%= f.file_field :attachment %>
+  <%= f.submit "Save" %>
+<% end %>

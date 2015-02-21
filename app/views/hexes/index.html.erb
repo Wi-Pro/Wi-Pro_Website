@@ -1,2 +1,7 @@
 <h1>Hexes#index</h1>
 <p>Find me in app/views/hexes/index.html.erb</p>
+<%= link_to "Upload Hex", new_hex_path %>
+<%@hexes.each do |hex| %>
+  <%=hex.name %>
+  <%=link_to "Download Hex", hex.attachment_url %>
+<% end %>
