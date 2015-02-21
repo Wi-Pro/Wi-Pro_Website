@@ -20,10 +20,12 @@
       }
 
 </style>
-<h1>File Upload</h1>
-<%#= start_form_tag ({:action => 'uploadFile'},
-                        :multipart => true) %>
-<p><label for="upload_file">Select File</label> :
-<%#= file_field 'upload', 'hexfile' %></p>
-<%#= submit_tag "Upload" %>
-<%#= end_form_tag %>
+<h1 align="center">Wi-Pro SeniorThesis</h1>
+<img src="assets/rails.png" align="center"><br/>
+<p>This file is located in /home/rails/app/views/home/index.html.erb</p>
+
+Your application root is located in: <%= Rails.root.to_s %><br>
+
+Ruby version: <%= RUBY_VERSION %><br>
+
+Rails version: <%= Rails.version %><br>
