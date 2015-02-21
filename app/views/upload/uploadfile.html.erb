@@ -21,9 +21,9 @@
 
 </style>
 <h1>File Upload</h1>
-<%= start_form_tag ({:action => 'uploadFile'},
+<%= form_tag (:action => 'uploadFile'},
                         :multipart => true) %>
 <p><label for="upload_file">Select File</label> :
 <%#= file_field 'upload', 'hexfile' %></p>
 <%#= submit_tag "Upload" %>
-<%= end_form_tag %>
+<%= submit_tag 'uploadFile'%>
