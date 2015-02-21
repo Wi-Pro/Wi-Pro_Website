@@ -11,6 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150221174317) do
+
+  create_table "hex_files", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "hexes", force: true do |t|
+    t.string   "name"
+    t.string   "attachment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.string   "server"
+    t.string   "hexfile_file_name"
+    t.string   "hexfile_content_type"
+    t.integer  "hexfile_file_size"
+    t.datetime "hexfile_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wipros", force: true do |t|
+    t.string "wpid"
+    t.text   "wpname"
+  end
 
 end

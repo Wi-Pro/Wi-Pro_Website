@@ -1,4 +1,8 @@
 Myapp::Application.routes.draw do
+  get "hexes/index"
+  get "hexes/new"
+  get "hexes/create"
+  get "hexes/destroy"
   get "home/index"
   get 'device' => 'device#index'
   get 'upload' => 'upload#uploadfile.html'
