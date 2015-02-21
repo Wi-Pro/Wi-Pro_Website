@@ -3,7 +3,6 @@ class CreateWipros < ActiveRecord::Migration
     create_table :wipros do |t|
       t.primary_key :wpid
       t.text :wpname
-      t.timestamps
     end
   end
 end
