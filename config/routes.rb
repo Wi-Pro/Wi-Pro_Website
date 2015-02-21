@@ -1,7 +1,7 @@
 Myapp::Application.routes.draw do
   get "home/index"
   get 'device' => 'device#index'
-  get 'upload'
+  get 'upload' => 'upload#uploadfile'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
