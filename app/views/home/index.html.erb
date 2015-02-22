@@ -1,5 +1,8 @@
 <head>
   <title>Wi-Pro</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
 </head>
 
 <style type="text/css" media="screen">
@@ -38,3 +41,6 @@ Rails version: <%= Rails.version %><br>
     </tr>
   </thead>
 </table>
+<div class="container" style="padding-top:20px;">
+<%= yield %>
+</div>
