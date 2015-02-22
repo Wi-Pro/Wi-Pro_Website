@@ -25,3 +25,27 @@
     <% end %>
   </tbody>
 </table>
+
+<% if !@hex.errors.empty? %>
+  <div class="alert alert-error">
+    <ul>
+      <% @hex.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="well">
+  <%= form_for @hex, html: { multipart: true } do |f| %>
+    <%#= f.label :name %>
+    <%#= f.text_field :name %>
+    <%= f.label "Which Wi-Pro do you want to use?"%>
+    <%= f.file_field :wiproid %>
+    <%= f.label "What device are you programming?"%>
+    <%= f.file_field :deviceid %>
+    <%= f.label "What hex file do you want to use?" %>
+    <%= f.file_field :attachment %>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  <% end %>
+</div>
