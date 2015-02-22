@@ -16,12 +16,12 @@
     </tr>
   </thead>
   <tbody>
-    <!--<%# @hexes.each do |hex| %>
+    <%# @hexes.each do |hex| %>
       <tr>
         <td><%#= hex.name %></td>
         <td><%#= link_to "Download Hex", hex.attachment_url %></td>
-        <td><%#= button_to "Delete",  hex, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{hex.name}?" %></td>
+        <td><%= button_to "Delete",  hex, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{hex.name}?" %></td>
       </tr>
-    <%# end %>-->
+    <%# end %>
   </tbody>
 </table>
