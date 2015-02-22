@@ -13,7 +13,7 @@
     <%= f.label "Which Wi-Pro do you want to use?"%>
     <%= f.file_field :wiproid %>
     <%= f.label "What device are you programming?"%>
-    <%= f.select_tag(:deviceid, '<option value="1">ATMega324</option>' %>
+    <%= f.select_tag(:deviceid, '<option value="1">ATMega324</option>') %>
     <%= f.label "What hex file do you want to use?" %>
     <%= f.file_field :attachment %>
     <%= f.submit "Submit", class: "btn btn-primary" %>
