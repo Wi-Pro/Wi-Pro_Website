@@ -4,7 +4,7 @@
   </div>
 <% end %>
 <br />
-<%#= link_to "New Hex", new_hex_path, class: "btn btn-primary" %>
+<%= link_to "New Hex", new_hex_path, class: "btn btn-primary" %>
 <br />
 <br />
 <table class="table table-bordered table-striped">
@@ -18,10 +18,10 @@
   <tbody>
     <% @hexes.each do |hex| %>
       <tr>
-        <td><%#= hex.name %></td>
-        <td><%#= link_to "Download Hex", hex.attachment_url %></td>
+        <td><%= hex.name %></td>
+        <td><%= link_to "Download Hex", hex.attachment_url %></td>
         <td><%= button_to "Delete",  hex, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{hex.name}?" %></td>
       </tr>
-    <%# end %>
+    <% end %>
   </tbody>
 </table>
