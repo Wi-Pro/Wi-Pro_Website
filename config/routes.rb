@@ -1,16 +1,12 @@
 Myapp::Application.routes.draw do
-  get "hexes/index"
-  get "hexes/new"
-  get "hexes/create"
-  get "hexes/destroy"
   get "home/index"
   get 'device' => 'device#index'
   get 'upload' => 'upload#uploadfile.html'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  resources :hexes, only: [:index, :new, :create, :destroy]
   # You can have the root of your site routed with "root"
-root to: 'home#index'
+  root to: 'hexes#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
