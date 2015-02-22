@@ -1,23 +1,27 @@
-<% if !@hex.errors.empty? %>
-  <div class="alert alert-error">
-    <ul>
-      <% @hex.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
+<% if !flash[:notice].blank? %>
+  <div class="alert alert-info">
+  <%= flash[:notice] %>
   </div>
 <% end %>
-
-<div class="well">
-  <%= form_for @hex, html: { multipart: true } do |f| %>
-    <%#= f.label :name %>
-    <%#= f.text_field :name %>
-    <%= f.label "Which Wi-Pro do you want to use?"%>
-    <%= f.file_field :wiproid %>
-    <%= f.label "What device are you programming?"%>
-    <%= f.file_field :deviceid %>
-    <%= f.label "What hex file do you want to use?" %>
-    <%= f.file_field :attachment %>
-    <%= f.submit "Submit", class: "btn btn-primary" %>
-  <% end %>
-</div>
+<br />
+<%= link_to "New Hex", new_hex_path, class: "btn btn-primary" %>
+<br />
+<br />
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Download Link</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @hex.each do |hex| %>
+      <tr>
+        <td><%= hex.name %></td>
+        <td><%= link_to "Download Hex", hex.attachment_url %></td>
+        <td><%= button_to "Delete",  hex, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{hex.name}?" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
