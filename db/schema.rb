@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221174317) do
+ActiveRecord::Schema.define(version: 20150222231239) do
 
   create_table "hex_files", force: true do |t|
     t.datetime "created_at"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20150221174317) do
     t.string   "attachment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "wiproid"
+    t.integer  "deviceid"
   end
 
   create_table "posts", force: true do |t|
