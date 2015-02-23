@@ -8,7 +8,7 @@
   </div>
 <% end %>
 
-<div class="well">
+<div class="panel panel-primary">
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= f.label "Which Wi-Pro do you want to use?"%>
     <%= f.file_field :wiproid %>
