@@ -1,6 +1,6 @@
 class HexesController < ApplicationController
   def index
-    @hex = Hex.all
+    @hexes = Hex.all
   end
 
   def new
@@ -23,6 +23,6 @@ class HexesController < ApplicationController
   end
 private
   def hex_params
-    params.require(:hex).permit(:name, :attachment)
+    params.require(:hex).permit(:name, :attachment, :wiproid, :deviceid)
   end
 end
