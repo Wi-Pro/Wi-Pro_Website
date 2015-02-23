@@ -11,7 +11,7 @@
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= f.label "Which Wi-Pro do you want to use?"%></br>
-    <%= f.select(:wiproid, options_for_select([['1111111111', 1],['2222222222', 2]]))%>
+    <%= f.select(:wiproid, options_for_select([['Senior Thesis #1', 1111111111],['Lab340 #9', 2222222222]]))%>
 
   </br>
     <%= f.label "What device are you programming?"%></br>
