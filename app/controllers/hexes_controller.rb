@@ -1,6 +1,6 @@
 class HexesController < ApplicationController
   def index
-    @hex = Hex.all
+    @hexes = Hex.all
   end
 
   def new
