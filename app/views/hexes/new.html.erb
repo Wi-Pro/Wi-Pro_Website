@@ -10,13 +10,13 @@
 
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
-    <%= f.label "Which Wi-Pro do you want to use?"%>
+    <%= f.label "Which Wi-Pro do you want to use?"%></br>
     <%= f.file_field :wiproid %>
   </br>
-    <%= f.label "What device are you programming?"%>
+    <%= f.label "What device are you programming?"%></br>
     <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
   </br>
-    <%= f.label "What hex file do you want to use?" %>
+    <%= f.label "What hex file do you want to use?" %></br>
     <%= f.file_field :attachment %>
   </br>
     <%= f.submit "Submit", class: "btn btn-primary" %>
