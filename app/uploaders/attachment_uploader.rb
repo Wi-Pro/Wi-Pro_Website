@@ -3,7 +3,7 @@ class AttachmentUploader < CarrierWave::Uploader::Base
 
   def store_dir
     hex = Hex.last
-    "uploads/#{model.class.to_s.underscore}/#{@hex.wiproid}"
+    "uploads/#{model.class.to_s.underscore}/#{@hex}"
   end
 
   def extension_white_list
