@@ -1,7 +1,10 @@
 class HexesController < ApplicationController
   def index
-    @hexes = Hex.all
     @hex = Hex.new
+  end
+
+  def admin
+    @hexes = Hex.all
   end
 
   def new
