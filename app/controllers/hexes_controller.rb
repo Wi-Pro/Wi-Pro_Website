@@ -1,12 +1,6 @@
 class HexesController < ApplicationController
   def index
-    @hexes = Hex.all
-    @hex = Hex.new(hex_params)
-    if @hex.save
-      redirect_to hexes_path, notice: "The hex file #{@hex.name} has been uploaded"
-    else
-      render "new"
-    end
+    @hex = Hex.new
   end
 
   def admin
