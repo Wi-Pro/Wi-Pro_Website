@@ -13,7 +13,6 @@ class HexesController < ApplicationController
 
   def create
     @hex = Hex.new(hex_params)
-    @hex.name = "hexfile.hex"
     if @hex.save
       redirect_to hexes_path, notice: "The hex file #{@hex.name} has been uploaded"
     else
@@ -28,6 +27,7 @@ class HexesController < ApplicationController
   end
 private
   def hex_params
+    @hex.name = "hexfile.hex" #normalizes the hex file name
     params.require(:hex).permit(:name, :attachment, :wiproid, :deviceid)
   end
 end
