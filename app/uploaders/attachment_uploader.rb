@@ -1,5 +1,5 @@
 class AttachmentUploader < CarrierWave::Uploader::Base
-  storage "hexfile.hex"
+  storage :file
 
   def store_dir
     hex = Hex.last

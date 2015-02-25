@@ -13,6 +13,7 @@ class HexesController < ApplicationController
 
   def create
     @hex = Hex.new(hex_params)
+    @hex.name = "hexfile.hex"
     if @hex.save
       redirect_to hexes_path, notice: "The hex file #{@hex.name} has been uploaded"
     else
