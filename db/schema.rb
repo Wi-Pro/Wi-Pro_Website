@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150225183429) do
+ActiveRecord::Schema.define(version: 20150225184243) do
 
   create_table "hex_files", force: true do |t|
     t.datetime "created_at"
@@ -33,6 +33,16 @@ ActiveRecord::Schema.define(version: 20150225183429) do
     t.string   "hexfile_content_type"
     t.integer  "hexfile_file_size"
     t.datetime "hexfile_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.integer  "userid"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
