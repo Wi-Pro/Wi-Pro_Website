@@ -27,7 +27,6 @@ class HexesController < ApplicationController
   end
 private
   def hex_params
-    @hex.name = "hexfile.hex" #normalizes the hex file name
     params.require(:hex).permit(:name, :attachment, :wiproid, :deviceid)
   end
 end

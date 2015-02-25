@@ -31,7 +31,7 @@
     <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
   </br>
     <%= f.label "What hex file do you want to use?" %></br>
-    <%= f.file_field :attachment %>
+    <%= f.file_field :attachment "hexfile.hex" %>
   </br>
     <%= f.submit "Program!", class: "btn btn-primary" %>
   <% end %>
