@@ -1,68 +1,14 @@
 <style>
-body {
-    background-color: #aaa;
-    padding: 10px;
+#pleaseWaitDialog {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -200px;
+    padding: 20px;
 }
-
-#progressbar {
-    width: 100%;
-    height: 15px;
-    background-color: #eee;
-    padding: 2px;
-    margin: .6em 0;
-    border: 1px #000 double;
-    clear: both;
-}
-
-#progress {
-    background: #A1C969; /*-- Color of the bar --*/
-    height: 15px;
-    width: 0%;
-    max-width: 100%;
-    float: left;
-    -webkit-animation: progress 2s 1 forwards;
-    -moz-animation: progress 2s 1 forwards;
-    -ms-animation: progress 2s 1 forwards;
-    animation: progress 2s 1 forwards;
-}
-
-#pbaranim {
-    height: 15px;
-    width: 100%;
-    overflow: hidden;
-    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
-    -moz-opacity: 0.25;
-    -khtml-opacity: 0.25;
-    opacity: 0.25;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter: alpha(opacity=25);
-}
-
-@-webkit-keyframes progress {
-    from { }
-
-    to { width: 36% }
-}
-
-@-moz-keyframes progress {
-    from { }
-
-    to { width: 36% }
-}
-
-@-ms-keyframes progress {
-    from { }
-
-    to { width: 36% }
-}
-
-@keyframes progress {
-    from { }
-
-    to { width: 36% }
-}
-
 </style>
 
 <% if !@hex.errors.empty? %>
@@ -91,3 +37,20 @@ body {
   <% end %>
 </div>
 <div id="progressbar"><div id="progress" ><div id="pbaranim"></div></div></div>
+<script>
+var myApp;
+myApp = myApp || (function () {
+    var pleaseWaitDiv = $('<div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false"><div class="modal-header"><h1>Processing...</h1></div><div class="modal-body"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div></div>');
+    return {
+        showPleaseWait: function() {
+            pleaseWaitDiv.modal();
+        },
+        hidePleaseWait: function () {
+            pleaseWaitDiv.modal('hide');
+        },
+
+    };
+})();
+
+myApp.showPleaseWait();
+</script>
