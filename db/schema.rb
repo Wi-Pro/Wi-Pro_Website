@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222231239) do
+ActiveRecord::Schema.define(version: 20150225183429) do
 
   create_table "hex_files", force: true do |t|
     t.datetime "created_at"
@@ -33,6 +33,14 @@ ActiveRecord::Schema.define(version: 20150222231239) do
     t.string   "hexfile_content_type"
     t.integer  "hexfile_file_size"
     t.datetime "hexfile_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wiproids", force: true do |t|
+    t.string   "name"
+    t.integer  "wiproid"
+    t.integer  "userid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
