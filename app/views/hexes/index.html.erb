@@ -34,7 +34,7 @@
     <%= f.file_field :attachment %>
   </br>
     <%= f.label "Name of hex file" %>
-    <%- f.text_field :name %>
+    <%- f.text_area_tag :name %>
   </br>
     <%= f.submit "Program!", class: "btn btn-primary" %>
   <% end %>
