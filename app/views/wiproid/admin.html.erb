@@ -1,0 +1,25 @@
+<% if !flash[:notice].blank? %>
+  <div class="alert alert-info">
+  <%= flash[:notice] %>
+  </div>
+<% end %>
+<br />
+<br />
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Download Link</th>
+      <th>Wi-Pro ID</th>
+      <th>Device ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @hexes.each do |hex| %>
+      <tr>
+        <td><%= link_to "Download Hex", hex.attachment_url %></td>
+        <td><%= hex.wiproid %></td>
+        <td><%= hex.deviceid %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,25 @@
+<% if !@hex.errors.empty? %>
+  <div class="alert alert-error">
+    <ul>
+      <% @hex.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="well">
+  <%= form_for @hex, html: { multipart: true } do |f| %>
+    <%= f.label "Which Wi-Pro do you want to use?"%></br>
+    <%= f.select(:wiproid, options_for_select([['Senior Thesis #1', 1111111111],['Lab340 #9', 2222222222]]))%>
+
+  </br>
+    <%= f.label "What device are you programming?"%></br>
+    <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
+  </br>
+    <%= f.label "What hex file do you want to use?" %></br>
+    <%= f.file_field :attachment %>
+  </br>
+    <%= f.submit "Program!", class: "btn btn-primary" %>
+  <% end %>
+</div>
