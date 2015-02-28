@@ -3,7 +3,7 @@ Myapp::Application.routes.draw do
   get 'hexes/admin' => 'hexes#admin'
   get 'wiproid/admin' => 'wiproid#admin'
   resources :hexes
-  resources :wiproid, path: 'wiproid'
+  resources :wiproid, path: 'wiproids'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
