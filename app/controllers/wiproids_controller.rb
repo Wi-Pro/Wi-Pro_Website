@@ -1,4 +1,4 @@
-class WiproidController < ApplicationController
+class WiproidsController < ApplicationController
   def index
     @wiproid = Wiproid.new
   end
