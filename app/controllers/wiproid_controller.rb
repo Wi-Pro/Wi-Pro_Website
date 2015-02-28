@@ -1,10 +1,10 @@
-class WiproidsController < ApplicationController
+class WiproidController < ApplicationController
   def index
     @wiproid = Wiproid.new
   end
 
   def admin
-    @wiproids = Wiproid.all
+    @wiproid = Wiproid.all
   end
 
   def new
