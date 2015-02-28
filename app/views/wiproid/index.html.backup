@@ -1,0 +1,59 @@
+<style>
+#pleaseWaitDialog {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -200px;
+    padding: 20px;
+}
+</style>
+
+<% if !@hex.errors.empty? %>
+  <div class="alert alert-error">
+    <ul>
+      <% @hex.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="well">
+  <%= form_for @hex, html: { multipart: true } do |f| %>
+    <%= f.label "Which Wi-Pro do you want to use?"%></br>
+    <%= f.select(:wiproid, options_for_select([['Senior Thesis #1', 1111111111],['Lab340 #9', 2222222222]]))%>
+
+  </br>
+    <%= f.label "What device are you programming?"%></br>
+    <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
+  </br>
+    <%= f.label "What hex file do you want to use?" %></br>
+    <%= f.file_field :attachment %>
+  </br>
+    <%= f.label "Name of hex file" %>
+    <%= f.text_field :name %>
+  </br>
+    <%= f.submit "Program!", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<div id="progressbar"><div id="progress" ><div id="pbaranim"></div></div></div>
+<script>
+var myApp;
+myApp = myApp || (function () {
+    var pleaseWaitDiv = $('<div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false"><div class="modal-header"><h1>Processing...</h1></div><div class="modal-body"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div></div>');
+    return {
+        showPleaseWait: function() {
+            pleaseWaitDiv.modal();
+        },
+        hidePleaseWait: function () {
+            pleaseWaitDiv.modal('hide');
+        },
+
+    };
+})();
+
+myApp.showPleaseWait();
+</script>

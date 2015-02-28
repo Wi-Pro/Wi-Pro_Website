@@ -14,11 +14,11 @@
     </tr>
   </thead>
   <tbody>
-    <% @hexes.each do |hex| %>
+    <% @wiproids.each do |wiproid| %>
       <tr>
-        <td><%= link_to "Download Hex", hex.attachment_url %></td>
-        <td><%= hex.wiproid %></td>
-        <td><%= hex.deviceid %></td>
+        <td><%= wiproid.name %></td>
+        <td><%= wiproid.wiproid %></td>
+        <td><%= wiproid.userid %></td>
       </tr>
     <% end %>
   </tbody>
