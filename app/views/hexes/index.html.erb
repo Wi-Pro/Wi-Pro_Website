@@ -27,12 +27,11 @@
     <%@wiproids = Wiproid.all%>
     <%@wiprolist = '['%>
     <%@wiproids.each do |w|%>
-      <%@wiprolist = @wiprolist + "[#{w.name},#{w.wiproid}],"%>
+      <%@wiprolist = @wiprolist + "['#{w.name}',#{w.wiproid}],"%>
     <%end%>
     <%@wiprolist.chomp!(',')%>
     <%@wiprolist = @wiprolist + ']'%>
     <%= f.select(:wiproid, options_for_select(@wiprolist))%>
-    <%=@wiprolist%>
   </br>
     <%= f.label "What device are you programming?"%></br>
     <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
