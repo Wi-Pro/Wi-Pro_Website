@@ -32,6 +32,7 @@
     <%@wiprolist.chomp!(',')%>
     <%@wiprolist = @wiprolist + ']'%>
     <%= f.select(:wiproid, options_for_select(@wiprolist))%>
+    <%= @wiprolist %>
   </br>
     <%= f.label "What device are you programming?"%></br>
     <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
