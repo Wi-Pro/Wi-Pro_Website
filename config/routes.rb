@@ -1,14 +1,14 @@
 Myapp::Application.routes.draw do
   get "home/index"
   get 'hexes/admin' => 'hexes#admin'
-  get 'wiproid/admin' => 'wiproid#admin'
+  get 'wiproid/admin' => 'wiproids#admin'
   resources :hexes
   resources :wiproids
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :hexes, only: [:index, :new, :create, :destroy]
-  #resources :wiproid, only: [:index, :new, :create, :destroy]
+  resources :wiproids, only: [:index, :new, :create, :destroy]
   # You can have the root of your site routed with "root"
   root to: 'home#index'
   # Example of regular route:
