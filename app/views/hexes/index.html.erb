@@ -29,6 +29,7 @@
     <%@wiproids.each do |w|%>
       <%@wiprolist = @wiprolist + "[#{w.name},#{w.wiproid}],"%>
     <%end%>
+    <%@wiprolist.chomp(',')%>
     <%@wiprolist = @wiprolist + ']'%>
     <%= f.select(:wiproid, options_for_select(@wiprolist))%>
     <%=@wiprolist%>
