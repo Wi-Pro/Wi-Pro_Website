@@ -1,7 +1,7 @@
 Myapp::Application.routes.draw do
   get "home/index"
   get 'hexes/admin' => 'hexes#admin'
-  get 'wiproid/admin' => 'wiproids#admin'
+  get 'wiproids/admin' => 'wiproids#admin'
   resources :hexes
   resources :wiproids
 

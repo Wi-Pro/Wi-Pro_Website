@@ -4,7 +4,7 @@ class WiproidsController < ApplicationController
   end
 
   def admin
-    @wiproid = Wiproid.all
+    @wiproids = Wiproid.all
   end
 
   def new
