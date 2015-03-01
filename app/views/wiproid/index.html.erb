@@ -1,4 +1,5 @@
 <div class="well">
+  <%=begin%>
   <%= form_for @wiproid do |f| %>
     <%= f.label "Name your Wi-Pro"%></br>
     <%= f.text_field :name %>
@@ -11,4 +12,5 @@
     </br>
     <%= f.submit "Add WiPro", class: "btn btn-primary" %>
   <% end %>
+  <%=end%>
 </div>
