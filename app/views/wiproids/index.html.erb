@@ -1,7 +1,7 @@
 <div class="well">
   <%= form_for @wiproid do |f| %>
-    <%#= f.label "Name your Wi-Pro"%></br>
-    <%#= f.text_field :name %>
+    <%= f.label "Name your Wi-Pro"%></br>
+    <%= f.text_field :name %>
     </br>
     <%#= f.label "What is the Serial Number on the device?"%></br>
     <%#= f.text_field :wiproid%>
@@ -9,6 +9,6 @@
     <%#= f.label "Enter your userid (this should be automatic later)" %>
     <%#= f.text_field :userid %>
     </br>
-    <%#= f.submit "Add WiPro", class: "btn btn-primary" %>
+    <%= f.submit "Add WiPro", class: "btn btn-primary" %>
   <% end %>
 </div>
