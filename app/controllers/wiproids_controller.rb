@@ -13,7 +13,7 @@ class WiproidsController < ApplicationController
 
   def create
     @wiproid = Wiproid.new(wiproid_params)
-    if @hex.save
+    if @wiproid.save
       redirect_to wiproid_path, notice: "The WiPro #{@wiproid.name} has been added"
     else
       render "new"
