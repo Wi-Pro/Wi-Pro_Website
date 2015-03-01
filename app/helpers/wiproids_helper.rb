@@ -1,2 +1,2 @@
-module WiproidHelper
+module WiproidsHelper
 end
