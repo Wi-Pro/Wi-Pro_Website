@@ -31,7 +31,7 @@
     <%end%>
     <%@wiprolist.chomp!(',')%>
     <%@wiprolist = @wiprolist + ']'%>
-    <%=f.collection_select(:wipro_id, Wiproid.all, :name, :wiproid)%>
+    <%=f.collection_select(:wiproid, Wiproid.all, :name, :wiproid)%>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
     <%= @wiprolist %>
   </br>
