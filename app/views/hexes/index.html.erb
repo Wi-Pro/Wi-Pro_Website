@@ -12,10 +12,10 @@
 </style>
 <div id="page">
   <% if flash[:alert] %>
-        <p class="flash-error"><%= flash[:alert] %></p>
+        <div class="alert alert-error"><%= flash[:alert] %></div>
   <% end %>
   <% if flash[:notice] %>
-      <p class="flash-notice"><%= flash[:notice] %></p>
+      <div class="alert alert-notice"><%= flash[:notice] %></div>
   <% end %>
   <%=yield%>
 </div>
