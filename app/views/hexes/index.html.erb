@@ -31,11 +31,12 @@
     <%end%>
     <%@wiprolist.chomp!(',')%>
     <%@wiprolist = @wiprolist + ']'%>
-    <%= f.select(:wiproid, options_for_select(@wiprolist))%>
+    <%=f.collection_select(:wipro_id, Wiproid.all, :name, wiproid)%>
+    <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
     <%= @wiprolist %>
   </br>
     <%= f.label "What device are you programming?"%></br>
-    <%= f.select(:deviceid, options_for_select(@wiprolist))#[['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
+    <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
   </br>
     <%= f.label "What hex file do you want to use?" %></br>
     <%= f.file_field :attachment %>
