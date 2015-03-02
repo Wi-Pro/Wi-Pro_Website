@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'paperclip'
 gem 'carrierwave'
-
+gem 'byebug' #adds debugger as a possibility
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass'
