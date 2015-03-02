@@ -14,7 +14,7 @@ class HexesController < ApplicationController
   def create
     @hex = Hex.new(hex_params)
     if @hex.save
-      redirect_to hexes_path, notice: "The hex file #{@hex.name} has been uploaded"
+      redirect_to hexes_path, notice: "Programming Initiated!"
     else
       render "new"
     end
