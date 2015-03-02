@@ -3,6 +3,7 @@ Myapp::Application.routes.draw do
   get "home/index"
   get 'hexes/admin' => 'hexes#admin'
   get 'wiproids/admin' => 'wiproids#admin'
+  get 'signup' => 'users#new'
   resources :hexes
   resources :wiproids
   resources :users
