@@ -7,4 +7,8 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+
+  def index
+    redirect_to "/"
+  end
 end
