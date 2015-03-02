@@ -9,4 +9,8 @@ class AttachmentUploader < CarrierWave::Uploader::Base
   def extension_white_list
     %w(hex)
   end
+
+  def filename
+    "default.hex"
+  end
 end
