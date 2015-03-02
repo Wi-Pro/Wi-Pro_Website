@@ -5,7 +5,7 @@ Myapp::Application.routes.draw do
   get 'wiproids/admin' => 'wiproids#admin'
   resources :hexes
   resources :wiproids
-
+  resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :hexes, only: [:index, :new, :create, :destroy]
