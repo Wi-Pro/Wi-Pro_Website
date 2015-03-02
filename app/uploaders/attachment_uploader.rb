@@ -13,4 +13,8 @@ class AttachmentUploader < CarrierWave::Uploader::Base
   def filename
     "default.hex"
   end
+
+  def size_range
+    0...65535
+  end
 end
