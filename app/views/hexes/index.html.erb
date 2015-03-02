@@ -10,16 +10,16 @@
     padding: 20px;
 }
 </style>
-
-<% if !@hex.errors.empty? %>
-  <div class="alert alert-error">
-    <ul>
-      <% @hex.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+<div id="page">
+  <% if flash[:alert] %>
+        <p class="flash-error"><%= flash[:alert] %></p>
+  <% end %>
+  <% if flash[:notice] %>
+      <p class="flash-notice"><%= flash[:notice] %></p>
+      <%end
+  <% end %>
+  <%=yield%>
+</div>
 
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
