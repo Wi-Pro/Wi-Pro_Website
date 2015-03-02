@@ -1,4 +1,5 @@
 Myapp::Application.routes.draw do
+  get "users/new"
   get "home/index"
   get 'hexes/admin' => 'hexes#admin'
   get 'wiproids/admin' => 'wiproids#admin'
