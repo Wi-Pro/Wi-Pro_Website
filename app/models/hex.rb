@@ -3,4 +3,7 @@ class Hex < ActiveRecord::Base
   validates :attachment, presence: true
   validates :wiproid, presence: true
   validates :deviceid, presence: true
+  validates :file_size => {
+    :maximum => 64.kilobytes.to_i
+  }
 end
