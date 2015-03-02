@@ -24,14 +24,7 @@
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= f.label "Which Wi-Pro do you want to use?"%></br>
-    <%@wiproids = Wiproid.all%>
-    <%@wiprolist = '['%>
-    <%@wiproids.each do |w|%>
-      <%@wiprolist = @wiprolist + "['#{w.name}', #{w.wiproid}],"%>
-    <%end%>
-    <%@wiprolist.chomp!(',')%>
-    <%@wiprolist = @wiprolist + ']'%>
-    <%=f.collection_select(:wiproid, Wiproid.all, :name, :wiproid)%>
+    <%=f.collection_select(:wiproid, Wiproid.all, :name)%>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
     <%= @wiprolist %>
   </br>
