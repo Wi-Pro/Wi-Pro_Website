@@ -14,7 +14,7 @@ class WiproidsController < ApplicationController
   def create
     @wiproid = Wiproid.new(wiproid_params)
     if @wiproid.save
-      redirect_to wiproid_path, notice: "The WiPro #{@wiproid.name} has been added"
+      redirect_to wiproids_path, notice: "The WiPro #{@wiproid.name} has been added"
     else
       render "new"
     end
@@ -23,7 +23,7 @@ class WiproidsController < ApplicationController
   def destroy
     @wiproid = Wiproid.find(params[:id])
     @wiproid.destroy
-    redirect_to wiproid_path, notice: "The WiPro #{@wiproid.name} has been deleted"
+    redirect_to wiproids_path, notice: "The WiPro #{@wiproid.name} has been deleted"
   end
 private
   def wiproid_params
