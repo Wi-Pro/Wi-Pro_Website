@@ -1,18 +1,31 @@
-<% if !@hex.errors.empty? %>
-  <div class="alert alert-error">
-    <ul>
-      <% @hex.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+<style>
+#pleaseWaitDialog {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -200px;
+    padding: 20px;
+}
+</style>
+<div id="page">
+  <% if flash[:alert] %>
+        <div class="alert alert-error"><%= flash[:alert] %></div>
+  <% end %>
+  <% if flash[:notice] %>
+      <div class="alert alert-success"><%= flash[:notice] %></div>
+  <% end %>
+  <%=yield%>
+</div>
 
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= f.label "Which Wi-Pro do you want to use?"%></br>
-    <%= f.select(:wiproid, options_for_select([['Senior Thesis #1', 1111111111],['Lab340 #9', 2222222222]]))%>
-
+    <%=f.collection_select(:wiproid, Wiproid.all, :wiproid, :name)%>
+    <a href="/wiproids">Add Device!</a>
+    <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
   </br>
     <%= f.label "What device are you programming?"%></br>
     <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
