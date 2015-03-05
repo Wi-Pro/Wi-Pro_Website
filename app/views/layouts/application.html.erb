@@ -31,7 +31,7 @@
     <% if logged_in? %>
       </br>
       <%current_user%>
-      Welcome <%=@current_user%>
+      Welcome <%=current_user.name%>
     <%end%>
     <% flash.each do |message_type, message| %>
       <div class="alert alert-<%= message_type %>"><%= message %></div>
