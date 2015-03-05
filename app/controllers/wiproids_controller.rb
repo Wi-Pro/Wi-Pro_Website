@@ -16,7 +16,7 @@ class WiproidsController < ApplicationController
     if @wiproid.save
       redirect_to "/hexes", notice: "The WiPro #{@wiproid.name} has been added"
     else
-      render "new"
+      render "index"
     end
   end
 
