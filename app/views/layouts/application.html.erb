@@ -15,17 +15,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div id="page">
-    <% if flash[:alert] %>
-          <div class="alert alert-error"><%= flash[:alert] %></div>
-    <% end %>
-    <% if flash[:notice] %>
-        <div class="alert alert-success"><%= flash[:notice] %></div>
-    <% end %>
-    <% if flash[:success] %>
-        <div class="alert alert-success"><%= flash[:success] %></div>
-    <% end %>
-  </div>
   <h1 align="center">Wi-Pro Senior Thesis Project</h1>
   <div class="container" style="padding-top:20px;">
     <ul class="nav nav-tabs">
@@ -33,6 +22,17 @@
         <li><a href="/hexes">Program Device</a></li>
         <li><a href="/wiproids">Register Wi-Pro</a></li>
     </ul>
+    <div id="page">
+      <% if flash[:alert] %>
+            <div class="alert alert-error"><%= flash[:alert] %></div>
+      <% end %>
+      <% if flash[:notice] %>
+          <div class="alert alert-success"><%= flash[:notice] %></div>
+      <% end %>
+      <% if flash[:success] %>
+          <div class="alert alert-success"><%= flash[:success] %></div>
+      <% end %>
+    </div>
     <%= yield %>
   </div>
 </body>
