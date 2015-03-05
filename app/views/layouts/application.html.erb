@@ -22,17 +22,9 @@
         <li><a href="/hexes">Program Device</a></li>
         <li><a href="/wiproids">Register Wi-Pro</a></li>
     </ul>
-    <div id="page">
-      <% if flash[:alert] %>
-            <div class="alert alert-error"><%= flash[:alert] %></div>
-      <% end %>
-      <% if flash[:notice] %>
-          <div class="alert alert-success"><%= flash[:notice] %></div>
-      <% end %>
-      <% if flash[:success] %>
-          <div class="alert alert-success"><%= flash[:success] %></div>
-      <% end %>
-    </div>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
     <%= yield %>
   </div>
 </body>
