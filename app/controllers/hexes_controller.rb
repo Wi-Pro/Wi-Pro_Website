@@ -1,11 +1,6 @@
 class HexesController < ApplicationController
   def index
     @hex = Hex.new
-    if @hex.save
-      redirect_to hexes_path, notice: "Programming Initiated!"
-    else
-      render "new"
-    end
   end
 
   def admin
@@ -21,7 +16,7 @@ class HexesController < ApplicationController
     if @hex.save
       redirect_to hexes_path, notice: "Programming Initiated!"
     else
-      render "new"
+      render "index"
     end
   end
 
