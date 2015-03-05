@@ -4,6 +4,9 @@ Myapp::Application.routes.draw do
   get 'hexes/admin' => 'hexes#admin'
   get 'wiproids/admin' => 'wiproids#admin'
   get 'signup' => 'users#new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
   resources :hexes
   resources :wiproids
   resources :users
