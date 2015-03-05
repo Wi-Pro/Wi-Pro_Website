@@ -30,6 +30,7 @@
     </ul>
     <% if logged_in? %>
       </br>
+      <%current_user%>
       Welcome <%=@current_user%>
     <%end%>
     <% flash.each do |message_type, message| %>
