@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       flash[:success] = "Welcome Back!"
       redirect_to "/hexes"
     else
-      flash.now[:alert] = "Invalid Email/Password"
+      flash.now[:danger] = "Invalid Email/Password"
       render 'new'
     end
   end
