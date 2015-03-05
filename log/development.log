@@ -180,3 +180,18 @@ Migrating to AddPasswordDigestToUsers (20150302221758)
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150302221758"]]
   [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('kevinbird15@gmail.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 02 Mar 2015 22:38:24 UTC +00:00], ["email", "kevinbird15@gmail.com"], ["name", "Kevin Bird"], ["password_digest", "$2a$10$Q0gciQh8LoQvoM/AtwVjee8lU80ktbR9u0hXR6KzJblAatp1n27.6"], ["updated_at", Mon, 02 Mar 2015 22:38:24 UTC +00:00]]
+  [1m[35m (7.6ms)[0m  commit transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[36mWiproid Load (0.4ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "wiproids" ("created_at", "name", "updated_at", "userid", "wiproid") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 03 Mar 2015 05:45:02 UTC +00:00], ["name", "Scott Village #1"], ["updated_at", Tue, 03 Mar 2015 05:45:02 UTC +00:00], ["userid", 1], ["wiproid", 1111111111]]
+  [1m[35m (14.8ms)[0m  commit transaction
+  [1m[36mHex Load (0.3ms)[0m  [1mSELECT "hexes".* FROM "hexes" ORDER BY "hexes"."id" ASC LIMIT 1[0m
+  [1m[36mHex Load (0.3ms)[0m  [1mSELECT "hexes".* FROM "hexes" ORDER BY "hexes"."id" ASC LIMIT 1[0m
+  [1m[35mHex Load (0.8ms)[0m  SELECT "hexes".* FROM "hexes" ORDER BY "hexes"."id" DESC LIMIT 1
