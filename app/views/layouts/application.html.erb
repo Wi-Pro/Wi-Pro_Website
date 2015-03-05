@@ -30,6 +30,7 @@
     <% if logged_in? %>
       <%current_user%>
       <div class="navbar-text navbar-right">Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
+    </br>
     <%end%>
     <% flash.each do |message_type, message| %>
       <div class="alert alert-<%= message_type %>"><%= message %></div>
