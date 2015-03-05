@@ -25571,3 +25571,851 @@ I, [2015-03-04T22:30:21.879875 #22629]  INFO -- : Processing by UsersController#
 I, [2015-03-04T22:30:21.880121 #22629]  INFO -- :   Parameters: {"id"=>"6"}
 I, [2015-03-04T22:30:21.940153 #22629]  INFO -- :   Rendered users/show.html.erb within layouts/application (5.1ms)
 I, [2015-03-04T22:30:21.950112 #22629]  INFO -- : Completed 200 OK in 69ms (Views: 24.4ms | ActiveRecord: 2.8ms)
+I, [2015-03-04T23:00:25.447627 #23248]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-04 23:00:25 -0600
+I, [2015-03-04T23:00:25.470127 #23248]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-04T23:00:25.524298 #23248]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (33.5ms)
+I, [2015-03-04T23:00:25.527707 #23248]  INFO -- : Completed 200 OK in 57ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-04T23:00:43.048995 #23256]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-04 23:00:43 -0600
+I, [2015-03-04T23:00:43.060782 #23256]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-04T23:00:43.060940 #23256]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-04T23:00:43.078912 #23256]  INFO -- : Completed 500 Internal Server Error in 18ms
+F, [2015-03-04T23:00:43.080263 #23256] FATAL -- : 
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:7:in `create'
+
+
+I, [2015-03-04T23:02:44.720471 #23358]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-04 23:02:44 -0600
+I, [2015-03-04T23:02:44.746026 #23358]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-04T23:02:44.769873 #23358]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (14.6ms)
+I, [2015-03-04T23:02:44.771418 #23358]  INFO -- : Completed 200 OK in 25ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-04T23:02:52.617601 #23362]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-04 23:02:52 -0600
+I, [2015-03-04T23:02:52.639313 #23362]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-04T23:02:52.639560 #23362]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-04T23:02:52.846646 #23362]  INFO -- : Redirected to http://104.131.36.80/hexes
+I, [2015-03-04T23:02:52.847356 #23362]  INFO -- : Completed 302 Found in 207ms (ActiveRecord: 2.4ms)
+I, [2015-03-04T23:02:53.089520 #23354]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:02:53 -0600
+I, [2015-03-04T23:02:53.112064 #23354]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:02:53.208689 #23354]  INFO -- :   Rendered hexes/new.html.erb within layouts/application (35.1ms)
+I, [2015-03-04T23:02:53.212112 #23354]  INFO -- : Completed 200 OK in 100ms (Views: 40.4ms | ActiveRecord: 3.6ms)
+I, [2015-03-04T23:03:01.984588 #23362]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:03:01 -0600
+I, [2015-03-04T23:03:01.989213 #23362]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:03:02.017815 #23362]  INFO -- :   Rendered shared/_error_messages.html.erb (2.8ms)
+I, [2015-03-04T23:03:02.018247 #23362]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (20.1ms)
+I, [2015-03-04T23:03:02.018570 #23362]  INFO -- : Completed 500 Internal Server Error in 29ms
+F, [2015-03-04T23:03:02.023115 #23362] FATAL -- : 
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @user.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@user.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__779409885403453336_29600180'
+  app/views/wiproids/index.html.erb:3:in `block in _app_views_wiproids_index_html_erb___4011279184175366477_30105400'
+  app/views/wiproids/index.html.erb:2:in `_app_views_wiproids_index_html_erb___4011279184175366477_30105400'
+
+
+I, [2015-03-04T23:03:04.862125 #23354]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:03:04 -0600
+I, [2015-03-04T23:03:04.865957 #23354]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:03:04.876846 #23354]  INFO -- :   Rendered shared/_error_messages.html.erb (2.2ms)
+I, [2015-03-04T23:03:04.877152 #23354]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (6.4ms)
+I, [2015-03-04T23:03:04.877514 #23354]  INFO -- : Completed 500 Internal Server Error in 11ms
+F, [2015-03-04T23:03:04.881308 #23354] FATAL -- : 
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @user.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@user.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__779409885403453336_26914460'
+  app/views/wiproids/index.html.erb:3:in `block in _app_views_wiproids_index_html_erb___4011279184175366477_27070340'
+  app/views/wiproids/index.html.erb:2:in `_app_views_wiproids_index_html_erb___4011279184175366477_27070340'
+
+
+I, [2015-03-04T23:03:45.740548 #23362]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:03:45 -0600
+I, [2015-03-04T23:03:45.743261 #23362]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:03:45.746480 #23362]  INFO -- :   Rendered shared/_error_messages.html.erb (0.8ms)
+I, [2015-03-04T23:03:45.746611 #23362]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (1.7ms)
+I, [2015-03-04T23:03:45.746746 #23362]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-04T23:03:45.748505 #23362] FATAL -- : 
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @user.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@user.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__779409885403453336_29600180'
+  app/views/wiproids/index.html.erb:3:in `block in _app_views_wiproids_index_html_erb___4011279184175366477_30105400'
+  app/views/wiproids/index.html.erb:2:in `_app_views_wiproids_index_html_erb___4011279184175366477_30105400'
+
+
+I, [2015-03-04T23:10:18.249204 #23479]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:10:18 -0600
+I, [2015-03-04T23:10:18.263255 #23479]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:10:18.283794 #23479]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (0.6ms)
+I, [2015-03-04T23:10:18.298200 #23479]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (22.5ms)
+I, [2015-03-04T23:10:18.299998 #23479]  INFO -- : Completed 200 OK in 36ms (Views: 25.9ms | ActiveRecord: 1.1ms)
+I, [2015-03-04T23:10:22.718548 #23479]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-04 23:10:22 -0600
+I, [2015-03-04T23:10:22.720687 #23479]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-04T23:10:22.720782 #23479]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "wiproid"=>{"name"=>"", "wiproid"=>"", "userid"=>""}, "commit"=>"Add WiPro"}
+I, [2015-03-04T23:10:22.738945 #23479]  INFO -- : Redirected to http://104.131.36.80/hexes
+I, [2015-03-04T23:10:22.739500 #23479]  INFO -- : Completed 302 Found in 19ms (ActiveRecord: 13.1ms)
+I, [2015-03-04T23:10:22.977288 #23475]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:10:22 -0600
+I, [2015-03-04T23:10:22.990329 #23475]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:10:23.041115 #23475]  INFO -- :   Rendered hexes/new.html.erb within layouts/application (18.6ms)
+I, [2015-03-04T23:10:23.042930 #23475]  INFO -- : Completed 200 OK in 52ms (Views: 21.7ms | ActiveRecord: 1.8ms)
+I, [2015-03-04T23:16:31.176722 #23579]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:16:31 -0600
+I, [2015-03-04T23:16:31.212616 #23579]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:16:31.256695 #23579]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.3ms)
+I, [2015-03-04T23:16:31.290858 #23579]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (51.1ms)
+I, [2015-03-04T23:16:31.294453 #23579]  INFO -- : Completed 200 OK in 81ms (Views: 58.5ms | ActiveRecord: 2.3ms)
+I, [2015-03-04T23:16:35.310470 #23577]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-04 23:16:35 -0600
+I, [2015-03-04T23:16:35.335390 #23577]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-04T23:16:35.335640 #23577]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "wiproid"=>{"name"=>"", "wiproid"=>"", "userid"=>""}, "commit"=>"Add WiPro"}
+I, [2015-03-04T23:16:35.419439 #23577]  INFO -- :   Rendered wiproids/new.html.erb within layouts/application (15.7ms)
+I, [2015-03-04T23:16:35.422979 #23577]  INFO -- : Completed 200 OK in 87ms (Views: 22.8ms | ActiveRecord: 2.6ms)
+I, [2015-03-04T23:16:43.268111 #23579]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-04 23:16:43 -0600
+I, [2015-03-04T23:16:43.272159 #23579]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-04T23:16:43.272355 #23579]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "wiproid"=>{"name"=>"", "wiproid"=>"", "userid"=>""}, "commit"=>"Add WiPro"}
+I, [2015-03-04T23:16:43.291017 #23579]  INFO -- :   Rendered wiproids/new.html.erb within layouts/application (6.8ms)
+I, [2015-03-04T23:16:43.292700 #23579]  INFO -- : Completed 200 OK in 20ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+I, [2015-03-04T23:16:48.873193 #23577]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:16:48 -0600
+I, [2015-03-04T23:16:48.876902 #23577]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:16:48.884613 #23577]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.0ms)
+I, [2015-03-04T23:16:48.889287 #23577]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (9.0ms)
+I, [2015-03-04T23:16:48.890894 #23577]  INFO -- : Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-04T23:16:51.510748 #23581]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-04 23:16:51 -0600
+I, [2015-03-04T23:16:51.536021 #23581]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-04T23:16:51.536496 #23581]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "wiproid"=>{"name"=>"", "wiproid"=>"", "userid"=>""}, "commit"=>"Add WiPro"}
+I, [2015-03-04T23:16:51.622504 #23581]  INFO -- :   Rendered wiproids/new.html.erb within layouts/application (15.5ms)
+I, [2015-03-04T23:16:51.626126 #23581]  INFO -- : Completed 200 OK in 89ms (Views: 23.2ms | ActiveRecord: 2.7ms)
+I, [2015-03-04T23:23:12.593224 #23694]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:23:12 -0600
+I, [2015-03-04T23:23:12.620068 #23694]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:23:12.665522 #23694]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.5ms)
+I, [2015-03-04T23:23:12.698773 #23694]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (51.6ms)
+I, [2015-03-04T23:23:12.703009 #23694]  INFO -- : Completed 200 OK in 83ms (Views: 59.7ms | ActiveRecord: 2.2ms)
+I, [2015-03-04T23:23:29.936909 #23690]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:23:29 -0600
+I, [2015-03-04T23:23:29.949700 #23690]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:23:29.997438 #23690]  INFO -- :   Rendered hexes/new.html.erb within layouts/application (16.8ms)
+I, [2015-03-04T23:23:29.999002 #23690]  INFO -- : Completed 200 OK in 49ms (Views: 19.3ms | ActiveRecord: 1.8ms)
+I, [2015-03-04T23:23:33.309776 #23694]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:23:33 -0600
+I, [2015-03-04T23:23:33.314111 #23694]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:23:33.317654 #23694]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (0.2ms)
+I, [2015-03-04T23:23:33.322571 #23694]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (6.2ms)
+I, [2015-03-04T23:23:33.323946 #23694]  INFO -- : Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-04T23:23:36.964304 #23690]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-04 23:23:36 -0600
+I, [2015-03-04T23:23:36.969096 #23690]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-04T23:23:36.969325 #23690]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "wiproid"=>{"name"=>"", "wiproid"=>"", "userid"=>""}, "commit"=>"Add WiPro"}
+I, [2015-03-04T23:23:36.990160 #23690]  INFO -- :   Rendered wiproids/new.html.erb within layouts/application (6.6ms)
+I, [2015-03-04T23:23:36.991659 #23690]  INFO -- : Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+I, [2015-03-04T23:26:05.136541 #23778]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-04 23:26:05 -0600
+I, [2015-03-04T23:26:05.161031 #23778]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-04T23:26:05.201207 #23778]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.2ms)
+I, [2015-03-04T23:26:05.231275 #23778]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (45.2ms)
+I, [2015-03-04T23:26:05.234787 #23778]  INFO -- : Completed 200 OK in 73ms (Views: 52.1ms | ActiveRecord: 2.0ms)
+I, [2015-03-04T23:26:08.386454 #23783]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-04 23:26:08 -0600
+I, [2015-03-04T23:26:08.423413 #23783]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-04T23:26:08.423832 #23783]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "wiproid"=>{"name"=>"", "wiproid"=>"", "userid"=>""}, "commit"=>"Add WiPro"}
+I, [2015-03-04T23:26:08.497357 #23783]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (7.3ms)
+I, [2015-03-04T23:26:08.509744 #23783]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (23.6ms)
+I, [2015-03-04T23:26:08.512957 #23783]  INFO -- : Completed 200 OK in 89ms (Views: 30.1ms | ActiveRecord: 2.5ms)
+I, [2015-03-04T23:26:31.870156 #23778]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:26:31 -0600
+I, [2015-03-04T23:26:31.874628 #23778]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:26:31.920307 #23778]  INFO -- :   Rendered hexes/new.html.erb within layouts/application (15.8ms)
+I, [2015-03-04T23:26:31.922022 #23778]  INFO -- : Completed 200 OK in 47ms (Views: 19.6ms | ActiveRecord: 2.1ms)
+I, [2015-03-04T23:26:34.165512 #23783]  INFO -- : Started POST "/hexes" for 98.23.163.20 at 2015-03-04 23:26:34 -0600
+I, [2015-03-04T23:26:34.169896 #23783]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-04T23:26:34.170079 #23783]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "hex"=>{"wiproid"=>"1111111111", "deviceid"=>"2"}, "commit"=>"Program!"}
+I, [2015-03-04T23:26:34.213631 #23783]  INFO -- :   Rendered hexes/new.html.erb within layouts/application (16.7ms)
+I, [2015-03-04T23:26:34.215331 #23783]  INFO -- : Completed 200 OK in 45ms (Views: 20.4ms | ActiveRecord: 1.8ms)
+I, [2015-03-04T23:26:38.783810 #23775]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:26:38 -0600
+I, [2015-03-04T23:26:38.799251 #23775]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:26:38.854347 #23775]  INFO -- :   Rendered hexes/new.html.erb within layouts/application (19.0ms)
+I, [2015-03-04T23:26:38.856041 #23775]  INFO -- : Completed 200 OK in 57ms (Views: 21.9ms | ActiveRecord: 1.8ms)
+I, [2015-03-04T23:26:58.888823 #23858]  INFO -- : Started POST "/hexes" for 98.23.163.20 at 2015-03-04 23:26:58 -0600
+I, [2015-03-04T23:26:58.899429 #23858]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-04T23:26:58.899536 #23858]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "hex"=>{"wiproid"=>"1111111111", "deviceid"=>"2"}, "commit"=>"Program!"}
+I, [2015-03-04T23:26:58.928542 #23858]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (1.0ms)
+I, [2015-03-04T23:26:58.928752 #23858]  INFO -- : Completed 500 Internal Server Error in 29ms
+F, [2015-03-04T23:26:58.930498 #23858] FATAL -- : 
+ActionView::Template::Error (/home/rails/app/views/hexes/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+... Wiproid.all, :wiproid, :name), class: 'form-control');@outp...
+...                               ^
+/home/rails/app/views/hexes/index.html.erb:24: syntax error, unexpected ',', expecting ')'
+...p', 1],['ATTiny2313', 2]], 2)), class: 'form-control');@outp...
+...                               ^):
+    15:   <%= form_for @hex, html: { multipart: true } do |f| %>
+    16:     <%= render 'shared/error_messages' %>
+    17:     <%= f.label "Which Wi-Pro do you want to use?"%></br>
+    18:     <%=f.collection_select(:wiproid, Wiproid.all, :wiproid, :name), class: 'form-control'%>
+    19:     <a href="/wiproids">Add Device!</a>
+    20:   </br>
+    21:     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
+  app/controllers/hexes_controller.rb:19:in `create'
+
+
+I, [2015-03-04T23:27:02.748206 #23862]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:27:02 -0600
+I, [2015-03-04T23:27:02.758944 #23862]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:27:02.771741 #23862]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (1.1ms)
+I, [2015-03-04T23:27:02.771991 #23862]  INFO -- : Completed 500 Internal Server Error in 13ms
+F, [2015-03-04T23:27:02.775075 #23862] FATAL -- : 
+ActionView::Template::Error (/home/rails/app/views/hexes/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+... Wiproid.all, :wiproid, :name), class: 'form-control');@outp...
+...                               ^
+/home/rails/app/views/hexes/index.html.erb:24: syntax error, unexpected ',', expecting ')'
+...p', 1],['ATTiny2313', 2]], 2)), class: 'form-control');@outp...
+...                               ^):
+    15:   <%= form_for @hex, html: { multipart: true } do |f| %>
+    16:     <%= render 'shared/error_messages' %>
+    17:     <%= f.label "Which Wi-Pro do you want to use?"%></br>
+    18:     <%=f.collection_select(:wiproid, Wiproid.all, :wiproid, :name), class: 'form-control'%>
+    19:     <a href="/wiproids">Add Device!</a>
+    20:   </br>
+    21:     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__713318726800530272__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1441607675563060167__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-04T23:29:48.674703 #23961]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:29:48 -0600
+I, [2015-03-04T23:29:48.685978 #23961]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:29:48.707497 #23961]  INFO -- :   Rendered shared/_error_messages.html.erb (1.4ms)
+I, [2015-03-04T23:29:48.707757 #23961]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (10.2ms)
+I, [2015-03-04T23:29:48.707987 #23961]  INFO -- : Completed 500 Internal Server Error in 22ms
+F, [2015-03-04T23:29:48.710956 #23961] FATAL -- : 
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @user.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@user.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb___1856352368337404047_28244140'
+  app/views/hexes/index.html.erb:16:in `block in _app_views_hexes_index_html_erb___3824864186118664673_29062180'
+  app/views/hexes/index.html.erb:15:in `_app_views_hexes_index_html_erb___3824864186118664673_29062180'
+
+
+I, [2015-03-04T23:31:52.877928 #24046]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:31:52 -0600
+I, [2015-03-04T23:31:52.902192 #24046]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:31:52.952882 #24046]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (2.4ms)
+I, [2015-03-04T23:31:52.953273 #24046]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (19.0ms)
+I, [2015-03-04T23:31:52.953691 #24046]  INFO -- : Completed 500 Internal Server Error in 51ms
+F, [2015-03-04T23:31:52.957701 #24046] FATAL -- : 
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @hexes.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@hexes.errors.count, "error") %>.
+  app/views/shared/_hexes_error_messages.html.erb:1:in `_app_views_shared__hexes_error_messages_html_erb__2742626960754288422_46754920'
+  app/views/hexes/index.html.erb:16:in `block in _app_views_hexes_index_html_erb___180949930892081736_47188000'
+  app/views/hexes/index.html.erb:15:in `_app_views_hexes_index_html_erb___180949930892081736_47188000'
+
+
+I, [2015-03-04T23:34:00.464507 #24136]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-04 23:34:00 -0600
+I, [2015-03-04T23:34:00.476496 #24136]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-04T23:34:00.495807 #24136]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.5ms)
+I, [2015-03-04T23:34:00.519016 #24136]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (30.9ms)
+I, [2015-03-04T23:34:00.520666 #24136]  INFO -- : Completed 200 OK in 44ms (Views: 33.3ms | ActiveRecord: 1.6ms)
+I, [2015-03-04T23:34:05.060140 #24128]  INFO -- : Started POST "/hexes" for 98.23.163.20 at 2015-03-04 23:34:05 -0600
+I, [2015-03-04T23:34:05.094000 #24128]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-04T23:34:05.094332 #24128]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "hex"=>{"wiproid"=>"1111111111", "deviceid"=>"2"}, "commit"=>"Program!"}
+I, [2015-03-04T23:34:05.170291 #24128]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (3.1ms)
+I, [2015-03-04T23:34:05.205726 #24128]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (43.7ms)
+I, [2015-03-04T23:34:05.208956 #24128]  INFO -- : Completed 200 OK in 114ms (Views: 49.1ms | ActiveRecord: 3.9ms)
+I, [2015-03-05T00:01:35.878151 #24545]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 00:01:35 -0600
+I, [2015-03-05T00:01:35.889297 #24545]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T00:01:35.903303 #24545]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.5ms)
+I, [2015-03-05T00:01:35.909770 #24545]  INFO -- : Completed 200 OK in 20ms (Views: 11.8ms | ActiveRecord: 0.8ms)
+I, [2015-03-05T00:01:39.468408 #24543]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:01:39 -0600
+I, [2015-03-05T00:01:39.494543 #24543]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:01:39.549724 #24543]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (33.1ms)
+I, [2015-03-05T00:01:39.559359 #24543]  INFO -- : Completed 200 OK in 64ms (Views: 44.9ms | ActiveRecord: 1.4ms)
+I, [2015-03-05T00:05:42.038325 #24715]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:05:42 -0600
+I, [2015-03-05T00:05:42.073148 #24715]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:05:42.144187 #24715]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (44.4ms)
+I, [2015-03-05T00:05:42.155877 #24715]  INFO -- : Completed 200 OK in 82ms (Views: 59.9ms | ActiveRecord: 2.1ms)
+I, [2015-03-05T00:06:37.767099 #24709]  INFO -- : Started GET "/signup" for 98.23.163.20 at 2015-03-05 00:06:37 -0600
+I, [2015-03-05T00:06:37.806220 #24709]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-05T00:06:37.858862 #24709]  INFO -- :   Rendered shared/_error_messages.html.erb (1.9ms)
+I, [2015-03-05T00:06:37.900889 #24709]  INFO -- :   Rendered users/new.html.erb within layouts/application (63.8ms)
+I, [2015-03-05T00:06:37.911739 #24709]  INFO -- : Completed 200 OK in 105ms (Views: 77.8ms | ActiveRecord: 3.2ms)
+I, [2015-03-05T00:07:09.180555 #24809]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:07:09 -0600
+I, [2015-03-05T00:07:09.202530 #24809]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:07:09.242160 #24809]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (24.4ms)
+I, [2015-03-05T00:07:09.249559 #24809]  INFO -- : Completed 200 OK in 47ms (Views: 33.2ms | ActiveRecord: 1.0ms)
+I, [2015-03-05T00:07:20.759390 #24809]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:07:20 -0600
+I, [2015-03-05T00:07:20.762560 #24809]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:07:20.766602 #24809]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (2.3ms)
+I, [2015-03-05T00:07:20.769029 #24809]  INFO -- : Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+I, [2015-03-05T00:07:22.416303 #24814]  INFO -- : Started GET "/signup" for 98.23.163.20 at 2015-03-05 00:07:22 -0600
+I, [2015-03-05T00:07:22.442680 #24814]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-05T00:07:22.486277 #24814]  INFO -- :   Rendered shared/_error_messages.html.erb (1.3ms)
+I, [2015-03-05T00:07:22.519413 #24814]  INFO -- :   Rendered users/new.html.erb within layouts/application (50.2ms)
+I, [2015-03-05T00:07:22.527222 #24814]  INFO -- : Completed 200 OK in 84ms (Views: 60.7ms | ActiveRecord: 2.4ms)
+I, [2015-03-05T00:07:27.698619 #24814]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:07:27 -0600
+I, [2015-03-05T00:07:27.704720 #24814]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:07:27.719087 #24814]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (6.4ms)
+I, [2015-03-05T00:07:27.724392 #24814]  INFO -- : Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.6ms)
+I, [2015-03-05T00:08:44.836277 #24895]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:08:44 -0600
+I, [2015-03-05T00:08:44.860348 #24895]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:08:44.913001 #24895]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (31.5ms)
+I, [2015-03-05T00:08:44.922944 #24895]  INFO -- : Completed 200 OK in 62ms (Views: 43.4ms | ActiveRecord: 1.4ms)
+I, [2015-03-05T00:09:29.498637 #24974]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:09:29 -0600
+I, [2015-03-05T00:09:29.521774 #24974]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:09:29.573522 #24974]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (31.0ms)
+I, [2015-03-05T00:09:29.583401 #24974]  INFO -- : Completed 200 OK in 61ms (Views: 43.1ms | ActiveRecord: 1.4ms)
+I, [2015-03-05T00:09:40.849704 #24969]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 00:09:40 -0600
+I, [2015-03-05T00:09:40.860295 #24969]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T00:09:40.860404 #24969]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T00:09:40.960040 #24969]  INFO -- : Completed 500 Internal Server Error in 99ms
+F, [2015-03-05T00:09:40.964112 #24969] FATAL -- : 
+NoMethodError (undefined method `log_in' for #<SessionsController:0x00000004380f78>):
+  app/controllers/sessions_controller.rb:8:in `create'
+
+
+I, [2015-03-05T00:17:38.546695 #25116]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:17:38 -0600
+I, [2015-03-05T00:17:38.569283 #25116]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:17:38.614080 #25116]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (27.4ms)
+I, [2015-03-05T00:17:38.623388 #25116]  INFO -- : Completed 200 OK in 54ms (Views: 38.4ms | ActiveRecord: 1.2ms)
+I, [2015-03-05T00:17:47.505750 #25122]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 00:17:47 -0600
+I, [2015-03-05T00:17:47.535378 #25122]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T00:17:47.535760 #25122]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T00:17:47.769030 #25122]  INFO -- : Completed 500 Internal Server Error in 233ms
+F, [2015-03-05T00:17:47.778759 #25122] FATAL -- : 
+NoMethodError (undefined method `log_in' for #<SessionsController:0x0000000437d710>):
+  app/controllers/sessions_controller.rb:8:in `create'
+
+
+I, [2015-03-05T00:18:06.234727 #25116]  INFO -- : Started GET "/signup" for 98.23.163.20 at 2015-03-05 00:18:06 -0600
+I, [2015-03-05T00:18:06.238873 #25116]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-05T00:18:06.261568 #25116]  INFO -- :   Rendered shared/_error_messages.html.erb (1.1ms)
+I, [2015-03-05T00:18:06.266988 #25116]  INFO -- :   Rendered users/new.html.erb within layouts/application (20.8ms)
+I, [2015-03-05T00:18:06.270518 #25116]  INFO -- : Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 1.6ms)
+I, [2015-03-05T00:18:33.021510 #25122]  INFO -- : Started POST "/users" for 98.23.163.20 at 2015-03-05 00:18:33 -0600
+I, [2015-03-05T00:18:33.026380 #25122]  INFO -- : Processing by UsersController#create as HTML
+I, [2015-03-05T00:18:33.026590 #25122]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "user"=>{"name"=>"Megan Goesch", "email"=>"megangoesch@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+E, [2015-03-05T00:18:33.230836 #25122] ERROR -- : Binary data inserted for `string` type on column `password_digest`
+I, [2015-03-05T00:18:33.246474 #25122]  INFO -- : Completed 500 Internal Server Error in 220ms
+F, [2015-03-05T00:18:33.256516 #25122] FATAL -- : 
+NoMethodError (undefined method `log_in' for #<UsersController:0x000000040b82a0>):
+  app/controllers/users_controller.rb:14:in `create'
+
+
+I, [2015-03-05T00:22:38.874453 #25118]  INFO -- : Started GET "/users" for 98.23.163.20 at 2015-03-05 00:22:38 -0600
+I, [2015-03-05T00:22:38.886267 #25118]  INFO -- : Processing by UsersController#index as HTML
+I, [2015-03-05T00:22:38.894462 #25118]  INFO -- : Redirected to http://104.131.36.80/
+I, [2015-03-05T00:22:38.894819 #25118]  INFO -- : Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+I, [2015-03-05T00:22:38.962342 #25113]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 00:22:38 -0600
+I, [2015-03-05T00:22:38.979376 #25113]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T00:22:38.990723 #25113]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.4ms)
+I, [2015-03-05T00:22:38.995136 #25113]  INFO -- : Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 0.7ms)
+I, [2015-03-05T00:22:41.594792 #25122]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:22:41 -0600
+I, [2015-03-05T00:22:41.599176 #25122]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:22:41.637207 #25122]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (33.2ms)
+I, [2015-03-05T00:22:41.643164 #25122]  INFO -- : Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.5ms)
+I, [2015-03-05T00:22:44.293180 #25122]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 00:22:44 -0600
+I, [2015-03-05T00:22:44.295150 #25122]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T00:22:44.295238 #25122]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T00:22:44.298902 #25122]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (1.5ms)
+I, [2015-03-05T00:22:44.300348 #25122]  INFO -- : Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+I, [2015-03-05T00:24:48.715335 #25113]  INFO -- : Started GET "/signup" for 98.23.163.20 at 2015-03-05 00:24:48 -0600
+I, [2015-03-05T00:24:48.720387 #25113]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-05T00:24:48.744577 #25113]  INFO -- :   Rendered shared/_error_messages.html.erb (0.8ms)
+I, [2015-03-05T00:24:48.762434 #25113]  INFO -- :   Rendered users/new.html.erb within layouts/application (33.1ms)
+I, [2015-03-05T00:24:48.764764 #25113]  INFO -- : Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 1.6ms)
+I, [2015-03-05T00:24:52.644100 #25116]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:24:52 -0600
+I, [2015-03-05T00:24:52.652264 #25116]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:24:52.662389 #25116]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (5.8ms)
+I, [2015-03-05T00:24:52.669172 #25116]  INFO -- : Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.9ms)
+I, [2015-03-05T00:28:25.496432 #25288]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:28:25 -0600
+I, [2015-03-05T00:28:25.508036 #25288]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:28:25.532251 #25288]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (14.6ms)
+I, [2015-03-05T00:28:25.537418 #25288]  INFO -- : Completed 200 OK in 29ms (Views: 20.7ms | ActiveRecord: 0.7ms)
+I, [2015-03-05T00:28:27.630008 #25288]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 00:28:27 -0600
+I, [2015-03-05T00:28:27.632105 #25288]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T00:28:27.632199 #25288]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T00:28:27.636647 #25288]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (1.3ms)
+I, [2015-03-05T00:28:27.637965 #25288]  INFO -- : Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.9ms)
+I, [2015-03-05T00:28:44.713011 #25279]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 00:28:44 -0600
+I, [2015-03-05T00:28:44.742796 #25279]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T00:28:44.743069 #25279]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"megangoesch@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T00:28:44.959424 #25279]  INFO -- : Completed 500 Internal Server Error in 216ms
+F, [2015-03-05T00:28:44.968267 #25279] FATAL -- : 
+NoMethodError (undefined method `log_in' for #<SessionsController:0x00000003c3e990>):
+  app/controllers/sessions_controller.rb:8:in `create'
+
+
+I, [2015-03-05T00:35:35.494733 #25393]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 00:35:35 -0600
+I, [2015-03-05T00:35:35.507334 #25393]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T00:35:35.532205 #25393]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (14.5ms)
+I, [2015-03-05T00:35:35.536943 #25393]  INFO -- : Completed 200 OK in 29ms (Views: 20.3ms | ActiveRecord: 0.6ms)
+I, [2015-03-05T00:35:46.720736 #25390]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 00:35:46 -0600
+I, [2015-03-05T00:35:46.748434 #25390]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T00:35:46.748749 #25390]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T00:35:46.965027 #25390]  INFO -- : Redirected to http://104.131.36.80/hexes
+I, [2015-03-05T00:35:46.965781 #25390]  INFO -- : Completed 302 Found in 217ms (ActiveRecord: 3.3ms)
+I, [2015-03-05T00:35:47.073026 #25395]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-05 00:35:47 -0600
+I, [2015-03-05T00:35:47.095947 #25395]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-05T00:35:47.138912 #25395]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.0ms)
+I, [2015-03-05T00:35:47.189629 #25395]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (67.6ms)
+I, [2015-03-05T00:35:47.210737 #25395]  INFO -- : Completed 200 OK in 114ms (Views: 89.1ms | ActiveRecord: 5.1ms)
+I, [2015-03-05T00:37:26.285721 #25390]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-05 00:37:26 -0600
+I, [2015-03-05T00:37:26.289518 #25390]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-05T00:37:26.289679 #25390]  INFO -- :   Parameters: {"authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14="}
+I, [2015-03-05T00:37:26.293647 #25390]  INFO -- : Completed 500 Internal Server Error in 4ms
+F, [2015-03-05T00:37:26.299376 #25390] FATAL -- : 
+ActionView::MissingTemplate (Missing template sessions/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/rails/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__3358275774379866770__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2683581167572338591__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-05T00:52:02.570552 #25393]  INFO -- : Started GET "/" for 94.102.49.168 at 2015-03-05 00:52:02 -0600
+I, [2015-03-05T00:52:02.574266 #25393]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T00:52:02.580672 #25393]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.3ms)
+I, [2015-03-05T00:52:02.583694 #25393]  INFO -- : Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+I, [2015-03-05T10:23:41.968830 #25395]  INFO -- : Started GET "/" for 61.240.144.66 at 2015-03-05 10:23:41 -0600
+I, [2015-03-05T10:23:41.984910 #25395]  INFO -- : Processing by HomeController#index as */*
+I, [2015-03-05T10:23:42.006470 #25395]  INFO -- :   Rendered home/index.html.erb within layouts/application (7.3ms)
+I, [2015-03-05T10:23:42.016753 #25395]  INFO -- : Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 1.7ms)
+I, [2015-03-05T10:49:45.979304 #25390]  INFO -- : Started GET "/" for 128.61.240.66 at 2015-03-05 10:49:45 -0600
+I, [2015-03-05T10:49:46.009620 #25390]  INFO -- : Processing by HomeController#index as */*
+I, [2015-03-05T10:49:46.039197 #25390]  INFO -- :   Rendered home/index.html.erb within layouts/application (14.8ms)
+I, [2015-03-05T10:49:46.051643 #25390]  INFO -- : Completed 200 OK in 42ms (Views: 36.8ms | ActiveRecord: 1.8ms)
+I, [2015-03-05T11:31:40.308382 #25393]  INFO -- : Started GET "/" for 198.101.242.72 at 2015-03-05 11:31:40 -0600
+I, [2015-03-05T11:31:40.315504 #25393]  INFO -- : Processing by HomeController#index as */*
+I, [2015-03-05T11:31:40.323590 #25393]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.1ms)
+I, [2015-03-05T11:31:40.327970 #25393]  INFO -- : Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.6ms)
+I, [2015-03-05T15:29:42.071388 #25393]  INFO -- : Started GET "/signup" for 98.23.163.20 at 2015-03-05 15:29:42 -0600
+I, [2015-03-05T15:29:42.078413 #25393]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-05T15:29:42.100905 #25393]  INFO -- :   Rendered shared/_error_messages.html.erb (0.9ms)
+I, [2015-03-05T15:29:42.105376 #25393]  INFO -- :   Rendered users/new.html.erb within layouts/application (17.8ms)
+I, [2015-03-05T15:29:42.109850 #25393]  INFO -- : Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 1.9ms)
+I, [2015-03-05T15:30:07.403824 #25390]  INFO -- : Started POST "/users" for 98.23.163.20 at 2015-03-05 15:30:07 -0600
+I, [2015-03-05T15:30:07.421056 #25390]  INFO -- : Processing by UsersController#create as HTML
+I, [2015-03-05T15:30:07.421418 #25390]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "user"=>{"name"=>"Xylr Chganz", "email"=>"xchganz@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+E, [2015-03-05T15:30:07.688726 #25390] ERROR -- : Binary data inserted for `string` type on column `password_digest`
+I, [2015-03-05T15:30:07.719097 #25390]  INFO -- : Completed 500 Internal Server Error in 297ms
+F, [2015-03-05T15:30:07.735435 #25390] FATAL -- : 
+NoMethodError (undefined method `log_in' for #<UsersController:0x000000035915e8>):
+  app/controllers/users_controller.rb:14:in `create'
+
+
+I, [2015-03-05T15:30:29.803604 #25393]  INFO -- : Started GET "/users/8" for 98.23.163.20 at 2015-03-05 15:30:29 -0600
+I, [2015-03-05T15:30:29.811077 #25393]  INFO -- : Processing by UsersController#show as HTML
+I, [2015-03-05T15:30:29.811261 #25393]  INFO -- :   Parameters: {"id"=>"8"}
+I, [2015-03-05T15:30:29.847931 #25393]  INFO -- :   Rendered users/show.html.erb within layouts/application (5.1ms)
+I, [2015-03-05T15:30:29.930186 #25393]  INFO -- : Completed 200 OK in 118ms (Views: 94.2ms | ActiveRecord: 3.2ms)
+I, [2015-03-05T15:30:49.067000 #25395]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 15:30:49 -0600
+I, [2015-03-05T15:30:49.073747 #25395]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T15:30:49.080240 #25395]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.0ms)
+I, [2015-03-05T15:30:49.085024 #25395]  INFO -- : Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.5ms)
+I, [2015-03-05T15:39:01.381998 #4747]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-05 15:39:01 -0600
+I, [2015-03-05T15:39:01.431620 #4747]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-05T15:39:01.431951 #4747]  INFO -- :   Parameters: {"authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14="}
+I, [2015-03-05T15:39:01.461660 #4747]  INFO -- : Completed 500 Internal Server Error in 29ms
+F, [2015-03-05T15:39:01.472075 #4747] FATAL -- : 
+ActionView::MissingTemplate (Missing template sessions/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/rails/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1328665971432788749__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__960872459260729342__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-05T15:48:36.531755 #5015]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 15:48:36 -0600
+I, [2015-03-05T15:48:36.543393 #5015]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T15:48:36.555426 #5015]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.7ms)
+I, [2015-03-05T15:48:36.567385 #5015]  INFO -- : Completed 200 OK in 24ms (Views: 14.1ms | ActiveRecord: 1.5ms)
+I, [2015-03-05T15:48:48.389237 #5010]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-05 15:48:48 -0600
+I, [2015-03-05T15:48:48.400995 #5010]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-05T15:48:48.401134 #5010]  INFO -- :   Parameters: {"authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14="}
+I, [2015-03-05T15:48:48.409451 #5010]  INFO -- : Redirected to http://104.131.36.80/
+I, [2015-03-05T15:48:48.409760 #5010]  INFO -- : Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+I, [2015-03-05T15:48:50.965036 #5015]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 15:48:50 -0600
+I, [2015-03-05T15:48:50.967082 #5015]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T15:48:50.968611 #5015]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.5ms)
+I, [2015-03-05T15:48:50.970267 #5015]  INFO -- : Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+I, [2015-03-05T15:49:02.820557 #5007]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 15:49:02 -0600
+I, [2015-03-05T15:49:02.831796 #5007]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T15:49:02.858643 #5007]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (16.2ms)
+I, [2015-03-05T15:49:02.863885 #5007]  INFO -- : Completed 200 OK in 32ms (Views: 22.7ms | ActiveRecord: 0.7ms)
+I, [2015-03-05T15:49:19.290411 #5015]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 15:49:19 -0600
+I, [2015-03-05T15:49:19.294395 #5015]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T15:49:19.294622 #5015]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T15:49:19.471742 #5015]  INFO -- : Redirected to http://104.131.36.80/hexes
+I, [2015-03-05T15:49:19.472328 #5015]  INFO -- : Completed 302 Found in 177ms (ActiveRecord: 0.5ms)
+I, [2015-03-05T15:49:19.638259 #5013]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-05 15:49:19 -0600
+I, [2015-03-05T15:49:19.662663 #5013]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-05T15:49:19.707742 #5013]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.0ms)
+I, [2015-03-05T15:49:19.760953 #5013]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (69.9ms)
+I, [2015-03-05T15:49:19.782132 #5013]  INFO -- : Completed 200 OK in 119ms (Views: 91.7ms | ActiveRecord: 5.4ms)
+I, [2015-03-05T15:49:29.424426 #5010]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-05 15:49:29 -0600
+I, [2015-03-05T15:49:29.428590 #5010]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-05T15:49:29.428788 #5010]  INFO -- :   Parameters: {"authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14="}
+I, [2015-03-05T15:49:29.431284 #5010]  INFO -- : Redirected to http://104.131.36.80/
+I, [2015-03-05T15:49:29.431672 #5010]  INFO -- : Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+I, [2015-03-05T15:49:29.582396 #5013]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 15:49:29 -0600
+I, [2015-03-05T15:49:29.585820 #5013]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T15:49:29.592108 #5013]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.9ms)
+I, [2015-03-05T15:49:29.595733 #5013]  INFO -- : Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+I, [2015-03-05T15:49:33.517928 #5010]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 15:49:33 -0600
+I, [2015-03-05T15:49:33.519076 #5010]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T15:49:33.539879 #5010]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (18.1ms)
+I, [2015-03-05T15:49:33.545921 #5010]  INFO -- : Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.7ms)
+I, [2015-03-05T15:49:36.315529 #5007]  INFO -- : Started GET "/signup" for 98.23.163.20 at 2015-03-05 15:49:36 -0600
+I, [2015-03-05T15:49:36.317762 #5007]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-05T15:49:36.329349 #5007]  INFO -- :   Rendered shared/_error_messages.html.erb (0.6ms)
+I, [2015-03-05T15:49:36.331946 #5007]  INFO -- :   Rendered users/new.html.erb within layouts/application (10.4ms)
+I, [2015-03-05T15:49:36.333818 #5007]  INFO -- : Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.8ms)
+I, [2015-03-05T15:50:26.100117 #5015]  INFO -- : Started POST "/users" for 98.23.163.20 at 2015-03-05 15:50:26 -0600
+I, [2015-03-05T15:50:26.104121 #5015]  INFO -- : Processing by UsersController#create as HTML
+I, [2015-03-05T15:50:26.104308 #5015]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "user"=>{"name"=>"Pedro Martinez", "email"=>"pmartinez@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+E, [2015-03-05T15:50:26.303942 #5015] ERROR -- : Binary data inserted for `string` type on column `password_digest`
+I, [2015-03-05T15:50:26.322427 #5015]  INFO -- : Redirected to http://104.131.36.80/
+I, [2015-03-05T15:50:26.323088 #5015]  INFO -- : Completed 302 Found in 219ms (ActiveRecord: 22.7ms)
+I, [2015-03-05T15:50:26.579974 #5010]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 15:50:26 -0600
+I, [2015-03-05T15:50:26.585826 #5010]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T15:50:26.594976 #5010]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.0ms)
+I, [2015-03-05T15:50:26.615347 #5010]  INFO -- : Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 1.8ms)
+I, [2015-03-05T15:50:48.130700 #5015]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-05 15:50:48 -0600
+I, [2015-03-05T15:50:48.139490 #5015]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-05T15:50:48.139841 #5015]  INFO -- :   Parameters: {"authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14="}
+I, [2015-03-05T15:50:48.142430 #5015]  INFO -- : Redirected to http://104.131.36.80/
+I, [2015-03-05T15:50:48.142873 #5015]  INFO -- : Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+I, [2015-03-05T15:50:48.258894 #5010]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 15:50:48 -0600
+I, [2015-03-05T15:50:48.263594 #5010]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T15:50:48.267709 #5010]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.2ms)
+I, [2015-03-05T15:50:48.271281 #5010]  INFO -- : Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.7ms)
+I, [2015-03-05T16:02:19.598954 #5156]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 16:02:19 -0600
+I, [2015-03-05T16:02:19.619046 #5156]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T16:02:19.646639 #5156]  INFO -- :   Rendered home/index.html.erb within layouts/application (10.0ms)
+I, [2015-03-05T16:02:19.651654 #5156]  INFO -- : Completed 200 OK in 32ms (Views: 16.0ms | ActiveRecord: 0.8ms)
+I, [2015-03-05T16:02:23.521028 #5156]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 16:02:23 -0600
+I, [2015-03-05T16:02:23.523125 #5156]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T16:02:23.544159 #5156]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (18.2ms)
+I, [2015-03-05T16:02:23.545953 #5156]  INFO -- : Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+I, [2015-03-05T16:03:00.019538 #5158]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 16:03:00 -0600
+I, [2015-03-05T16:03:00.032680 #5158]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T16:03:00.032853 #5158]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T16:03:00.136259 #5158]  INFO -- : Redirected to http://104.131.36.80/hexes
+I, [2015-03-05T16:03:00.136681 #5158]  INFO -- : Completed 302 Found in 104ms (ActiveRecord: 1.7ms)
+I, [2015-03-05T16:03:00.425186 #5164]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-05 16:03:00 -0600
+I, [2015-03-05T16:03:00.464861 #5164]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-05T16:03:00.517568 #5164]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.1ms)
+I, [2015-03-05T16:03:00.567956 #5164]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (71.9ms)
+I, [2015-03-05T16:03:00.588098 #5164]  INFO -- : Completed 200 OK in 123ms (Views: 93.2ms | ActiveRecord: 4.6ms)
+I, [2015-03-05T16:03:07.474837 #5158]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 16:03:07 -0600
+I, [2015-03-05T16:03:07.477659 #5158]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T16:03:07.483339 #5158]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.0ms)
+I, [2015-03-05T16:03:07.487608 #5158]  INFO -- : Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.5ms)
+I, [2015-03-05T16:03:10.175179 #5156]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-05 16:03:10 -0600
+I, [2015-03-05T16:03:10.179337 #5156]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-05T16:03:10.198671 #5156]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.0ms)
+I, [2015-03-05T16:03:10.216173 #5156]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (29.2ms)
+I, [2015-03-05T16:03:10.227642 #5156]  INFO -- : Completed 200 OK in 48ms (Views: 41.2ms | ActiveRecord: 2.3ms)
+I, [2015-03-05T16:05:14.558945 #5278]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 16:05:14 -0600
+I, [2015-03-05T16:05:14.582941 #5278]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T16:05:14.614332 #5278]  INFO -- :   Rendered home/index.html.erb within layouts/application (6.7ms)
+I, [2015-03-05T16:05:14.657539 #5278]  INFO -- : Completed 200 OK in 70ms (Views: 46.4ms | ActiveRecord: 6.3ms)
+I, [2015-03-05T16:07:27.866448 #5402]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 16:07:27 -0600
+I, [2015-03-05T16:07:27.909345 #5402]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T16:07:27.944898 #5402]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.8ms)
+I, [2015-03-05T16:07:27.966813 #5402]  INFO -- : Completed 200 OK in 57ms (Views: 25.9ms | ActiveRecord: 2.4ms)
+I, [2015-03-05T16:07:33.364700 #5400]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 16:07:33 -0600
+I, [2015-03-05T16:07:33.397668 #5400]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T16:07:33.426602 #5400]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.6ms)
+I, [2015-03-05T16:07:33.454270 #5400]  INFO -- : Completed 200 OK in 56ms (Views: 33.3ms | ActiveRecord: 2.6ms)
+I, [2015-03-05T16:07:37.607167 #5400]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 16:07:37 -0600
+I, [2015-03-05T16:07:37.610189 #5400]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T16:07:37.612567 #5400]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.8ms)
+I, [2015-03-05T16:07:37.615364 #5400]  INFO -- : Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+I, [2015-03-05T16:07:40.593220 #5402]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-05 16:07:40 -0600
+I, [2015-03-05T16:07:40.595832 #5402]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-05T16:07:40.595949 #5402]  INFO -- :   Parameters: {"authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14="}
+I, [2015-03-05T16:07:40.597239 #5402]  INFO -- : Redirected to http://104.131.36.80/
+I, [2015-03-05T16:07:40.597517 #5402]  INFO -- : Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+I, [2015-03-05T16:07:40.660920 #5397]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-05 16:07:40 -0600
+I, [2015-03-05T16:07:40.671754 #5397]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-05T16:07:40.682502 #5397]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.4ms)
+I, [2015-03-05T16:07:40.687267 #5397]  INFO -- : Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 0.7ms)
+I, [2015-03-05T16:07:42.586947 #5405]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-05 16:07:42 -0600
+I, [2015-03-05T16:07:42.608715 #5405]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-05T16:07:42.661229 #5405]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (30.1ms)
+I, [2015-03-05T16:07:42.671670 #5405]  INFO -- : Completed 200 OK in 63ms (Views: 42.4ms | ActiveRecord: 1.4ms)
+I, [2015-03-05T16:07:49.492292 #5405]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-05 16:07:49 -0600
+I, [2015-03-05T16:07:49.496001 #5405]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-05T16:07:49.496235 #5405]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"59BPzW0CF2lx6mf4G+ewmWx9zavYRDr52OjvUeo2Q14=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+I, [2015-03-05T16:07:49.671743 #5405]  INFO -- : Redirected to http://104.131.36.80/hexes
+I, [2015-03-05T16:07:49.672390 #5405]  INFO -- : Completed 302 Found in 176ms (ActiveRecord: 1.9ms)
+I, [2015-03-05T16:07:49.819198 #5397]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-05 16:07:49 -0600
+I, [2015-03-05T16:07:49.822728 #5397]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-05T16:07:49.844470 #5397]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.0ms)
+I, [2015-03-05T16:07:49.904203 #5397]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (74.0ms)
+I, [2015-03-05T16:07:49.919561 #5397]  INFO -- : Completed 200 OK in 96ms (Views: 88.0ms | ActiveRecord: 4.4ms)

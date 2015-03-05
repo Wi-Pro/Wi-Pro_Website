@@ -195,3 +195,10 @@ Binary data inserted for `string` type on column `password_digest`
   [1m[36mHex Load (0.3ms)[0m  [1mSELECT "hexes".* FROM "hexes" ORDER BY "hexes"."id" ASC LIMIT 1[0m
   [1m[36mHex Load (0.3ms)[0m  [1mSELECT "hexes".* FROM "hexes" ORDER BY "hexes"."id" ASC LIMIT 1[0m
   [1m[35mHex Load (0.8ms)[0m  SELECT "hexes".* FROM "hexes" ORDER BY "hexes"."id" DESC LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRememberDigestToUsers (20150305221323)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "remember_digest" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150305221323"]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
