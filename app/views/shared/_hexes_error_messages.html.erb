@@ -1,10 +1,10 @@
-<% if @hexes.errors.any? %>
+<% if @hex.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
-      The form contains <%= pluralize(@hexes.errors.count, "error") %>.
+      The form contains <%= pluralize(@hex.errors.count, "error") %>.
     </div>
     <ul>
-    <% @hexes.errors.full_messages.each do |msg| %>
+    <% @hex.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
     </ul>
