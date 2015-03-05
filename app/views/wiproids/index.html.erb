@@ -1,13 +1,14 @@
 <div class="well">
   <%= form_for @wiproid do |f| %>
+    <%= render 'shared/error_messages' %>
     <%= f.label "Name your Wi-Pro"%></br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control' %>
     </br>
     <%= f.label "What is the Serial Number on the device?"%></br>
-    <%= f.text_field :wiproid%>
+    <%= f.text_field :wiproid, class: 'form-control'%>
     </br>
     <%= f.label "Enter your userid (this should be automatic later)" %></br>
-    <%= f.text_field :userid %>
+    <%= f.text_field :userid, class: 'form-control' %>
     </br>
   </br>
     <%= f.submit "Add WiPro", class: "btn btn-primary" %>
