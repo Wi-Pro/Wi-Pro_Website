@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-  helper_method :log_in
   def new
   end
 
@@ -18,7 +17,5 @@ class SessionsController < ApplicationController
   def destroy
   end
 
-  def log_in(user)
-    session[:user_id] = user.id
-  end
+  
 end
