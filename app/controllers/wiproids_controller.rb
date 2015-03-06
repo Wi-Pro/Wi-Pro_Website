@@ -15,7 +15,7 @@ class WiproidsController < ApplicationController
     @wiproid = Wiproid.new(wiproid_params)
     @wiproid.userid = current_user.id
     if @wiproid.save
-      redirect_to "/hexes", notice: "The WiPro #{@wiproid.name} has been added"
+      redirect_to "/hexes", success: "The WiPro #{@wiproid.name} has been added"
     else
       render "index"
     end
@@ -24,7 +24,7 @@ class WiproidsController < ApplicationController
   def destroy
     @wiproid = Wiproid.find(params[:id])
     @wiproid.destroy
-    redirect_to wiproids_path, notice: "The WiPro #{@wiproid.name} has been deleted"
+    redirect_to wiproids_path, alert: "The WiPro #{@wiproid.name} has been deleted"
   end
 private
   def wiproid_params
