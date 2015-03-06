@@ -13,6 +13,7 @@ class WiproidsController < ApplicationController
 
   def create
     @wiproid = Wiproid.new(wiproid_params)
+    @wiproid.userid = current_user.id
     if @wiproid.save
       redirect_to "/hexes", notice: "The WiPro #{@wiproid.name} has been added"
     else
@@ -27,6 +28,6 @@ class WiproidsController < ApplicationController
   end
 private
   def wiproid_params
-    params.require(:wiproid).permit(:name, :wiproid, :userid)
+    params.require(:wiproid).permit(:name, :wiproid)
   end
 end
