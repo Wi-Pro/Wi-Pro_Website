@@ -17,7 +17,6 @@
 <body>
   <% if logged_in? %>
     <div align="right">Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
-    UserID = <%=current_user.id%>
   <%end%>
   <h1 align="center">Wi-Pro Senior Thesis Project</h1>
 
