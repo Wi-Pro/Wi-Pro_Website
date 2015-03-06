@@ -16,7 +16,7 @@
     <%= render 'shared/hexes_error_messages' %>
     <%wiproid_user = Wiproid.find_by userid: current_user.id%>
     <%= f.label "Which Wi-Pro do you want to use?"%></br>
-    <%=f.collection_select(:wiproid, wiproid_user, :wiproid, :name)%>
+    <%=f.collection_select(:wiproid, :wiproid_user, :wiproid, :name)%>
     <a href="/wiproids">Add Device!</a>
   </br>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
