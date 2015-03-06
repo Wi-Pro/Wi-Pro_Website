@@ -20,7 +20,7 @@
   <div class="container" style="padding-top:20px;">
     <% if logged_in? %>
       <%current_user%>
-      <div>Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
+      <div class="nav">Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
     <%end%>
     <ul class="nav nav-tabs">
       <% if logged_in? %>
@@ -32,10 +32,6 @@
           <li><%= link_to "Sign up", signup_path %></li>
         <% end %>
     </ul>
-    <% if logged_in? %>
-      <%current_user%>
-      <div>Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
-    <%end%>
     <% flash.each do |message_type, message| %>
       <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %>
