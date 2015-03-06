@@ -14,7 +14,7 @@
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
-    <%wiproid_user = Wiproid.find_by userid: current_user.id
+    <%wiproid_user = Wiproid.find_by userid: current_user.id%>
     <%= f.label "Which Wi-Pro do you want to use?"%></br>
     <%=f.collection_select(:wiproid, wiproid_user, :wiproid, :name)%>
     <a href="/wiproids">Add Device!</a>
