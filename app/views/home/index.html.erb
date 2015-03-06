@@ -3,11 +3,11 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-
+  <% if !logged_in? %>
+    <meta http-equiv="refresh" content="0;url=/login">
+  <% end %>
 </head>
-<% if !logged_in? %>
-  <% redirect_to "/login" %>
-<% end %>
+
 <div class="well">
   <a href="/hexes">Upload a Hex file!</a>
 </div>
