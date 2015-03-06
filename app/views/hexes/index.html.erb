@@ -17,10 +17,12 @@
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
+    <%if logged_in? %>
     <%wiproid_user = Wiproid.find_by userid: current_user.id%>
     <%= f.label "Which Wi-Pro do you want to use?"%></br>
     <%=f.collection_select(:wiproid, Wiproid.where(userid: current_user.id), :wiproid, :name)%>
     <a href="/wiproids">Add Device!</a>
+    <%end%>
   </br>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
   </br>
