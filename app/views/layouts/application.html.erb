@@ -16,12 +16,12 @@
 </head>
 <body>
   <h1 align="center">Wi-Pro Senior Thesis Project</h1>
-  <% if logged_in? %>
-    <%current_user%>
-    <div>Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
-  </br>
-  <%end%>
+
   <div class="container" style="padding-top:20px;">
+    <% if logged_in? %>
+      <%current_user%>
+      <div>Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
+    <%end%>
     <ul class="nav nav-tabs">
       <% if logged_in? %>
           <li><a href="/">Home</a></li>
