@@ -10,6 +10,9 @@
     padding: 20px;
 }
 </style>
+<% if !logged_in? %>
+  <%redirect_to "/login"%>
+<% end %>
 
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>

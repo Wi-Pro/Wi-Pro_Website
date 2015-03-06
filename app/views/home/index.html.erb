@@ -5,6 +5,9 @@
   <%= csrf_meta_tags %>
 
 </head>
+<% if !logged_in? %>
+  <%redirect_to "/login"%>
+<% end %>
 <div class="well">
   <a href="/hexes">Upload a Hex file!</a>
 </div>

@@ -1,3 +1,6 @@
+<% if !logged_in? %>
+  <%redirect_to "/login"%>
+<% end %>
 <div class="well">
   <%= form_for @wiproid do |f| %>
     <%= f.label "Name your Wi-Pro"%></br>
