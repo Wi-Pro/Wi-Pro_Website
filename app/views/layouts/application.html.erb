@@ -21,9 +21,6 @@
   <h1 align="center">Wi-Pro Senior Thesis Project</h1>
 
   <div class="container" style="padding-top:20px;">
-    <% if logged_in? %>
-      <div class="nav">Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
-    <%end%>
     <ul class="nav nav-tabs">
       <% if logged_in? %>
           <li><a href="/">Home</a></li>
