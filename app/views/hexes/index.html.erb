@@ -11,6 +11,10 @@
 }
 </style>
 <% if !logged_in? %>
+  <script language="javascript"><!--
+  location.replace("login")
+  //-->
+  </script>
   <meta http-equiv="refresh" content="0;url=/login">
 <% end %>
 
