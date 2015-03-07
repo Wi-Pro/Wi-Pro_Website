@@ -7,6 +7,8 @@ Myapp::Application.routes.draw do
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
+  post 'data' => 'data#index'
+  get 'data' => 'data#index'
   delete 'logout' => 'sessions#destroy'
   resources :hexes
   resources :wiproids
