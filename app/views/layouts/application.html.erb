@@ -18,8 +18,9 @@
   <% if logged_in? %>
     <div align="right">Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
   <%end%>
-  <h1>Wi-Pro</h1>
-
+  <div class="container" style="padding-top:20px;">
+    <h1>Wi-Pro</h1>
+  </div>
   <div class="container" style="padding-top:20px;">
     <ul class="nav nav-tabs">
       <% if logged_in? %>
