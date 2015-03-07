@@ -9,6 +9,8 @@ Myapp::Application.routes.draw do
   post 'login' => 'sessions#create'
   post 'data' => 'data#index'
   get 'data' => 'data#index'
+  post 'checkout' => 'checkout#index'
+  get 'checkout' => 'checkout#index'
   delete 'logout' => 'sessions#destroy'
   resources :hexes
   resources :wiproids
