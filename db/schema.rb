@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150305221323) do
+ActiveRecord::Schema.define(version: 20150308063807) do
 
   create_table "hex_files", force: true do |t|
     t.datetime "created_at"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20150305221323) do
     t.datetime "updated_at"
     t.string   "password_digest"
     t.string   "remember_digest"
+    t.integer  "devicepreference"
   end
 
   create_table "wiproids", force: true do |t|
@@ -52,6 +53,7 @@ ActiveRecord::Schema.define(version: 20150305221323) do
     t.integer  "userid"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "wiprouser"
   end
 
   create_table "wipros", force: true do |t|

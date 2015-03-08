@@ -29938,3 +29938,541 @@ I, [2015-03-07T00:18:49.228287 #1015]  INFO -- : Processing by HexesController#i
 I, [2015-03-07T00:18:49.274907 #1015]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.1ms)
 I, [2015-03-07T00:18:49.296372 #1015]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (57.5ms)
 I, [2015-03-07T00:18:49.298007 #1015]  INFO -- : Completed 200 OK in 70ms (Views: 64.3ms | ActiveRecord: 2.4ms)
+I, [2015-03-07T00:28:19.996974 #2608]  INFO -- : Started GET "/" for 137.48.255.10 at 2015-03-07 00:28:19 -0600
+I, [2015-03-07T00:28:20.018609 #2608]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T00:28:20.060986 #2608]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.8ms)
+I, [2015-03-07T00:28:20.091335 #2608]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (56.0ms)
+I, [2015-03-07T00:28:20.094226 #2608]  INFO -- : Completed 200 OK in 75ms (Views: 60.2ms | ActiveRecord: 2.9ms)
+I, [2015-03-07T00:28:29.095656 #2606]  INFO -- : Started GET "/wiproids/admin" for 137.48.255.10 at 2015-03-07 00:28:29 -0600
+I, [2015-03-07T00:28:29.115522 #2606]  INFO -- : Processing by WiproidsController#admin as HTML
+I, [2015-03-07T00:28:29.142508 #2606]  INFO -- :   Rendered wiproids/admin.html.erb within layouts/application (13.3ms)
+I, [2015-03-07T00:28:29.159941 #2606]  INFO -- : Completed 200 OK in 44ms (Views: 32.3ms | ActiveRecord: 2.3ms)
+I, [2015-03-07T00:28:50.799419 #2614]  INFO -- : Started GET "/wiproids" for 173.252.110.114 at 2015-03-07 00:28:50 -0600
+I, [2015-03-07T00:28:50.814524 #2614]  INFO -- : Processing by WiproidsController#index as */*
+I, [2015-03-07T00:28:50.847470 #2614]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (0.8ms)
+I, [2015-03-07T00:28:50.864027 #2614]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (32.8ms)
+I, [2015-03-07T00:28:50.866704 #2614]  INFO -- : Completed 200 OK in 52ms (Views: 41.1ms | ActiveRecord: 1.0ms)
+I, [2015-03-07T00:28:56.931081 #2612]  INFO -- : Started GET "/wiproids" for 137.48.255.9 at 2015-03-07 00:28:56 -0600
+I, [2015-03-07T00:28:56.946918 #2612]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-07T00:28:56.974140 #2612]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (0.6ms)
+I, [2015-03-07T00:28:56.988780 #2612]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (25.9ms)
+I, [2015-03-07T00:28:56.990860 #2612]  INFO -- : Completed 200 OK in 44ms (Views: 29.7ms | ActiveRecord: 1.0ms)
+I, [2015-03-07T00:28:57.876472 #2614]  INFO -- : Started GET "/login" for 137.48.255.9 at 2015-03-07 00:28:57 -0600
+I, [2015-03-07T00:28:57.880462 #2614]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-07T00:28:57.890725 #2614]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (6.5ms)
+I, [2015-03-07T00:28:57.891738 #2614]  INFO -- : Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T00:29:07.159224 #2612]  INFO -- : Started GET "/signup" for 137.48.255.9 at 2015-03-07 00:29:07 -0600
+I, [2015-03-07T00:29:07.163143 #2612]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-07T00:29:07.190426 #2612]  INFO -- :   Rendered shared/_error_messages.html.erb (1.6ms)
+I, [2015-03-07T00:29:07.199401 #2612]  INFO -- :   Rendered users/new.html.erb within layouts/application (27.0ms)
+I, [2015-03-07T00:29:07.201576 #2612]  INFO -- : Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 1.4ms)
+I, [2015-03-07T00:29:20.111791 #2608]  INFO -- : Started POST "/users" for 137.48.255.9 at 2015-03-07 00:29:20 -0600
+I, [2015-03-07T00:29:20.115807 #2608]  INFO -- : Processing by UsersController#create as HTML
+I, [2015-03-07T00:29:20.116003 #2608]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"copHCRMQ4wK181DDQJzmmqe8U1Y2QguAUGKZ838Robo=", "user"=>{"name"=>"Brandon Pfeifer", "email"=>"brpfeifer@unomaha.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+E, [2015-03-07T00:29:20.362904 #2608] ERROR -- : Binary data inserted for `string` type on column `password_digest`
+I, [2015-03-07T00:29:20.398435 #2608]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-07T00:29:20.400036 #2608]  INFO -- : Completed 302 Found in 284ms (ActiveRecord: 37.8ms)
+I, [2015-03-07T00:29:20.457258 #2612]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 00:29:20 -0600
+I, [2015-03-07T00:29:20.472179 #2612]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T00:29:20.536322 #2612]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.9ms)
+I, [2015-03-07T00:29:20.559997 #2612]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (66.5ms)
+I, [2015-03-07T00:29:20.563985 #2612]  INFO -- : Completed 200 OK in 91ms (Views: 74.7ms | ActiveRecord: 3.7ms)
+I, [2015-03-07T00:29:27.940984 #2606]  INFO -- : Started GET "/wiproids" for 137.48.255.9 at 2015-03-07 00:29:27 -0600
+I, [2015-03-07T00:29:27.944211 #2606]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-07T00:29:27.952188 #2606]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (0.6ms)
+I, [2015-03-07T00:29:27.976446 #2606]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (29.3ms)
+I, [2015-03-07T00:29:27.978448 #2606]  INFO -- : Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+I, [2015-03-07T00:30:18.610678 #2614]  INFO -- : Started POST "/wiproids" for 137.48.187.123 at 2015-03-07 00:30:18 -0600
+I, [2015-03-07T00:30:18.622521 #2614]  INFO -- : Processing by WiproidsController#create as HTML
+W, [2015-03-07T00:30:18.624492 #2614]  WARN -- : Can't verify CSRF token authenticity
+I, [2015-03-07T00:30:18.626347 #2614]  INFO -- : Completed 422 Unprocessable Entity in 3ms
+F, [2015-03-07T00:30:18.632695 #2614] FATAL -- : 
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:377:in `_run__3637336152012049996__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1644212508283150688__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-07T00:46:00.981942 #2941]  INFO -- : Started GET "/" for 137.48.255.10 at 2015-03-07 00:46:00 -0600
+I, [2015-03-07T00:46:00.993388 #2941]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T00:46:01.028410 #2941]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.7ms)
+I, [2015-03-07T00:46:01.058942 #2941]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (50.9ms)
+I, [2015-03-07T00:46:01.062712 #2941]  INFO -- : Completed 200 OK in 69ms (Views: 55.5ms | ActiveRecord: 3.1ms)
+I, [2015-03-07T00:46:07.202308 #2938]  INFO -- : Started GET "/data" for 137.48.255.10 at 2015-03-07 00:46:07 -0600
+I, [2015-03-07T00:46:07.212906 #2938]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T00:46:07.223707 #2938]  INFO -- : Completed 500 Internal Server Error in 11ms
+F, [2015-03-07T00:46:07.227398 #2938] FATAL -- : 
+NameError (undefined local variable or method `somefile' for #<DataController:0x00000005685ba0>):
+  app/controllers/data_controller.rb:5:in `index'
+
+
+I, [2015-03-07T00:47:59.864991 #3073]  INFO -- : Started GET "/data" for 137.48.255.10 at 2015-03-07 00:47:59 -0600
+I, [2015-03-07T00:47:59.874907 #3073]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T00:47:59.884935 #3073]  INFO -- :   Rendered data/index.html.erb within layouts/application (0.4ms)
+I, [2015-03-07T00:47:59.896400 #3073]  INFO -- : Completed 200 OK in 21ms (Views: 12.5ms | ActiveRecord: 1.1ms)
+I, [2015-03-07T00:55:14.246625 #3067]  INFO -- : Started GET "/data" for 137.48.255.10 at 2015-03-07 00:55:14 -0600
+I, [2015-03-07T00:55:14.295895 #3067]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T00:55:14.322305 #3067]  INFO -- :   Rendered data/index.html.erb within layouts/application (2.1ms)
+I, [2015-03-07T00:55:14.359855 #3067]  INFO -- : Completed 200 OK in 64ms (Views: 42.7ms | ActiveRecord: 2.5ms)
+I, [2015-03-07T00:56:18.222930 #3069]  INFO -- : Started POST "/data" for 137.48.187.123 at 2015-03-07 00:56:18 -0600
+I, [2015-03-07T00:56:18.251082 #3069]  INFO -- : Processing by DataController#index as HTML
+W, [2015-03-07T00:56:18.258986 #3069]  WARN -- : Can't verify CSRF token authenticity
+I, [2015-03-07T00:56:18.259657 #3069]  INFO -- : Completed 422 Unprocessable Entity in 8ms
+F, [2015-03-07T00:56:18.262155 #3069] FATAL -- : 
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:377:in `_run__2010395239833029998__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__219209494466291390__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-07T01:00:56.339022 #3203]  INFO -- : Started GET "/data" for 137.48.255.10 at 2015-03-07 01:00:56 -0600
+I, [2015-03-07T01:00:56.350350 #3203]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T01:00:56.360618 #3203]  INFO -- :   Rendered data/index.html.erb within layouts/application (0.5ms)
+I, [2015-03-07T01:00:56.372772 #3203]  INFO -- : Completed 200 OK in 22ms (Views: 13.1ms | ActiveRecord: 1.2ms)
+I, [2015-03-07T01:01:20.005929 #3200]  INFO -- : Started POST "/data" for 137.48.187.123 at 2015-03-07 01:01:20 -0600
+I, [2015-03-07T01:01:20.032162 #3200]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T01:01:20.056206 #3200]  INFO -- :   Rendered data/index.html.erb within layouts/application (1.0ms)
+I, [2015-03-07T01:01:20.071309 #3200]  INFO -- : Completed 200 OK in 39ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:08:40.181039 #3205]  INFO -- : Started POST "/data?t="Bitch"" for 137.48.187.123 at 2015-03-07 01:08:40 -0600
+I, [2015-03-07T01:08:40.212396 #3205]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T01:08:40.212620 #3205]  INFO -- :   Parameters: {"t"=>"\"Bitch\""}
+I, [2015-03-07T01:08:40.233719 #3205]  INFO -- :   Rendered data/index.html.erb within layouts/application (1.1ms)
+I, [2015-03-07T01:08:40.245691 #3205]  INFO -- : Completed 200 OK in 33ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:09:26.604127 #3362]  INFO -- : Started POST "/data?t="Bitch"" for 137.48.187.123 at 2015-03-07 01:09:26 -0600
+I, [2015-03-07T01:09:26.615385 #3362]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T01:09:26.615473 #3362]  INFO -- :   Parameters: {"t"=>"\"Bitch\""}
+I, [2015-03-07T01:09:26.625136 #3362]  INFO -- :   Rendered data/index.html.erb within layouts/application (0.5ms)
+I, [2015-03-07T01:09:26.630683 #3362]  INFO -- : Completed 200 OK in 15ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:17:49.154489 #3368]  INFO -- : Started POST "/data?t=Hello%20World" for 137.48.181.175 at 2015-03-07 01:17:49 -0600
+I, [2015-03-07T01:17:49.172306 #3368]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T01:17:49.172458 #3368]  INFO -- :   Parameters: {"t"=>"Hello World"}
+I, [2015-03-07T01:17:49.184623 #3368]  INFO -- :   Rendered data/index.html.erb within layouts/application (1.0ms)
+I, [2015-03-07T01:17:49.191319 #3368]  INFO -- : Completed 200 OK in 19ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:26:26.030741 #3362]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 01:26:26 -0600
+I, [2015-03-07T01:26:26.044339 #3362]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:26:26.127052 #3362]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.7ms)
+I, [2015-03-07T01:26:26.180576 #3362]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (113.8ms)
+I, [2015-03-07T01:26:26.183841 #3362]  INFO -- : Completed 200 OK in 139ms (Views: 120.3ms | ActiveRecord: 6.3ms)
+I, [2015-03-07T01:27:23.442539 #3368]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 01:27:23 -0600
+I, [2015-03-07T01:27:23.448963 #3368]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:27:23.487532 #3368]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.8ms)
+I, [2015-03-07T01:27:23.513136 #3368]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (53.8ms)
+I, [2015-03-07T01:27:23.514739 #3368]  INFO -- : Completed 200 OK in 66ms (Views: 56.8ms | ActiveRecord: 2.9ms)
+I, [2015-03-07T01:27:25.526609 #3364]  INFO -- : Started GET "/wiproids" for 137.48.255.9 at 2015-03-07 01:27:25 -0600
+I, [2015-03-07T01:27:25.566951 #3364]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-07T01:27:25.648446 #3364]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.5ms)
+I, [2015-03-07T01:27:25.684283 #3364]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (85.7ms)
+I, [2015-03-07T01:27:25.687726 #3364]  INFO -- : Completed 200 OK in 120ms (Views: 93.5ms | ActiveRecord: 3.6ms)
+I, [2015-03-07T01:28:59.742552 #3362]  INFO -- : Started GET "/" for 137.48.255.10 at 2015-03-07 01:28:59 -0600
+I, [2015-03-07T01:28:59.749179 #3362]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:28:59.758271 #3362]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-07T01:28:59.773577 #3362]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (20.4ms)
+I, [2015-03-07T01:28:59.775237 #3362]  INFO -- : Completed 200 OK in 26ms (Views: 21.1ms | ActiveRecord: 1.9ms)
+I, [2015-03-07T01:34:44.456622 #3368]  INFO -- : Started GET "/wiproids" for 137.48.255.10 at 2015-03-07 01:34:44 -0600
+I, [2015-03-07T01:34:44.471653 #3368]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-07T01:34:44.521457 #3368]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (2.0ms)
+I, [2015-03-07T01:34:44.528338 #3368]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (38.1ms)
+I, [2015-03-07T01:34:44.531688 #3368]  INFO -- : Completed 200 OK in 60ms (Views: 46.3ms | ActiveRecord: 3.0ms)
+I, [2015-03-07T01:47:33.091503 #3370]  INFO -- : Started GET "/" for 137.48.255.10 at 2015-03-07 01:47:33 -0600
+I, [2015-03-07T01:47:33.110365 #3370]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:47:33.149896 #3370]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.7ms)
+I, [2015-03-07T01:47:33.178506 #3370]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (53.0ms)
+I, [2015-03-07T01:47:33.181202 #3370]  INFO -- : Completed 200 OK in 71ms (Views: 56.9ms | ActiveRecord: 2.7ms)
+I, [2015-03-07T01:52:13.943308 #3362]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 01:52:13 -0600
+I, [2015-03-07T01:52:13.948155 #3362]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:52:13.956765 #3362]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-07T01:52:13.962766 #3362]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (10.7ms)
+I, [2015-03-07T01:52:13.964486 #3362]  INFO -- : Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 1.1ms)
+I, [2015-03-07T01:52:15.823840 #3364]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 01:52:15 -0600
+I, [2015-03-07T01:52:15.838551 #3364]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:52:15.889502 #3364]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.8ms)
+I, [2015-03-07T01:52:15.908721 #3364]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (51.0ms)
+I, [2015-03-07T01:52:15.911865 #3364]  INFO -- : Completed 200 OK in 73ms (Views: 58.6ms | ActiveRecord: 3.5ms)
+I, [2015-03-07T01:52:33.199161 #3364]  INFO -- : Started DELETE "/logout" for 137.48.255.9 at 2015-03-07 01:52:33 -0600
+I, [2015-03-07T01:52:33.205658 #3364]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-07T01:52:33.205872 #3364]  INFO -- :   Parameters: {"authenticity_token"=>"copHCRMQ4wK181DDQJzmmqe8U1Y2QguAUGKZ838Robo="}
+I, [2015-03-07T01:52:33.216338 #3364]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-07T01:52:33.216728 #3364]  INFO -- : Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+I, [2015-03-07T01:52:33.283593 #3368]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 01:52:33 -0600
+I, [2015-03-07T01:52:33.293810 #3368]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:52:33.300417 #3368]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-07T01:52:33.303444 #3368]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (4.6ms)
+I, [2015-03-07T01:52:33.304806 #3368]  INFO -- : Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:52:33.490639 #3362]  INFO -- : Started GET "/login" for 137.48.255.9 at 2015-03-07 01:52:33 -0600
+I, [2015-03-07T01:52:33.493595 #3362]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-07T01:52:33.504939 #3362]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (8.2ms)
+I, [2015-03-07T01:52:33.506204 #3362]  INFO -- : Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:52:36.922530 #3364]  INFO -- : Started GET "/login" for 137.48.255.9 at 2015-03-07 01:52:36 -0600
+I, [2015-03-07T01:52:36.926299 #3364]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-07T01:52:36.944068 #3364]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (13.8ms)
+I, [2015-03-07T01:52:36.953764 #3364]  INFO -- : Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:52:38.717033 #3362]  INFO -- : Started POST "/login" for 137.48.255.9 at 2015-03-07 01:52:38 -0600
+I, [2015-03-07T01:52:38.721292 #3362]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-07T01:52:38.721450 #3362]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"copHCRMQ4wK181DDQJzmmqe8U1Y2QguAUGKZ838Robo=", "session"=>{"email"=>"brpfeifer@unomaha.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-07T01:52:38.807718 #3362]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-07T01:52:38.808025 #3362]  INFO -- : Completed 302 Found in 86ms (ActiveRecord: 0.8ms)
+I, [2015-03-07T01:52:38.871500 #3364]  INFO -- : Started GET "/hexes" for 137.48.255.9 at 2015-03-07 01:52:38 -0600
+I, [2015-03-07T01:52:38.873551 #3364]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:52:38.876563 #3364]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.0ms)
+I, [2015-03-07T01:52:38.881086 #3364]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (6.1ms)
+I, [2015-03-07T01:52:38.900580 #3364]  INFO -- : Completed 200 OK in 27ms (Views: 7.2ms | ActiveRecord: 0.7ms)
+I, [2015-03-07T01:53:22.958940 #3370]  INFO -- : Started DELETE "/logout" for 137.48.255.9 at 2015-03-07 01:53:22 -0600
+I, [2015-03-07T01:53:22.970849 #3370]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-07T01:53:22.971043 #3370]  INFO -- :   Parameters: {"authenticity_token"=>"copHCRMQ4wK181DDQJzmmqe8U1Y2QguAUGKZ838Robo="}
+I, [2015-03-07T01:53:22.989319 #3370]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-07T01:53:22.989776 #3370]  INFO -- : Completed 302 Found in 18ms (ActiveRecord: 1.6ms)
+I, [2015-03-07T01:53:23.056819 #3368]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 01:53:23 -0600
+I, [2015-03-07T01:53:23.058912 #3368]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:53:23.063484 #3368]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.2ms)
+I, [2015-03-07T01:53:23.068427 #3368]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (6.7ms)
+I, [2015-03-07T01:53:23.070962 #3368]  INFO -- : Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:53:23.266056 #3362]  INFO -- : Started GET "/login" for 137.48.255.9 at 2015-03-07 01:53:23 -0600
+I, [2015-03-07T01:53:23.305369 #3362]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-07T01:53:23.308054 #3362]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (1.5ms)
+I, [2015-03-07T01:53:23.308920 #3362]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T01:53:28.819471 #3370]  INFO -- : Started POST "/login" for 137.48.255.9 at 2015-03-07 01:53:28 -0600
+I, [2015-03-07T01:53:28.824572 #3370]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-07T01:53:28.824810 #3370]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"copHCRMQ4wK181DDQJzmmqe8U1Y2QguAUGKZ838Robo=", "session"=>{"email"=>"brpfeifer@unomaha.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-07T01:53:28.980160 #3370]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-07T01:53:28.980841 #3370]  INFO -- : Completed 302 Found in 156ms (ActiveRecord: 1.1ms)
+I, [2015-03-07T01:53:29.046028 #3370]  INFO -- : Started GET "/hexes" for 137.48.255.9 at 2015-03-07 01:53:29 -0600
+I, [2015-03-07T01:53:29.049519 #3370]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T01:53:29.056699 #3370]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.2ms)
+I, [2015-03-07T01:53:29.066085 #3370]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (13.3ms)
+I, [2015-03-07T01:53:29.068563 #3370]  INFO -- : Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 1.5ms)
+I, [2015-03-07T02:17:14.038958 #3368]  INFO -- : Started POST "/data?t=Hello%20World" for 137.48.181.175 at 2015-03-07 02:17:14 -0600
+I, [2015-03-07T02:17:14.050215 #3368]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T02:17:14.050446 #3368]  INFO -- :   Parameters: {"t"=>"Hello World"}
+I, [2015-03-07T02:17:14.055834 #3368]  INFO -- :   Rendered data/index.html.erb within layouts/application (0.5ms)
+I, [2015-03-07T02:17:14.061129 #3368]  INFO -- : Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T07:20:12.543045 #3370]  INFO -- : Started GET "/" for 213.47.217.101 at 2015-03-07 07:20:12 -0600
+I, [2015-03-07T07:20:12.553867 #3370]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T07:20:12.575736 #3370]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.3ms)
+I, [2015-03-07T07:20:12.586882 #3370]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (26.4ms)
+I, [2015-03-07T07:20:12.591122 #3370]  INFO -- : Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T14:48:03.428732 #3362]  INFO -- : Started GET "/user/soapCaller.bs" for 118.98.104.21 at 2015-03-07 14:48:03 -0600
+F, [2015-03-07T14:48:03.441305 #3362] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/user/soapCaller.bs"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-07T16:16:48.822520 #3368]  INFO -- : Started POST "/data?t=Hello%20World" for 137.48.181.175 at 2015-03-07 16:16:48 -0600
+I, [2015-03-07T16:16:48.835058 #3368]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T16:16:48.835288 #3368]  INFO -- :   Parameters: {"t"=>"Hello World"}
+I, [2015-03-07T16:16:48.847624 #3368]  INFO -- :   Rendered data/index.html.erb within layouts/application (0.7ms)
+I, [2015-03-07T16:16:48.856316 #3368]  INFO -- : Completed 200 OK in 21ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T16:18:41.279893 #3364]  INFO -- : Started POST "/data?t=Hello%20World" for 137.48.181.175 at 2015-03-07 16:18:41 -0600
+I, [2015-03-07T16:18:41.297808 #3364]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T16:18:41.298077 #3364]  INFO -- :   Parameters: {"t"=>"Hello World"}
+I, [2015-03-07T16:18:41.311275 #3364]  INFO -- :   Rendered data/index.html.erb within layouts/application (2.1ms)
+I, [2015-03-07T16:18:41.317533 #3364]  INFO -- : Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T16:56:39.291595 #13135]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-07 16:56:39 -0600
+I, [2015-03-07T16:56:39.302980 #13135]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T16:56:39.332516 #13135]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.7ms)
+I, [2015-03-07T16:56:39.360756 #13135]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (45.3ms)
+I, [2015-03-07T16:56:39.363113 #13135]  INFO -- : Completed 200 OK in 60ms (Views: 47.7ms | ActiveRecord: 3.0ms)
+I, [2015-03-07T16:56:42.918627 #13141]  INFO -- : Started POST "/data?t=Hello%20World" for 137.48.181.175 at 2015-03-07 16:56:42 -0600
+I, [2015-03-07T16:56:42.939238 #13141]  INFO -- : Processing by DataController#index as HTML
+I, [2015-03-07T16:56:42.939453 #13141]  INFO -- :   Parameters: {"t"=>"Hello World"}
+I, [2015-03-07T16:56:42.959954 #13141]  INFO -- :   Rendered data/index.html.erb within layouts/application (0.9ms)
+I, [2015-03-07T16:56:42.971529 #13141]  INFO -- : Completed 200 OK in 32ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T17:02:39.898304 #13228]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-07 17:02:39 -0600
+I, [2015-03-07T17:02:39.912637 #13228]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T17:02:39.948320 #13228]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.9ms)
+I, [2015-03-07T17:02:39.980529 #13228]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (54.7ms)
+I, [2015-03-07T17:02:39.983900 #13228]  INFO -- : Completed 200 OK in 71ms (Views: 57.7ms | ActiveRecord: 2.8ms)
+I, [2015-03-07T17:31:32.920613 #13713]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-07 17:31:32 -0600
+F, [2015-03-07T17:31:32.955173 #13713] FATAL -- : 
+RuntimeError (Circular dependency detected while autoloading constant CheckoutController):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:461:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4376427753060860199__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-07T17:33:02.388271 #13807]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-07 17:33:02 -0600
+I, [2015-03-07T17:33:02.402383 #13807]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-07T17:33:02.413101 #13807]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (0.4ms)
+I, [2015-03-07T17:33:02.425642 #13807]  INFO -- : Completed 200 OK in 23ms (Views: 13.6ms | ActiveRecord: 1.3ms)
+I, [2015-03-07T17:43:15.099869 #13927]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-07 17:43:15 -0600
+I, [2015-03-07T17:43:15.110745 #13927]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-07T17:43:15.136057 #13927]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.5ms)
+I, [2015-03-07T17:43:15.164566 #13927]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (36.6ms)
+I, [2015-03-07T17:43:15.166759 #13927]  INFO -- : Completed 200 OK in 56ms (Views: 39.3ms | ActiveRecord: 2.6ms)
+I, [2015-03-07T17:44:33.638437 #13922]  INFO -- : Started GET "/" for 61.240.144.66 at 2015-03-07 17:44:33 -0600
+I, [2015-03-07T17:44:33.661338 #13922]  INFO -- : Processing by HexesController#index as */*
+I, [2015-03-07T17:44:33.725302 #13922]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.1ms)
+I, [2015-03-07T17:44:33.756031 #13922]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (61.9ms)
+I, [2015-03-07T17:44:33.760850 #13922]  INFO -- : Completed 200 OK in 99ms (Views: 78.5ms | ActiveRecord: 1.9ms)
+I, [2015-03-07T17:45:58.772304 #14004]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-07 17:45:58 -0600
+I, [2015-03-07T17:45:58.782575 #14004]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-07T17:45:58.801785 #14004]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.5ms)
+I, [2015-03-07T17:45:58.829344 #14004]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (35.3ms)
+I, [2015-03-07T17:45:58.831470 #14004]  INFO -- : Completed 200 OK in 49ms (Views: 37.7ms | ActiveRecord: 2.1ms)
+I, [2015-03-07T17:53:35.778297 #14006]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-07 17:53:35 -0600
+I, [2015-03-07T17:53:35.825724 #14006]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-07T17:53:35.924631 #14006]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.8ms)
+I, [2015-03-07T17:53:35.975457 #14006]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (110.0ms)
+I, [2015-03-07T17:53:35.982604 #14006]  INFO -- : Completed 200 OK in 156ms (Views: 122.8ms | ActiveRecord: 5.3ms)
+I, [2015-03-07T17:55:28.675901 #14109]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-07 17:55:28 -0600
+I, [2015-03-07T17:55:28.689760 #14109]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-07T17:55:28.712034 #14109]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.7ms)
+I, [2015-03-07T17:55:28.745347 #14109]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (42.5ms)
+I, [2015-03-07T17:55:28.747973 #14109]  INFO -- : Completed 200 OK in 58ms (Views: 45.5ms | ActiveRecord: 2.9ms)
+I, [2015-03-07T17:58:51.357326 #14191]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-07 17:58:51 -0600
+I, [2015-03-07T17:58:51.383879 #14191]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-07T17:58:51.430741 #14191]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.1ms)
+I, [2015-03-07T17:58:51.506634 #14191]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (95.1ms)
+I, [2015-03-07T17:58:51.511685 #14191]  INFO -- : Completed 200 OK in 127ms (Views: 101.5ms | ActiveRecord: 5.0ms)
+I, [2015-03-07T18:18:22.979762 #14338]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-07 18:18:22 -0600
+I, [2015-03-07T18:18:23.001585 #14338]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-07T18:18:23.043307 #14338]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.0ms)
+I, [2015-03-07T18:18:23.102853 #14338]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (76.2ms)
+I, [2015-03-07T18:18:23.107121 #14338]  INFO -- : Completed 200 OK in 105ms (Views: 81.4ms | ActiveRecord: 4.9ms)
+I, [2015-03-07T19:49:50.379990 #14346]  INFO -- : Started GET "/wiproids" for 137.48.255.9 at 2015-03-07 19:49:50 -0600
+I, [2015-03-07T19:49:50.405968 #14346]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-07T19:49:50.486256 #14346]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.4ms)
+I, [2015-03-07T19:49:50.523714 #14346]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (85.9ms)
+I, [2015-03-07T19:49:50.529301 #14346]  INFO -- : Completed 200 OK in 123ms (Views: 95.7ms | ActiveRecord: 4.0ms)
+I, [2015-03-07T21:23:52.902173 #14340]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 21:23:52 -0600
+I, [2015-03-07T21:23:52.956026 #14340]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T21:23:53.058435 #14340]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.8ms)
+I, [2015-03-07T21:23:53.126978 #14340]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (132.6ms)
+I, [2015-03-07T21:23:53.135425 #14340]  INFO -- : Completed 200 OK in 179ms (Views: 145.8ms | ActiveRecord: 6.1ms)
+I, [2015-03-07T21:23:57.194186 #14338]  INFO -- : Started DELETE "/logout" for 137.48.255.9 at 2015-03-07 21:23:57 -0600
+I, [2015-03-07T21:23:57.206982 #14338]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-07T21:23:57.207216 #14338]  INFO -- :   Parameters: {"authenticity_token"=>"copHCRMQ4wK181DDQJzmmqe8U1Y2QguAUGKZ838Robo="}
+I, [2015-03-07T21:23:57.226372 #14338]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-07T21:23:57.226968 #14338]  INFO -- : Completed 302 Found in 19ms (ActiveRecord: 2.1ms)
+I, [2015-03-07T21:23:57.307185 #14343]  INFO -- : Started GET "/" for 137.48.255.9 at 2015-03-07 21:23:57 -0600
+I, [2015-03-07T21:23:57.354072 #14343]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T21:23:57.430057 #14343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (2.0ms)
+I, [2015-03-07T21:23:57.487657 #14343]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (99.1ms)
+I, [2015-03-07T21:23:57.493812 #14343]  INFO -- : Completed 200 OK in 139ms (Views: 111.4ms | ActiveRecord: 2.6ms)
+I, [2015-03-07T21:23:57.781803 #14338]  INFO -- : Started GET "/login" for 137.48.255.9 at 2015-03-07 21:23:57 -0600
+I, [2015-03-07T21:23:57.786136 #14338]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-07T21:23:57.815140 #14338]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (20.6ms)
+I, [2015-03-07T21:23:57.821170 #14338]  INFO -- : Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T21:24:02.137047 #14338]  INFO -- : Started POST "/login" for 137.48.255.9 at 2015-03-07 21:24:02 -0600
+I, [2015-03-07T21:24:02.142972 #14338]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-07T21:24:02.143215 #14338]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"copHCRMQ4wK181DDQJzmmqe8U1Y2QguAUGKZ838Robo=", "session"=>{"email"=>"brpfeifer@unomaha.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-07T21:24:02.325325 #14338]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-07T21:24:02.325838 #14338]  INFO -- : Completed 302 Found in 182ms (ActiveRecord: 1.4ms)
+I, [2015-03-07T21:24:02.395460 #14343]  INFO -- : Started GET "/hexes" for 137.48.255.9 at 2015-03-07 21:24:02 -0600
+I, [2015-03-07T21:24:02.404138 #14343]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T21:24:02.424532 #14343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-07T21:24:02.431195 #14343]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (22.9ms)
+I, [2015-03-07T21:24:02.432462 #14343]  INFO -- : Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 1.5ms)
+I, [2015-03-07T21:47:50.339980 #14346]  INFO -- : Started GET "/" for 198.186.192.44 at 2015-03-07 21:47:50 -0600
+I, [2015-03-07T21:47:50.347726 #14346]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T21:47:50.373422 #14346]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.9ms)
+I, [2015-03-07T21:47:50.380492 #14346]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (23.4ms)
+I, [2015-03-07T21:47:50.382319 #14346]  INFO -- : Completed 200 OK in 34ms (Views: 27.9ms | ActiveRecord: 1.3ms)
+I, [2015-03-07T21:57:48.887450 #14338]  INFO -- : Started GET "/" for 192.99.170.80 at 2015-03-07 21:57:48 -0600
+I, [2015-03-07T21:57:48.894083 #14338]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T21:57:48.907724 #14338]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-07T21:57:48.915093 #14338]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (11.9ms)
+I, [2015-03-07T21:57:48.917057 #14338]  INFO -- : Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-07T22:04:59.859993 #14343]  INFO -- : Started GET "/" for 23.239.196.71 at 2015-03-07 22:04:59 -0600
+I, [2015-03-07T22:04:59.871212 #14343]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-07T22:04:59.883351 #14343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.6ms)
+I, [2015-03-07T22:04:59.892172 #14343]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (13.8ms)
+I, [2015-03-07T22:04:59.895738 #14343]  INFO -- : Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 0.0ms)
