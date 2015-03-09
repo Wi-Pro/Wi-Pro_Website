@@ -30476,3 +30476,120 @@ I, [2015-03-07T22:04:59.871212 #14343]  INFO -- : Processing by HexesController#
 I, [2015-03-07T22:04:59.883351 #14343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.6ms)
 I, [2015-03-07T22:04:59.892172 #14343]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (13.8ms)
 I, [2015-03-07T22:04:59.895738 #14343]  INFO -- : Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T01:45:47.190558 #14340]  INFO -- : Started GET "/hexes" for 70.197.200.114 at 2015-03-08 01:45:47 -0600
+I, [2015-03-08T01:45:47.206142 #14340]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-08T01:45:47.223337 #14340]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.3ms)
+I, [2015-03-08T01:45:47.231440 #14340]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (19.3ms)
+I, [2015-03-08T01:45:47.234305 #14340]  INFO -- : Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T01:45:48.198384 #14343]  INFO -- : Started GET "/login" for 70.197.200.114 at 2015-03-08 01:45:48 -0600
+I, [2015-03-08T01:45:48.212429 #14343]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-08T01:45:48.246076 #14343]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (23.0ms)
+I, [2015-03-08T01:45:48.249935 #14343]  INFO -- : Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T04:39:01.083929 #14346]  INFO -- : Started GET "/" for 50.117.87.207 at 2015-03-08 04:39:01 -0500
+I, [2015-03-08T04:39:01.093038 #14346]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-08T04:39:01.098430 #14346]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-08T04:39:01.103111 #14346]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (6.9ms)
+I, [2015-03-08T04:39:01.105146 #14346]  INFO -- : Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T09:36:13.468954 #14343]  INFO -- : Started GET "/" for 76.74.97.4 at 2015-03-08 09:36:13 -0500
+I, [2015-03-08T09:36:13.475036 #14343]  INFO -- : Processing by HexesController#index as */*
+I, [2015-03-08T09:36:13.519824 #14343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.7ms)
+I, [2015-03-08T09:36:13.522223 #14343]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (39.9ms)
+I, [2015-03-08T09:36:13.523407 #14343]  INFO -- : Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T14:59:24.180580 #14343]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-08 14:59:24 -0500
+I, [2015-03-08T14:59:24.187964 #14343]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-08T14:59:24.197603 #14343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-08T14:59:24.216388 #14343]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (22.0ms)
+I, [2015-03-08T14:59:24.218656 #14343]  INFO -- : Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 2.3ms)
+I, [2015-03-08T18:11:36.653544 #14340]  INFO -- : Started GET "/" for 182.118.55.118 at 2015-03-08 18:11:36 -0500
+I, [2015-03-08T18:11:36.661600 #14340]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-08T18:11:36.670338 #14340]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.2ms)
+I, [2015-03-08T18:11:36.683018 #14340]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (16.3ms)
+I, [2015-03-08T18:11:36.686716 #14340]  INFO -- : Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T20:43:27.528716 #14338]  INFO -- : Started GET "/" for 192.99.170.80 at 2015-03-08 20:43:27 -0500
+I, [2015-03-08T20:43:27.543839 #14338]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-08T20:43:27.553737 #14338]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.4ms)
+I, [2015-03-08T20:43:27.563958 #14338]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (14.2ms)
+I, [2015-03-08T20:43:27.567336 #14338]  INFO -- : Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T21:28:32.367798 #14346]  INFO -- : Started GET "/" for 198.186.192.44 at 2015-03-08 21:28:32 -0500
+I, [2015-03-08T21:28:32.371671 #14346]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-08T21:28:32.375977 #14346]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-08T21:28:32.381502 #14346]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (7.3ms)
+I, [2015-03-08T21:28:32.382964 #14346]  INFO -- : Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T22:29:23.083080 #14338]  INFO -- : Started GET "/" for 166.78.181.113 at 2015-03-08 22:29:23 -0500
+I, [2015-03-08T22:29:23.093430 #14338]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-08T22:29:23.103445 #14338]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.2ms)
+I, [2015-03-08T22:29:23.113068 #14338]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (13.5ms)
+I, [2015-03-08T22:29:23.117034 #14338]  INFO -- : Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-08T23:00:37.477414 #14343]  INFO -- : Started GET "/cgi-bin/test-cgi" for 222.73.18.162 at 2015-03-08 23:00:37 -0500
+F, [2015-03-08T23:00:37.486048 #14343] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-bin/test-cgi"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-09T00:46:57.319022 #14340]  INFO -- : Started GET "/" for 166.78.181.113 at 2015-03-09 00:46:57 -0500
+I, [2015-03-09T00:46:57.325783 #14340]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T00:46:57.332517 #14340]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-09T00:46:57.340584 #14340]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (11.2ms)
+I, [2015-03-09T00:46:57.343569 #14340]  INFO -- : Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T08:59:55.737681 #14338]  INFO -- : Started GET "/" for 128.61.240.66 at 2015-03-09 08:59:55 -0500
+I, [2015-03-09T08:59:55.760695 #14338]  INFO -- : Processing by HexesController#index as */*
+I, [2015-03-09T08:59:55.801678 #14338]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.7ms)
+I, [2015-03-09T08:59:55.817378 #14338]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (36.8ms)
+I, [2015-03-09T08:59:55.825717 #14338]  INFO -- : Completed 200 OK in 64ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T09:44:46.800036 #14343]  INFO -- : Started GET "/manager/html" for 82.138.16.125 at 2015-03-09 09:44:46 -0500
+F, [2015-03-09T09:44:46.814164 #14343] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/manager/html"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-09T12:02:35.459374 #14340]  INFO -- : Started GET "/" for 199.30.228.155 at 2015-03-09 12:02:35 -0500
+I, [2015-03-09T12:02:35.505881 #14340]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T12:02:35.536622 #14340]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (3.2ms)
+I, [2015-03-09T12:02:35.570168 #14340]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (57.3ms)
+I, [2015-03-09T12:02:35.582980 #14340]  INFO -- : Completed 200 OK in 76ms (Views: 72.1ms | ActiveRecord: 0.0ms)
