@@ -6,7 +6,8 @@ class GroupsController < ApplicationController
   def create
     @group = Group.new(group_params)
     if @group.save
-      redirect_to "/", success: "Group Added!"
+      flash[:success] = "Group Added!"
+      redirect_to "/"
     else
       flash[:danger] = "Error"
       render "index"
