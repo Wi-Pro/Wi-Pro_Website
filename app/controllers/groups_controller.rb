@@ -12,6 +12,10 @@ class GroupsController < ApplicationController
       render "index"
     end
   end
+
+  def show
+    redirect_to "/"
+  end
 private
   def group_params
     params.require(:group).permit(:name)
