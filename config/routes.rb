@@ -12,8 +12,8 @@ Myapp::Application.routes.draw do
   post 'checkout' => 'checkout#index'
   get 'checkout' => 'checkout#index'
   delete 'logout' => 'sessions#destroy'
-  get 'group' => 'group#index'
-  post 'group' => 'group#create'
+  get 'group' => 'groups#index'
+  post 'group' => 'groups#create'
 
   resources :hexes
   resources :wiproids
