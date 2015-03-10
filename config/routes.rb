@@ -12,12 +12,11 @@ Myapp::Application.routes.draw do
   post 'checkout' => 'checkout#index'
   get 'checkout' => 'checkout#index'
   delete 'logout' => 'sessions#destroy'
-  get 'group' => 'groups#index'
-  post 'group' => 'groups#create'
 
   resources :hexes
   resources :wiproids
   resources :users
+  resources :groups
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   #resources :hexes, only: [:index, :new, :create, :destroy]
