@@ -1,0 +1,13 @@
+<div class="well">
+  <%= form_for @group do |f| %>
+    <%= f.label "What is the group name?"%></br>
+    <%=f.text_field :name%>
+    </br>
+    </br>
+    <%= f.submit "Add Group!", class: "btn btn-primary" %>
+  <% end %>
+  </br>
+  </br>
+  <h2>Welcome to the Checkout Page!</h2>
+  <p>This is the section that you will checkout a device on.</p>
+</div>
