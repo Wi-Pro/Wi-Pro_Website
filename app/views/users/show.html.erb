@@ -9,7 +9,7 @@
   <tbody>
     <% @member.each do |m| %>
       <tr>
-        <td><%= Group.find(m.groupname).name %></td>
+        <td><%= Group.find(m.groupid).name %></td>
       </tr>
     <% end %>
   </tbody>
