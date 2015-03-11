@@ -1,12 +1,9 @@
 <div class="well">
-  <%= form_for @hex do |f| %>
-    <%= render 'shared/hexes_error_messages' %>
-    <%if logged_in? %>
+  <%= form_for @memberships do |f| %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
     <%=f.collection_select(:groupid, @groups, :id, :name)%>
     <%=f.collection_select(:userid, @users, :id, :name)%>
     <a href="/groups">Add Group!</a>
-    <%end%>
     </br>
     </br>
     <%= f.submit "Add to Group!", class: "btn btn-primary" %>
