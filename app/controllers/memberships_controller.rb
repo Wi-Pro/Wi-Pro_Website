@@ -1,7 +1,7 @@
 class MembershipsController < ApplicationController
   def index
-    @groups = Groups.all
-    @users = Users.all
+    @groups = Group.all
+    @users = User.all
     @membership = Membership.new
   end
   def create
