@@ -1,2 +1,16 @@
 <h1><%= @user.name %></h1>
 <h3>Email: <%= @user.email %></h3>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Group Memberships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @member.each do |m| %>
+      <tr>
+        <td><%= Group.find(m.groupname).name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
