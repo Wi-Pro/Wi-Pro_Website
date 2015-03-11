@@ -1,5 +1,5 @@
 <div class="well">
-  <%= form_for @memberships do |f| %>
+  <%= form_for @membership do |f| %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
     <%=f.collection_select(:groupid, @groups, :id, :name)%>
     <%=f.collection_select(:userid, @users, :id, :name)%>
