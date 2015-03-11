@@ -9,7 +9,7 @@ class MembershipsController < ApplicationController
     if @membership.save
       username = User.find(@membership.userid)
       groupname = Group.find(@membership.groupid)
-      flash[:success] = "#{username} has been added to #{groupname}"
+      flash[:success] = "#{username.name} has been added to #{groupname.name}"
       redirect_to "/memberships"
     else
       render "index"
