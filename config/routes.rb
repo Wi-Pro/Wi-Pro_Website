@@ -17,6 +17,7 @@ Myapp::Application.routes.draw do
   resources :wiproids
   resources :users
   resources :groups
+  resources :memberships
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   #resources :hexes, only: [:index, :new, :create, :destroy]
