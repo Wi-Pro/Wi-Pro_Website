@@ -30593,3 +30593,560 @@ I, [2015-03-09T12:02:35.505881 #14340]  INFO -- : Processing by HexesController#
 I, [2015-03-09T12:02:35.536622 #14340]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (3.2ms)
 I, [2015-03-09T12:02:35.570168 #14340]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (57.3ms)
 I, [2015-03-09T12:02:35.582980 #14340]  INFO -- : Completed 200 OK in 76ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T16:50:51.864101 #14338]  INFO -- : Started GET "/vtigercrm/test/upload/vtigercrm.txt" for 74.208.146.150 at 2015-03-09 16:50:51 -0500
+F, [2015-03-09T16:50:51.877585 #14338] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/vtigercrm/test/upload/vtigercrm.txt"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-09T18:31:36.938439 #14346]  INFO -- : Started GET "/" for 23.251.32.53 at 2015-03-09 18:31:36 -0500
+I, [2015-03-09T18:31:36.952669 #14346]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T18:31:36.965271 #14346]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-09T18:31:36.986963 #14346]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (26.0ms)
+I, [2015-03-09T18:31:36.992092 #14346]  INFO -- : Completed 200 OK in 39ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:01.961808 #14343]  INFO -- : Started GET "/wiproids/admin" for 24.227.255.210 at 2015-03-09 18:53:01 -0500
+I, [2015-03-09T18:53:01.994491 #14343]  INFO -- : Processing by WiproidsController#admin as HTML
+I, [2015-03-09T18:53:02.046691 #14343]  INFO -- :   Rendered wiproids/admin.html.erb within layouts/application (24.7ms)
+I, [2015-03-09T18:53:02.061902 #14343]  INFO -- : Completed 200 OK in 67ms (Views: 48.4ms | ActiveRecord: 10.6ms)
+I, [2015-03-09T18:53:03.751559 #14338]  INFO -- : Started GET "/hexes" for 24.227.255.210 at 2015-03-09 18:53:03 -0500
+I, [2015-03-09T18:53:03.767335 #14338]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T18:53:03.780006 #14338]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.4ms)
+I, [2015-03-09T18:53:03.790965 #14338]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (15.6ms)
+I, [2015-03-09T18:53:03.795797 #14338]  INFO -- : Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:04.649102 #14340]  INFO -- : Started GET "/login" for 24.227.255.210 at 2015-03-09 18:53:04 -0500
+I, [2015-03-09T18:53:04.669991 #14340]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-09T18:53:04.737810 #14340]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (47.8ms)
+I, [2015-03-09T18:53:04.747977 #14340]  INFO -- : Completed 200 OK in 78ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:08.553152 #14343]  INFO -- : Started GET "/wiproids" for 66.102.7.152 at 2015-03-09 18:53:08 -0500
+I, [2015-03-09T18:53:08.554483 #14338]  INFO -- : Started GET "/hexes/new" for 66.102.7.152 at 2015-03-09 18:53:08 -0500
+I, [2015-03-09T18:53:08.557334 #14343]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-09T18:53:08.558984 #14338]  INFO -- : Processing by HexesController#new as HTML
+I, [2015-03-09T18:53:08.569676 #14346]  INFO -- : Started GET "/hexes" for 66.102.7.138 at 2015-03-09 18:53:08 -0500
+I, [2015-03-09T18:53:08.575047 #14346]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T18:53:08.581376 #14346]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-09T18:53:08.588395 #14340]  INFO -- : Started GET "/" for 66.102.7.152 at 2015-03-09 18:53:08 -0500
+I, [2015-03-09T18:53:08.590449 #14340]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T18:53:08.593306 #14346]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (14.7ms)
+I, [2015-03-09T18:53:08.595737 #14340]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.3ms)
+I, [2015-03-09T18:53:08.600919 #14346]  INFO -- : Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:08.603005 #14340]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (10.7ms)
+I, [2015-03-09T18:53:08.604434 #14340]  INFO -- : Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:08.613004 #14343]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (11.3ms)
+I, [2015-03-09T18:53:08.614983 #14338]  INFO -- :   Rendered hexes/new.html.erb within layouts/application (47.4ms)
+I, [2015-03-09T18:53:08.618958 #14338]  INFO -- : Completed 200 OK in 60ms (Views: 50.9ms | ActiveRecord: 7.6ms)
+I, [2015-03-09T18:53:08.620615 #14343]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (61.0ms)
+I, [2015-03-09T18:53:08.622632 #14343]  INFO -- : Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:08.676166 #14340]  INFO -- : Started GET "/login" for 66.102.7.145 at 2015-03-09 18:53:08 -0500
+I, [2015-03-09T18:53:08.677333 #14346]  INFO -- : Started GET "/login" for 66.102.7.145 at 2015-03-09 18:53:08 -0500
+I, [2015-03-09T18:53:08.680657 #14340]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-09T18:53:08.685704 #14346]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-09T18:53:08.687837 #14340]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (5.4ms)
+I, [2015-03-09T18:53:08.690405 #14340]  INFO -- : Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:08.729297 #14346]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (31.5ms)
+I, [2015-03-09T18:53:08.734433 #14346]  INFO -- : Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:15.240555 #14343]  INFO -- : Started GET "/hexes" for 24.227.255.210 at 2015-03-09 18:53:15 -0500
+I, [2015-03-09T18:53:15.242992 #14343]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T18:53:15.249269 #14343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-09T18:53:15.256257 #14343]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (10.0ms)
+I, [2015-03-09T18:53:15.258539 #14343]  INFO -- : Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T18:53:18.680750 #14338]  INFO -- : Started GET "/login" for 24.227.255.210 at 2015-03-09 18:53:18 -0500
+I, [2015-03-09T18:53:18.683489 #14338]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-09T18:53:18.691349 #14338]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (5.6ms)
+I, [2015-03-09T18:53:18.693104 #14338]  INFO -- : Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T21:16:43.741781 #14346]  INFO -- : Started GET "/" for 198.186.192.44 at 2015-03-09 21:16:43 -0500
+I, [2015-03-09T21:16:43.747977 #14346]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T21:16:43.753814 #14346]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.4ms)
+I, [2015-03-09T21:16:43.758509 #14346]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (7.1ms)
+I, [2015-03-09T21:16:43.760112 #14346]  INFO -- : Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-09T21:31:49.161874 #16760]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-09 21:31:49 -0500
+I, [2015-03-09T21:31:49.176665 #16760]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-09T21:31:49.210805 #16760]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.9ms)
+I, [2015-03-09T21:31:49.242015 #16760]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (52.2ms)
+I, [2015-03-09T21:31:49.244584 #16760]  INFO -- : Completed 200 OK in 68ms (Views: 54.9ms | ActiveRecord: 2.9ms)
+I, [2015-03-09T21:31:58.220322 #16758]  INFO -- : Started GET "/group" for 98.23.163.20 at 2015-03-09 21:31:58 -0500
+I, [2015-03-09T21:31:58.250066 #16758]  INFO -- : Processing by GroupController#index as HTML
+I, [2015-03-09T21:31:58.312712 #16758]  INFO -- :   Rendered group/index.html.erb within layouts/application (34.1ms)
+I, [2015-03-09T21:31:58.313223 #16758]  INFO -- : Completed 500 Internal Server Error in 63ms
+F, [2015-03-09T21:31:58.317239 #16758] FATAL -- : 
+ActionView::Template::Error (undefined method `groups_path' for #<#<Class:0x000000044ec880>:0x000000044eb9a8>):
+    1: <div class="well">
+    2:   <%= form_for @group do |f| %>
+    3:     <%= f.label "What is the group name?"%></br>
+    4:     <%=f.text_field :name%>
+    5:     </br>
+  app/views/group/index.html.erb:2:in `_app_views_group_index_html_erb___3972511345587332897_36130480'
+
+
+I, [2015-03-10T00:26:41.171019 #16764]  INFO -- : Started GET "/wiproids/admin" for 24.227.255.210 at 2015-03-10 00:26:41 -0500
+I, [2015-03-10T00:26:41.195172 #16764]  INFO -- : Processing by WiproidsController#admin as HTML
+I, [2015-03-10T00:26:41.224726 #16764]  INFO -- :   Rendered wiproids/admin.html.erb within layouts/application (15.1ms)
+I, [2015-03-10T00:26:41.233585 #16764]  INFO -- : Completed 200 OK in 38ms (Views: 25.3ms | ActiveRecord: 1.8ms)
+I, [2015-03-10T00:40:40.370394 #16758]  INFO -- : Started GET "/" for 58.213.132.151 at 2015-03-10 00:40:40 -0500
+I, [2015-03-10T00:40:40.383893 #16758]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T00:40:40.431836 #16758]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.5ms)
+I, [2015-03-10T00:40:40.476021 #16758]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (77.3ms)
+I, [2015-03-10T00:40:40.481515 #16758]  INFO -- : Completed 200 OK in 97ms (Views: 86.8ms | ActiveRecord: 2.0ms)
+I, [2015-03-10T00:40:41.167143 #16755]  INFO -- : Started HEAD "/" for 58.213.132.151 at 2015-03-10 00:40:41 -0500
+I, [2015-03-10T00:40:41.211798 #16755]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T00:40:41.275967 #16755]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (2.0ms)
+I, [2015-03-10T00:40:41.335527 #16755]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (92.9ms)
+I, [2015-03-10T00:40:41.340840 #16755]  INFO -- : Completed 200 OK in 129ms (Views: 102.7ms | ActiveRecord: 2.7ms)
+I, [2015-03-10T00:40:42.033721 #16758]  INFO -- : Started GET "/" for 58.213.132.151 at 2015-03-10 00:40:42 -0500
+I, [2015-03-10T00:40:42.036543 #16758]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T00:40:42.038832 #16758]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-10T00:40:42.042411 #16758]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (4.6ms)
+I, [2015-03-10T00:40:42.043980 #16758]  INFO -- : Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-10T01:19:22.713539 #16760]  INFO -- : Started GET "/group" for 98.23.163.20 at 2015-03-10 01:19:22 -0500
+I, [2015-03-10T01:19:22.729723 #16760]  INFO -- : Processing by GroupController#index as HTML
+I, [2015-03-10T01:19:22.805685 #16760]  INFO -- :   Rendered group/index.html.erb within layouts/application (54.3ms)
+I, [2015-03-10T01:19:22.806102 #16760]  INFO -- : Completed 500 Internal Server Error in 76ms
+F, [2015-03-10T01:19:22.809434 #16760] FATAL -- : 
+ActionView::Template::Error (undefined method `groups_path' for #<#<Class:0x00000002d13150>:0x00000002d10c48>):
+    1: <div class="well">
+    2:   <%= form_for @group do |f| %>
+    3:     <%= f.label "What is the group name?"%></br>
+    4:     <%=f.text_field :name%>
+    5:     </br>
+  app/views/group/index.html.erb:2:in `_app_views_group_index_html_erb___3972511345587332897_23609880'
+
+
+I, [2015-03-10T01:20:16.608667 #16764]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-10 01:20:16 -0500
+I, [2015-03-10T01:20:16.620419 #16764]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-10T01:20:16.651370 #16764]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.9ms)
+I, [2015-03-10T01:20:16.687710 #16764]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (50.6ms)
+I, [2015-03-10T01:20:16.689263 #16764]  INFO -- : Completed 200 OK in 69ms (Views: 56.0ms | ActiveRecord: 2.8ms)
+I, [2015-03-10T01:46:34.975297 #22752]  INFO -- : Started GET "/group" for 98.23.163.20 at 2015-03-10 01:46:34 -0500
+F, [2015-03-10T01:46:34.987171 #22752] FATAL -- : 
+ActionController::RoutingError (uninitialized constant GroupController):
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__951693984390224190__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-10T01:48:05.452076 #22830]  INFO -- : Started GET "/group" for 98.23.163.20 at 2015-03-10 01:48:05 -0500
+I, [2015-03-10T01:48:05.462535 #22830]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T01:48:05.487109 #22830]  INFO -- :   Rendered groups/index.html.erb within layouts/application (12.6ms)
+I, [2015-03-10T01:48:05.487312 #22830]  INFO -- : Completed 500 Internal Server Error in 25ms
+F, [2015-03-10T01:48:05.489092 #22830] FATAL -- : 
+ActionView::Template::Error (undefined method `groups_path' for #<#<Class:0x000000040b00c8>:0x000000040aed18>):
+    1: <div class="well">
+    2:   <%= form_for @group do |f| %>
+    3:     <%= f.label "What is the group name?"%></br>
+    4:     <%=f.text_field :name%>
+    5:     </br>
+  app/views/groups/index.html.erb:2:in `_app_views_groups_index_html_erb__3961160773976437947_33907540'
+
+
+I, [2015-03-10T01:54:03.700318 #22925]  INFO -- : Started GET "/group" for 98.23.163.20 at 2015-03-10 01:54:03 -0500
+F, [2015-03-10T01:54:03.727062 #22925] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/group"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-10T01:54:06.446469 #22923]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-10 01:54:06 -0500
+I, [2015-03-10T01:54:06.469815 #22923]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T01:54:06.529371 #22923]  INFO -- :   Rendered groups/index.html.erb within layouts/application (35.5ms)
+I, [2015-03-10T01:54:06.553046 #22923]  INFO -- : Completed 200 OK in 83ms (Views: 60.8ms | ActiveRecord: 3.6ms)
+I, [2015-03-10T01:54:19.063125 #22925]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-10 01:54:19 -0500
+I, [2015-03-10T01:54:19.065882 #22925]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-10T01:54:19.065997 #22925]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"Lab 340"}, "commit"=>"Add Group!"}
+I, [2015-03-10T01:54:19.090624 #22925]  INFO -- : Completed 500 Internal Server Error in 24ms
+F, [2015-03-10T01:54:19.092023 #22925] FATAL -- : 
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups"} missing required keys: [:id]):
+  app/controllers/groups_controller.rb:9:in `create'
+
+
+I, [2015-03-10T01:55:34.948052 #22923]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-10 01:55:34 -0500
+I, [2015-03-10T01:55:34.950987 #22923]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T01:55:34.954802 #22923]  INFO -- :   Rendered groups/index.html.erb within layouts/application (2.1ms)
+I, [2015-03-10T01:55:34.957040 #22923]  INFO -- : Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.5ms)
+I, [2015-03-10T01:55:40.548978 #22931]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-10 01:55:40 -0500
+I, [2015-03-10T01:55:40.561734 #22931]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-10T01:55:40.561842 #22931]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"test"}, "commit"=>"Add Group!"}
+I, [2015-03-10T01:55:40.585943 #22931]  INFO -- : Completed 500 Internal Server Error in 24ms
+F, [2015-03-10T01:55:40.587350 #22931] FATAL -- : 
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups"} missing required keys: [:id]):
+  app/controllers/groups_controller.rb:9:in `create'
+
+
+I, [2015-03-10T06:11:32.961047 #22929]  INFO -- : Started GET "/" for 141.212.122.42 at 2015-03-10 06:11:32 -0500
+I, [2015-03-10T06:11:33.010077 #22929]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T06:11:33.080145 #22929]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (2.0ms)
+I, [2015-03-10T06:11:33.125658 #22929]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (80.9ms)
+I, [2015-03-10T06:11:33.131270 #22929]  INFO -- : Completed 200 OK in 121ms (Views: 92.4ms | ActiveRecord: 3.9ms)
+I, [2015-03-10T06:34:25.628912 #22925]  INFO -- : Started GET "/" for 61.240.144.66 at 2015-03-10 06:34:25 -0500
+I, [2015-03-10T06:34:25.638568 #22925]  INFO -- : Processing by HexesController#index as */*
+I, [2015-03-10T06:34:25.697368 #22925]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.7ms)
+I, [2015-03-10T06:34:25.750952 #22925]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (93.1ms)
+I, [2015-03-10T06:34:25.756887 #22925]  INFO -- : Completed 200 OK in 118ms (Views: 110.4ms | ActiveRecord: 2.0ms)
+I, [2015-03-10T15:12:41.511942 #22929]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-10 15:12:41 -0500
+I, [2015-03-10T15:12:41.626365 #22929]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T15:12:41.795344 #22929]  INFO -- :   Rendered groups/index.html.erb within layouts/application (55.8ms)
+I, [2015-03-10T15:12:41.913778 #22929]  INFO -- : Completed 200 OK in 286ms (Views: 210.4ms | ActiveRecord: 8.4ms)
+I, [2015-03-10T15:15:59.598614 #22931]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-10 15:15:59 -0500
+I, [2015-03-10T15:15:59.624084 #22931]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-10T15:15:59.715468 #22931]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (4.0ms)
+I, [2015-03-10T15:15:59.904555 #22931]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (238.6ms)
+I, [2015-03-10T15:16:00.050843 #22931]  INFO -- : Completed 200 OK in 426ms (Views: 396.4ms | ActiveRecord: 8.9ms)
+I, [2015-03-10T15:16:33.912381 #22929]  INFO -- : Started POST "/hexes" for 98.23.163.20 at 2015-03-10 15:16:33 -0500
+I, [2015-03-10T15:16:33.929402 #22929]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-10T15:16:33.929972 #22929]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "hex"=>{"wiproid"=>"1111111111"}, "commit"=>"Checkout!"}
+I, [2015-03-10T15:16:34.235143 #22929]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (5.1ms)
+I, [2015-03-10T15:16:34.266486 #22929]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (42.3ms)
+I, [2015-03-10T15:16:34.269245 #22929]  INFO -- : Completed 200 OK in 339ms (Views: 282.6ms | ActiveRecord: 5.0ms)
+I, [2015-03-10T15:34:16.628350 #22925]  INFO -- : Started GET "/group" for 98.23.163.20 at 2015-03-10 15:34:16 -0500
+F, [2015-03-10T15:34:16.646681 #22925] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/group"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-10T15:34:19.669558 #22923]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-10 15:34:19 -0500
+I, [2015-03-10T15:34:19.684346 #22923]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T15:34:19.720894 #22923]  INFO -- :   Rendered groups/index.html.erb within layouts/application (21.6ms)
+I, [2015-03-10T15:34:19.740569 #22923]  INFO -- : Completed 200 OK in 55ms (Views: 42.2ms | ActiveRecord: 3.2ms)
+I, [2015-03-10T15:34:23.795091 #22925]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-10 15:34:23 -0500
+I, [2015-03-10T15:34:23.876509 #22925]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-10T15:34:23.877035 #22925]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"test"}, "commit"=>"Add Group!"}
+I, [2015-03-10T15:34:23.930403 #22925]  INFO -- : Completed 500 Internal Server Error in 52ms
+F, [2015-03-10T15:34:23.937433 #22925] FATAL -- : 
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups"} missing required keys: [:id]):
+  app/controllers/groups_controller.rb:9:in `create'
+
+
+I, [2015-03-10T15:34:31.394737 #22929]  INFO -- : Started GET "/groups/show" for 98.23.163.20 at 2015-03-10 15:34:31 -0500
+F, [2015-03-10T15:34:31.430995 #22929] FATAL -- : 
+AbstractController::ActionNotFound (The action 'show' could not be found for GroupsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2783923766647401336__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-10T15:34:35.489553 #22931]  INFO -- : Started GET "/groups/1" for 98.23.163.20 at 2015-03-10 15:34:35 -0500
+F, [2015-03-10T15:34:35.502967 #22931] FATAL -- : 
+AbstractController::ActionNotFound (The action 'show' could not be found for GroupsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2783923766647401336__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-10T15:34:49.400161 #22929]  INFO -- : Started GET "/groups/" for 98.23.163.20 at 2015-03-10 15:34:49 -0500
+I, [2015-03-10T15:34:49.403656 #22929]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T15:34:49.423570 #22929]  INFO -- :   Rendered groups/index.html.erb within layouts/application (11.4ms)
+I, [2015-03-10T15:34:49.434096 #22929]  INFO -- : Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 1.5ms)
+I, [2015-03-10T15:34:57.364947 #22931]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-10 15:34:57 -0500
+I, [2015-03-10T15:34:57.366575 #22931]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-10T15:34:57.366673 #22931]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"Lab 340"}, "commit"=>"Add Group!"}
+I, [2015-03-10T15:34:57.382183 #22931]  INFO -- : Completed 500 Internal Server Error in 15ms
+F, [2015-03-10T15:34:57.384008 #22931] FATAL -- : 
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups"} missing required keys: [:id]):
+  app/controllers/groups_controller.rb:9:in `create'
+
+
+I, [2015-03-10T15:38:53.990991 #10127]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-10 15:38:53 -0500
+I, [2015-03-10T15:38:54.023881 #10127]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T15:38:54.092872 #10127]  INFO -- :   Rendered groups/index.html.erb within layouts/application (42.5ms)
+I, [2015-03-10T15:38:54.118043 #10127]  INFO -- : Completed 200 OK in 94ms (Views: 69.5ms | ActiveRecord: 3.8ms)
+I, [2015-03-10T15:39:03.327652 #10129]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-10 15:39:03 -0500
+I, [2015-03-10T15:39:03.357791 #10129]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-10T15:39:03.358077 #10129]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"Lab 345"}, "commit"=>"Add Group!"}
+I, [2015-03-10T15:39:03.406120 #10129]  INFO -- : Completed 500 Internal Server Error in 48ms
+F, [2015-03-10T15:39:03.407899 #10129] FATAL -- : 
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"groups"} missing required keys: [:id]):
+  app/controllers/groups_controller.rb:9:in `create'
+
+
+I, [2015-03-10T15:40:33.034854 #10225]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-10 15:40:33 -0500
+I, [2015-03-10T15:40:33.098571 #10225]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T15:40:33.194934 #10225]  INFO -- :   Rendered groups/index.html.erb within layouts/application (48.6ms)
+I, [2015-03-10T15:40:33.226118 #10225]  INFO -- : Completed 200 OK in 127ms (Views: 85.1ms | ActiveRecord: 1.8ms)
+I, [2015-03-10T15:40:37.271613 #10217]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-10 15:40:37 -0500
+I, [2015-03-10T15:40:37.286404 #10217]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-10T15:40:37.286560 #10217]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"Lab 350"}, "commit"=>"Add Group!"}
+I, [2015-03-10T15:40:37.314135 #10217]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-10T15:40:37.314675 #10217]  INFO -- : Completed 302 Found in 28ms (ActiveRecord: 10.2ms)
+I, [2015-03-10T15:40:37.379355 #10225]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-10 15:40:37 -0500
+I, [2015-03-10T15:40:37.381808 #10225]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T15:40:37.397688 #10225]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.7ms)
+I, [2015-03-10T15:40:37.411593 #10225]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (25.4ms)
+I, [2015-03-10T15:40:37.412695 #10225]  INFO -- : Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 1.7ms)
+I, [2015-03-10T15:40:58.456435 #10223]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-10 15:40:58 -0500
+I, [2015-03-10T15:40:58.496991 #10223]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T15:40:58.601570 #10223]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.6ms)
+I, [2015-03-10T15:40:58.652338 #10223]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (109.0ms)
+I, [2015-03-10T15:40:58.654996 #10223]  INFO -- : Completed 200 OK in 158ms (Views: 115.6ms | ActiveRecord: 7.4ms)
+I, [2015-03-10T15:42:06.740275 #10217]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-10 15:42:06 -0500
+I, [2015-03-10T15:42:06.747946 #10217]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T15:42:06.781575 #10217]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.8ms)
+I, [2015-03-10T15:42:06.832423 #10217]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (75.9ms)
+I, [2015-03-10T15:42:06.834788 #10217]  INFO -- : Completed 200 OK in 87ms (Views: 79.6ms | ActiveRecord: 2.6ms)
+I, [2015-03-10T15:42:21.391181 #10299]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-10 15:42:21 -0500
+I, [2015-03-10T15:42:21.417786 #10299]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-10T15:42:21.495601 #10299]  INFO -- :   Rendered groups/index.html.erb within layouts/application (53.2ms)
+I, [2015-03-10T15:42:21.522508 #10299]  INFO -- : Completed 200 OK in 104ms (Views: 82.2ms | ActiveRecord: 3.2ms)
+I, [2015-03-10T15:42:21.580035 #10296]  INFO -- : Started GET "/group" for 98.23.163.20 at 2015-03-10 15:42:21 -0500
+F, [2015-03-10T15:42:21.614795 #10296] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/group"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+I, [2015-03-10T15:42:26.917904 #10299]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-10 15:42:26 -0500
+I, [2015-03-10T15:42:26.921741 #10299]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-10T15:42:26.921970 #10299]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"Lab 311"}, "commit"=>"Add Group!"}
+I, [2015-03-10T15:42:26.958977 #10299]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-10T15:42:26.959510 #10299]  INFO -- : Completed 302 Found in 37ms (ActiveRecord: 28.4ms)
+I, [2015-03-10T15:42:27.015695 #10296]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-10 15:42:27 -0500
+I, [2015-03-10T15:42:27.023466 #10296]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T15:42:27.102420 #10296]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.4ms)
+I, [2015-03-10T15:42:27.162364 #10296]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (108.8ms)
+I, [2015-03-10T15:42:27.166842 #10296]  INFO -- : Completed 200 OK in 143ms (Views: 113.8ms | ActiveRecord: 6.3ms)
+I, [2015-03-10T17:07:41.672311 #10299]  INFO -- : Started GET "/" for 182.118.55.214 at 2015-03-10 17:07:41 -0500
+I, [2015-03-10T17:07:41.688174 #10299]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-10T17:07:41.747258 #10299]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (2.0ms)
+I, [2015-03-10T17:07:41.762131 #10299]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (53.8ms)
+I, [2015-03-10T17:07:41.765746 #10299]  INFO -- : Completed 200 OK in 77ms (Views: 63.5ms | ActiveRecord: 2.8ms)
+I, [2015-03-10T18:39:53.215025 #10302]  INFO -- : Started GET "/" for 128.61.240.66 at 2015-03-10 18:39:53 -0500
+I, [2015-03-10T18:39:53.262494 #10302]  INFO -- : Processing by HexesController#index as */*
+I, [2015-03-10T18:39:53.337110 #10302]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (2.1ms)
+I, [2015-03-10T18:39:53.382876 #10302]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (85.2ms)
+I, [2015-03-10T18:39:53.388688 #10302]  INFO -- : Completed 200 OK in 126ms (Views: 100.3ms | ActiveRecord: 3.1ms)
+I, [2015-03-10T18:56:40.779132 #10296]  INFO -- : Started GET "/" for 54.174.46.220 at 2015-03-10 18:56:40 -0500
+I, [2015-03-10T18:56:40.787353 #10296]  INFO -- : Processing by HexesController#index as */*
+I, [2015-03-10T18:56:40.804953 #10296]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.9ms)
+I, [2015-03-10T18:56:40.809167 #10296]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (15.1ms)
+I, [2015-03-10T18:56:40.811169 #10296]  INFO -- : Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.0ms)
