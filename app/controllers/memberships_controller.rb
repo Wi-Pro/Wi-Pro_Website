@@ -7,7 +7,8 @@ class MembershipsController < ApplicationController
   def create
     @membership = Membership.new(membership_params)
     if @membership.save
-      redirect_to "/memberships", success: "#{@membership.userid} has been added to #{@membership.groupid}"
+      flash[:success] = "#{@membership.userid} has been added to #{@membership.groupid}"
+      redirect_to "/memberships"
     else
       render "index"
     end
