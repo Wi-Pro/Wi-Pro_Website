@@ -1,15 +1,3 @@
-<style>
-#pleaseWaitDialog {
-    width: 400px;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -25px;
-    margin-left: -200px;
-    padding: 20px;
-}
-</style>
 <% if !logged_in? %>
   <script language="javascript"><!--
   location.replace("login")
@@ -21,21 +9,15 @@
 <div class="well">
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
-    <%if logged_in? %>
-    <%wiproid_user = Wiproid.find_by userid: current_user.id%>
-    <%= f.label "Which Wi-Pro do you want to use?"%></br>
-    <%=f.collection_select(:wiproid, Wiproid.where(userid: current_user.id), :wiproid, :name)%>
-    <a href="/wiproids">Add Device!</a>
-    <%end%>
-  </br>
+    </br>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
-  </br>
+    </br>
     <%= f.label "What device are you programming?"%></br>
     <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
-  </br>
+    </br>
     <%= f.label "What hex file do you want to use?" %></br>
     <%= f.file_field :attachment %>
-  </br>
+    </br>
     <%= f.submit "Program!", class: "btn btn-primary" %>
   <% end %>
 </div>
