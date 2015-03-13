@@ -11,7 +11,7 @@
     <%= f.text_field :wiproid%>
     </br>
     <%= f.label "Which group would you like to associate this device with?"%></br>
-    <%= f.collection_select(:groupid, Group.all, :id, :name) %>
+    <%= f.collection_select(:wiproid, :groupid, Group.all, :id, :name) %>
     </br>
     </br>
     <%= f.submit "Add WiPro", class: "btn btn-primary" %>
