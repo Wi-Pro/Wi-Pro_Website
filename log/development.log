@@ -425,3 +425,13 @@ Migrating to AddCheckedoutbyToWiproids (20150311005553)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150311005553"]]
   [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "memberships" ("created_at", "groupid", "updated_at", "userid") VALUES (?, ?, ?, ?)  [["created_at", Wed, 11 Mar 2015 04:55:34 UTC +00:00], ["groupid", 1], ["updated_at", Wed, 11 Mar 2015 04:55:34 UTC +00:00], ["userid", 1]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddGroupidToWiproids (20150313062542)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "wiproids" ADD "groupid" integer[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150313062542"]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150311005553) do
+ActiveRecord::Schema.define(version: 20150313062542) do
 
   create_table "groups", force: true do |t|
     t.string   "name"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20150311005553) do
     t.datetime "updated_at"
     t.string   "wiprouser"
     t.integer  "checkedoutby"
+    t.integer  "groupid"
   end
 
   create_table "wipros", force: true do |t|
