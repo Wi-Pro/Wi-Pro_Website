@@ -8,7 +8,7 @@
   <%= form_for @wiproid do |f| %>
     <%= render 'shared/wiproids_error_messages' %>
     <%= f.label "What is the Serial Number on the device?"%></br>
-    <%= f.number_field :wiproid%>
+    <%= f.text_field :wiproid%>
     </br>
     <%= f.label "Which group would you like to associate this device with?"%></br>
     <%= f.collection_select(:groupid, Group.all, :id, :name) %>
