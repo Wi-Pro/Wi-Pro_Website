@@ -23,7 +23,7 @@ Myapp::Application.routes.draw do
   #resources :hexes, only: [:index, :new, :create, :destroy]
   #resources :wiproids, only: [:index, :new, :create, :destroy]
   # You can have the root of your site routed with "root"
-  root to: 'hexes#index'
+  root to: 'checkout#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
