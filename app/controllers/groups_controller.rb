@@ -9,7 +9,7 @@ class GroupsController < ApplicationController
       flash[:success] = "Group Added!"
       redirect_to "/"
     else
-      flash[:danger] = "Error"
+      flash[:danger] = "Group Name Taken!"
       render "index"
     end
   end
