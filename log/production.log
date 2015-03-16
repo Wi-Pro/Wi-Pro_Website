@@ -31636,3 +31636,406 @@ I, [2015-03-13T01:21:41.780433 #10500]  INFO -- : Processing by CheckoutControll
 I, [2015-03-13T01:21:41.839010 #10500]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.4ms)
 I, [2015-03-13T01:21:41.934653 #10500]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (118.7ms)
 I, [2015-03-13T01:21:41.940711 #10500]  INFO -- : Completed 200 OK in 160ms (Views: 127.3ms | ActiveRecord: 6.5ms)
+I, [2015-03-13T01:37:41.308444 #10500]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-13 01:37:41 -0500
+I, [2015-03-13T01:37:41.324127 #10500]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T01:37:41.360951 #10500]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (2.2ms)
+I, [2015-03-13T01:37:41.373485 #10500]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (33.7ms)
+I, [2015-03-13T01:37:41.377654 #10500]  INFO -- : Completed 200 OK in 53ms (Views: 42.0ms | ActiveRecord: 2.9ms)
+I, [2015-03-13T01:49:20.973359 #10495]  INFO -- : Started GET "/" for 67.198.141.91 at 2015-03-13 01:49:20 -0500
+I, [2015-03-13T01:49:20.997375 #10495]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T01:49:21.014871 #10495]  INFO -- :   Rendered home/index.html.erb within layouts/application (12.1ms)
+I, [2015-03-13T01:49:21.020810 #10495]  INFO -- : Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T01:51:42.319956 #10837]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-13 01:51:42 -0500
+I, [2015-03-13T01:51:42.352199 #10837]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T01:51:42.399653 #10837]  INFO -- :   Rendered home/index.html.erb within layouts/application (24.5ms)
+I, [2015-03-13T01:51:42.403937 #10837]  INFO -- : Completed 200 OK in 51ms (Views: 29.5ms | ActiveRecord: 2.7ms)
+I, [2015-03-13T01:51:45.622565 #10835]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-13 01:51:45 -0500
+I, [2015-03-13T01:51:45.659878 #10835]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T01:51:45.749856 #10835]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.5ms)
+I, [2015-03-13T01:51:45.796335 #10835]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (85.7ms)
+I, [2015-03-13T01:51:45.800723 #10835]  INFO -- : Completed 200 OK in 140ms (Views: 91.0ms | ActiveRecord: 29.2ms)
+I, [2015-03-13T01:52:33.090928 #10837]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-13 01:52:33 -0500
+I, [2015-03-13T01:52:33.100561 #10837]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T01:52:33.100799 #10837]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "wiproid"=>{"wiproid"=>"1111111111", "groupid"=>"1"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T01:52:33.169717 #10837]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (3.1ms)
+I, [2015-03-13T01:52:33.200295 #10837]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (38.7ms)
+I, [2015-03-13T01:52:33.203227 #10837]  INFO -- : Completed 200 OK in 102ms (Views: 43.8ms | ActiveRecord: 4.3ms)
+I, [2015-03-13T01:54:34.660894 #10921]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-13 01:54:34 -0500
+I, [2015-03-13T01:54:34.694311 #10921]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T01:54:34.794150 #10921]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (2.0ms)
+I, [2015-03-13T01:54:34.835479 #10921]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (105.8ms)
+I, [2015-03-13T01:54:34.839753 #10921]  INFO -- : Completed 200 OK in 145ms (Views: 112.0ms | ActiveRecord: 6.7ms)
+I, [2015-03-13T01:54:40.154708 #10926]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-13 01:54:40 -0500
+I, [2015-03-13T01:54:40.183229 #10926]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T01:54:40.183501 #10926]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "wiproid"=>{"wiproid"=>"1111111111", "groupid"=>"1"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T01:54:40.270083 #10926]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (2.6ms)
+I, [2015-03-13T01:54:40.294542 #10926]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (31.0ms)
+I, [2015-03-13T01:54:40.298866 #10926]  INFO -- : Completed 200 OK in 115ms (Views: 37.2ms | ActiveRecord: 5.2ms)
+I, [2015-03-13T02:03:18.440654 #11026]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-13 02:03:18 -0500
+I, [2015-03-13T02:03:18.474011 #11026]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T02:03:18.549962 #11026]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.4ms)
+I, [2015-03-13T02:03:18.585013 #11026]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (82.3ms)
+I, [2015-03-13T02:03:18.585453 #11026]  INFO -- : Completed 500 Internal Server Error in 111ms
+F, [2015-03-13T02:03:18.589930 #11026] FATAL -- : 
+ActionView::Template::Error (undefined method `merge' for :name:Symbol):
+    11:     <%= f.text_field :wiproid%>
+    12:     </br>
+    13:     <%= f.label "Which group would you like to associate this device with?"%></br>
+    14:     <%= f.collection_select(:wiproid, :groupid, Group.all, :id, :name) %>
+    15:     </br>
+    16:     </br>
+    17:     <%= f.submit "Add WiPro", class: "btn btn-primary" %>
+  app/views/wiproids/index.html.erb:14:in `block in _app_views_wiproids_index_html_erb__3916397276890183583_39427640'
+  app/views/wiproids/index.html.erb:8:in `_app_views_wiproids_index_html_erb__3916397276890183583_39427640'
+
+
+I, [2015-03-13T02:06:00.749341 #11118]  INFO -- : Started GET "/wiproids" for 98.23.163.20 at 2015-03-13 02:06:00 -0500
+I, [2015-03-13T02:06:00.785234 #11118]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T02:06:00.854166 #11118]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.2ms)
+I, [2015-03-13T02:06:00.894391 #11118]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (76.7ms)
+I, [2015-03-13T02:06:00.898809 #11118]  INFO -- : Completed 200 OK in 113ms (Views: 81.9ms | ActiveRecord: 5.8ms)
+I, [2015-03-13T02:06:13.760520 #11116]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-13 02:06:13 -0500
+I, [2015-03-13T02:06:13.786827 #11116]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T02:06:13.787083 #11116]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "wiproid"=>{"wiproid"=>"1111111111", "groupid"=>"7"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T02:06:13.874762 #11116]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (2.6ms)
+I, [2015-03-13T02:06:13.899346 #11116]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (31.4ms)
+I, [2015-03-13T02:06:13.903514 #11116]  INFO -- : Completed 200 OK in 116ms (Views: 37.6ms | ActiveRecord: 5.3ms)
+I, [2015-03-13T02:09:08.655626 #11113]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-13 02:09:08 -0500
+I, [2015-03-13T02:09:08.694275 #11113]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T02:09:08.694538 #11113]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "wiproid"=>{"wiproid"=>"111111111", "groupid"=>"1"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T02:09:08.790349 #11113]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (4.7ms)
+I, [2015-03-13T02:09:08.819997 #11113]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (38.2ms)
+I, [2015-03-13T02:09:08.826219 #11113]  INFO -- : Completed 200 OK in 131ms (Views: 46.5ms | ActiveRecord: 5.2ms)
+I, [2015-03-13T02:19:48.267385 #11118]  INFO -- : Started POST "/wiproids" for 98.23.163.20 at 2015-03-13 02:19:48 -0500
+I, [2015-03-13T02:19:48.284654 #11118]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T02:19:48.284976 #11118]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "wiproid"=>{"wiproid"=>"1111111111", "groupid"=>"1"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T02:19:48.319325 #11118]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.8ms)
+I, [2015-03-13T02:19:48.328876 #11118]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (14.5ms)
+I, [2015-03-13T02:19:48.331985 #11118]  INFO -- : Completed 200 OK in 47ms (Views: 18.7ms | ActiveRecord: 2.7ms)
+I, [2015-03-13T02:23:45.488080 #11256]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-13 02:23:45 -0500
+I, [2015-03-13T02:23:45.533471 #11256]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-13T02:23:45.631699 #11256]  INFO -- :   Rendered groups/index.html.erb within layouts/application (66.4ms)
+I, [2015-03-13T02:23:45.672766 #11256]  INFO -- : Completed 200 OK in 139ms (Views: 109.5ms | ActiveRecord: 5.0ms)
+I, [2015-03-13T02:23:50.417661 #11258]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-13 02:23:50 -0500
+I, [2015-03-13T02:23:50.450905 #11258]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-13T02:23:50.451199 #11258]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"Lab 340"}, "commit"=>"Add Group!"}
+I, [2015-03-13T02:23:50.549795 #11258]  INFO -- :   Rendered groups/index.html.erb within layouts/application (16.9ms)
+I, [2015-03-13T02:23:50.577380 #11258]  INFO -- : Completed 200 OK in 126ms (Views: 47.3ms | ActiveRecord: 5.0ms)
+I, [2015-03-13T02:25:11.720372 #11337]  INFO -- : Started GET "/groups" for 98.23.163.20 at 2015-03-13 02:25:11 -0500
+I, [2015-03-13T02:25:11.744423 #11337]  INFO -- : Processing by GroupsController#index as HTML
+I, [2015-03-13T02:25:11.776850 #11337]  INFO -- :   Rendered groups/index.html.erb within layouts/application (18.2ms)
+I, [2015-03-13T02:25:11.788713 #11337]  INFO -- : Completed 200 OK in 44ms (Views: 31.1ms | ActiveRecord: 1.9ms)
+I, [2015-03-13T02:25:16.605500 #11337]  INFO -- : Started POST "/groups" for 98.23.163.20 at 2015-03-13 02:25:16 -0500
+I, [2015-03-13T02:25:16.609526 #11337]  INFO -- : Processing by GroupsController#create as HTML
+I, [2015-03-13T02:25:16.609728 #11337]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "group"=>{"name"=>"Lab 340"}, "commit"=>"Add Group!"}
+I, [2015-03-13T02:25:16.630413 #11337]  INFO -- :   Rendered groups/index.html.erb within layouts/application (3.7ms)
+I, [2015-03-13T02:25:16.633974 #11337]  INFO -- : Completed 200 OK in 24ms (Views: 7.4ms | ActiveRecord: 1.5ms)
+I, [2015-03-13T02:35:44.573358 #11343]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-13 02:35:44 -0500
+I, [2015-03-13T02:35:44.621700 #11343]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T02:35:44.685979 #11343]  INFO -- :   Rendered home/index.html.erb within layouts/application (40.3ms)
+I, [2015-03-13T02:35:44.691719 #11343]  INFO -- : Completed 200 OK in 69ms (Views: 48.8ms | ActiveRecord: 3.0ms)
+I, [2015-03-13T02:44:56.410261 #11341]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-13 02:44:56 -0500
+I, [2015-03-13T02:44:56.460444 #11341]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T02:44:56.528994 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (43.9ms)
+I, [2015-03-13T02:44:56.534975 #11341]  INFO -- : Completed 200 OK in 74ms (Views: 52.3ms | ActiveRecord: 3.2ms)
+I, [2015-03-13T09:07:53.724923 #11341]  INFO -- : Started GET "/" for 67.198.141.91 at 2015-03-13 09:07:53 -0500
+I, [2015-03-13T09:07:53.740351 #11341]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T09:07:53.756292 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (11.7ms)
+I, [2015-03-13T09:07:53.760500 #11341]  INFO -- : Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T09:38:38.529149 #11337]  INFO -- : Started GET "/" for 98.126.3.75 at 2015-03-13 09:38:38 -0500
+I, [2015-03-13T09:38:38.538990 #11337]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T09:38:38.552186 #11337]  INFO -- :   Rendered home/index.html.erb within layouts/application (7.4ms)
+I, [2015-03-13T09:38:38.554558 #11337]  INFO -- : Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T09:50:26.220652 #11343]  INFO -- : Started GET "/" for 180.234.89.42 at 2015-03-13 09:50:26 -0500
+I, [2015-03-13T09:50:26.234857 #11343]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T09:50:26.247897 #11343]  INFO -- :   Rendered home/index.html.erb within layouts/application (9.3ms)
+I, [2015-03-13T09:50:26.250665 #11343]  INFO -- : Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T10:22:06.889870 #11341]  INFO -- : Started GET "/" for 183.60.48.25 at 2015-03-13 10:22:06 -0500
+I, [2015-03-13T10:22:06.898265 #11341]  INFO -- : Processing by HomeController#index as */*
+I, [2015-03-13T10:22:06.915897 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (6.1ms)
+I, [2015-03-13T10:22:06.918436 #11341]  INFO -- : Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T11:42:02.711370 #11341]  INFO -- : Started HEAD "/" for 95.173.185.218 at 2015-03-13 11:42:02 -0500
+I, [2015-03-13T11:42:02.719323 #11341]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T11:42:02.726964 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.4ms)
+I, [2015-03-13T11:42:02.730198 #11341]  INFO -- : Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T12:28:06.707644 #11341]  INFO -- : Started GET "/" for 123.30.128.71 at 2015-03-13 12:28:06 -0500
+I, [2015-03-13T12:28:06.716743 #11341]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T12:28:06.725631 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (4.7ms)
+I, [2015-03-13T12:28:06.728589 #11341]  INFO -- : Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T18:36:03.456486 #11343]  INFO -- : Started GET "/wiproids/admin" for 24.227.255.210 at 2015-03-13 18:36:03 -0500
+I, [2015-03-13T18:36:03.478021 #11343]  INFO -- : Processing by WiproidsController#admin as HTML
+I, [2015-03-13T18:36:03.531712 #11343]  INFO -- :   Rendered wiproids/admin.html.erb within layouts/application (36.0ms)
+I, [2015-03-13T18:36:03.537381 #11343]  INFO -- : Completed 200 OK in 59ms (Views: 46.2ms | ActiveRecord: 2.8ms)
+I, [2015-03-13T18:36:06.608793 #11337]  INFO -- : Started GET "/login" for 24.227.255.210 at 2015-03-13 18:36:06 -0500
+I, [2015-03-13T18:36:06.633481 #11337]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-13T18:36:06.684449 #11337]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (34.2ms)
+I, [2015-03-13T18:36:06.689039 #11337]  INFO -- : Completed 200 OK in 55ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T20:24:45.781158 #11335]  INFO -- : Started GET "/login" for 24.227.255.210 at 2015-03-13 20:24:45 -0500
+I, [2015-03-13T20:24:45.820482 #11335]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-13T20:24:45.923866 #11335]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (87.1ms)
+I, [2015-03-13T20:24:45.944368 #11335]  INFO -- : Completed 200 OK in 123ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T21:41:38.078672 #11337]  INFO -- : Started GET "/" for 70.198.44.56 at 2015-03-13 21:41:38 -0500
+I, [2015-03-13T21:41:38.085972 #11337]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T21:41:38.089997 #11337]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.8ms)
+I, [2015-03-13T21:41:38.091443 #11337]  INFO -- : Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T21:41:39.242712 #11341]  INFO -- : Started GET "/login" for 70.198.44.56 at 2015-03-13 21:41:39 -0500
+I, [2015-03-13T21:41:39.252705 #11341]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-13T21:41:39.354768 #11341]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (94.9ms)
+I, [2015-03-13T21:41:39.355936 #11341]  INFO -- : Completed 200 OK in 103ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T21:43:03.836412 #11343]  INFO -- : Started POST "/login" for 70.198.44.56 at 2015-03-13 21:43:03 -0500
+I, [2015-03-13T21:43:03.854373 #11343]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-13T21:43:03.854860 #11343]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "session"=>{"email"=>"avogel@unomaha.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-13T21:43:04.050460 #11343]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (68.9ms)
+I, [2015-03-13T21:43:04.051692 #11343]  INFO -- : Completed 200 OK in 196ms (Views: 73.3ms | ActiveRecord: 2.1ms)
+I, [2015-03-13T21:43:12.990998 #11335]  INFO -- : Started POST "/login" for 70.198.44.56 at 2015-03-13 21:43:12 -0500
+I, [2015-03-13T21:43:13.007106 #11335]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-13T21:43:13.007399 #11335]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "session"=>{"email"=>"avogel@unomaha.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-13T21:43:13.172825 #11335]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (5.7ms)
+I, [2015-03-13T21:43:13.175432 #11335]  INFO -- : Completed 200 OK in 168ms (Views: 10.0ms | ActiveRecord: 3.6ms)
+I, [2015-03-13T21:43:27.142452 #11341]  INFO -- : Started POST "/login" for 70.198.44.56 at 2015-03-13 21:43:27 -0500
+I, [2015-03-13T21:43:27.147054 #11341]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-13T21:43:27.147310 #11341]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "session"=>{"email"=>"avogel@unomaha.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-13T21:43:27.342983 #11341]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (4.3ms)
+I, [2015-03-13T21:43:27.345907 #11341]  INFO -- : Completed 200 OK in 198ms (Views: 7.7ms | ActiveRecord: 1.2ms)
+I, [2015-03-13T21:43:31.016835 #11337]  INFO -- : Started GET "/signup" for 70.198.44.56 at 2015-03-13 21:43:31 -0500
+I, [2015-03-13T21:43:31.022347 #11337]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-13T21:43:31.047678 #11337]  INFO -- :   Rendered shared/_error_messages.html.erb (2.0ms)
+I, [2015-03-13T21:43:31.058164 #11337]  INFO -- :   Rendered users/new.html.erb within layouts/application (24.2ms)
+I, [2015-03-13T21:43:31.061333 #11337]  INFO -- : Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T21:43:50.597079 #11343]  INFO -- : Started GET "/login" for 70.198.44.56 at 2015-03-13 21:43:50 -0500
+I, [2015-03-13T21:43:50.606748 #11343]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-13T21:43:50.615205 #11343]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (5.1ms)
+I, [2015-03-13T21:43:50.617817 #11343]  INFO -- : Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T21:43:57.357942 #11341]  INFO -- : Started POST "/login" for 70.198.44.56 at 2015-03-13 21:43:57 -0500
+I, [2015-03-13T21:43:57.359973 #11341]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-13T21:43:57.360124 #11341]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "session"=>{"email"=>"avogel@unomaha.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-13T21:43:57.480865 #11341]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (5.5ms)
+I, [2015-03-13T21:43:57.483506 #11341]  INFO -- : Completed 200 OK in 123ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+I, [2015-03-13T21:44:08.779482 #11343]  INFO -- : Started GET "/signup" for 70.198.44.56 at 2015-03-13 21:44:08 -0500
+I, [2015-03-13T21:44:08.793585 #11343]  INFO -- : Processing by UsersController#new as HTML
+I, [2015-03-13T21:44:08.823578 #11343]  INFO -- :   Rendered shared/_error_messages.html.erb (1.7ms)
+I, [2015-03-13T21:44:08.832002 #11343]  INFO -- :   Rendered users/new.html.erb within layouts/application (20.8ms)
+I, [2015-03-13T21:44:08.835232 #11343]  INFO -- : Completed 200 OK in 41ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-13T21:44:42.721909 #11337]  INFO -- : Started POST "/users" for 70.198.44.56 at 2015-03-13 21:44:42 -0500
+I, [2015-03-13T21:44:42.734091 #11337]  INFO -- : Processing by UsersController#create as HTML
+I, [2015-03-13T21:44:42.734396 #11337]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "user"=>{"name"=>"Adam vogel", "email"=>"avogel@unomaha.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+I, [2015-03-13T21:44:42.948680 #11337]  INFO -- :   Rendered shared/_error_messages.html.erb (2.8ms)
+I, [2015-03-13T21:44:42.953421 #11337]  INFO -- :   Rendered users/new.html.erb within layouts/application (8.9ms)
+I, [2015-03-13T21:44:42.955056 #11337]  INFO -- : Completed 200 OK in 220ms (Views: 11.2ms | ActiveRecord: 1.0ms)
+I, [2015-03-13T21:45:06.648501 #11335]  INFO -- : Started POST "/users" for 70.198.44.56 at 2015-03-13 21:45:06 -0500
+I, [2015-03-13T21:45:06.656568 #11335]  INFO -- : Processing by UsersController#create as HTML
+I, [2015-03-13T21:45:06.656778 #11335]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "user"=>{"name"=>"Adam vogel", "email"=>"vogelam28@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+I, [2015-03-13T21:45:06.772589 #11335]  INFO -- :   Rendered shared/_error_messages.html.erb (1.8ms)
+I, [2015-03-13T21:45:06.777394 #11335]  INFO -- :   Rendered users/new.html.erb within layouts/application (10.8ms)
+I, [2015-03-13T21:45:06.779207 #11335]  INFO -- : Completed 200 OK in 122ms (Views: 15.4ms | ActiveRecord: 0.9ms)
+I, [2015-03-13T21:45:16.758593 #11341]  INFO -- : Started POST "/users" for 70.198.44.56 at 2015-03-13 21:45:16 -0500
+I, [2015-03-13T21:45:16.768810 #11341]  INFO -- : Processing by UsersController#create as HTML
+I, [2015-03-13T21:45:16.769074 #11341]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "user"=>{"name"=>"Adam vogel", "email"=>"vogelam28@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+E, [2015-03-13T21:45:16.958535 #11341] ERROR -- : Binary data inserted for `string` type on column `password_digest`
+I, [2015-03-13T21:45:16.976158 #11341]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-13T21:45:16.977033 #11341]  INFO -- : Completed 302 Found in 207ms (ActiveRecord: 25.3ms)
+I, [2015-03-13T21:45:17.136286 #11337]  INFO -- : Started GET "/" for 70.198.44.56 at 2015-03-13 21:45:17 -0500
+I, [2015-03-13T21:45:17.139076 #11337]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T21:45:17.145576 #11337]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.9ms)
+I, [2015-03-13T21:45:17.148112 #11337]  INFO -- : Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.8ms)
+I, [2015-03-13T21:45:41.278280 #11335]  INFO -- : Started GET "/wiproids" for 70.198.44.56 at 2015-03-13 21:45:41 -0500
+I, [2015-03-13T21:45:41.281908 #11335]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T21:45:41.305281 #11335]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (1.1ms)
+I, [2015-03-13T21:45:41.319308 #11335]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (30.3ms)
+I, [2015-03-13T21:45:41.321169 #11335]  INFO -- : Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 2.3ms)
+I, [2015-03-13T21:46:00.986877 #11343]  INFO -- : Started GET "/checkout" for 70.198.44.56 at 2015-03-13 21:46:00 -0500
+I, [2015-03-13T21:46:00.995069 #11343]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-13T21:46:01.036695 #11343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.8ms)
+I, [2015-03-13T21:46:01.050384 #11343]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (40.0ms)
+I, [2015-03-13T21:46:01.053507 #11343]  INFO -- : Completed 200 OK in 58ms (Views: 46.1ms | ActiveRecord: 3.4ms)
+I, [2015-03-13T21:46:06.136934 #11341]  INFO -- : Started GET "/wiproids" for 70.198.44.56 at 2015-03-13 21:46:06 -0500
+I, [2015-03-13T21:46:06.146530 #11341]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T21:46:06.204095 #11341]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (2.2ms)
+I, [2015-03-13T21:46:06.231682 #11341]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (69.1ms)
+I, [2015-03-13T21:46:06.234688 #11341]  INFO -- : Completed 200 OK in 87ms (Views: 73.4ms | ActiveRecord: 5.1ms)
+I, [2015-03-13T21:46:12.375936 #11343]  INFO -- : Started GET "/" for 70.198.44.56 at 2015-03-13 21:46:12 -0500
+I, [2015-03-13T21:46:12.380396 #11343]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-13T21:46:12.389583 #11343]  INFO -- :   Rendered home/index.html.erb within layouts/application (4.7ms)
+I, [2015-03-13T21:46:12.392161 #11343]  INFO -- : Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.9ms)
+I, [2015-03-13T21:46:14.506786 #11335]  INFO -- : Started GET "/checkout" for 70.198.44.56 at 2015-03-13 21:46:14 -0500
+I, [2015-03-13T21:46:14.509771 #11335]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-13T21:46:14.526129 #11335]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.8ms)
+I, [2015-03-13T21:46:14.530036 #11335]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (15.2ms)
+I, [2015-03-13T21:46:14.531214 #11335]  INFO -- : Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 1.0ms)
+I, [2015-03-13T21:46:21.838413 #11341]  INFO -- : Started GET "/wiproids" for 70.198.44.56 at 2015-03-13 21:46:21 -0500
+I, [2015-03-13T21:46:21.842506 #11341]  INFO -- : Processing by WiproidsController#index as HTML
+I, [2015-03-13T21:46:21.846260 #11341]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (0.1ms)
+I, [2015-03-13T21:46:21.849777 #11341]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (5.6ms)
+I, [2015-03-13T21:46:21.851071 #11341]  INFO -- : Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.6ms)
+I, [2015-03-13T21:46:53.048427 #11335]  INFO -- : Started POST "/wiproids" for 70.198.44.56 at 2015-03-13 21:46:53 -0500
+I, [2015-03-13T21:46:53.050767 #11335]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T21:46:53.050858 #11335]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "wiproid"=>{"wiproid"=>"1234567892", "groupid"=>"7"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T21:46:53.057675 #11335]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (0.8ms)
+I, [2015-03-13T21:46:53.061308 #11335]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (5.2ms)
+I, [2015-03-13T21:46:53.062427 #11335]  INFO -- : Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 0.7ms)
+I, [2015-03-13T21:47:01.603158 #11343]  INFO -- : Started POST "/wiproids" for 70.198.44.56 at 2015-03-13 21:47:01 -0500
+I, [2015-03-13T21:47:01.607923 #11343]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T21:47:01.608274 #11343]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "wiproid"=>{"wiproid"=>"1234567892", "groupid"=>"3"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T21:47:01.632647 #11343]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (3.4ms)
+I, [2015-03-13T21:47:01.657018 #11343]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (31.9ms)
+I, [2015-03-13T21:47:01.660184 #11343]  INFO -- : Completed 200 OK in 52ms (Views: 35.6ms | ActiveRecord: 3.2ms)
+I, [2015-03-13T21:47:04.932136 #11337]  INFO -- : Started POST "/wiproids" for 70.198.44.56 at 2015-03-13 21:47:04 -0500
+I, [2015-03-13T21:47:04.942782 #11337]  INFO -- : Processing by WiproidsController#create as HTML
+I, [2015-03-13T21:47:04.943335 #11337]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"LSuqaMRhAGzE0QFkhh2lGiGLAaVmc2wgLc8USM/kikE=", "wiproid"=>{"wiproid"=>"1234567892", "groupid"=>"8"}, "commit"=>"Add WiPro"}
+I, [2015-03-13T21:47:05.010340 #11337]  INFO -- :   Rendered shared/_wiproids_error_messages.html.erb (3.6ms)
+I, [2015-03-13T21:47:05.027961 #11337]  INFO -- :   Rendered wiproids/index.html.erb within layouts/application (28.6ms)
+I, [2015-03-13T21:47:05.030960 #11337]  INFO -- : Completed 200 OK in 87ms (Views: 35.2ms | ActiveRecord: 3.9ms)
+I, [2015-03-13T21:47:08.078786 #11343]  INFO -- : Started GET "/checkout" for 70.198.44.56 at 2015-03-13 21:47:08 -0500
+I, [2015-03-13T21:47:08.083557 #11343]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-13T21:47:08.088335 #11343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.2ms)
+I, [2015-03-13T21:47:08.096471 #11343]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (9.7ms)
+I, [2015-03-13T21:47:08.103560 #11343]  INFO -- : Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 1.2ms)
+I, [2015-03-14T14:22:34.717018 #11335]  INFO -- : Started GET "/" for 61.160.232.203 at 2015-03-14 14:22:34 -0500
+I, [2015-03-14T14:22:34.737450 #11335]  INFO -- : Processing by HomeController#index as */*
+I, [2015-03-14T14:22:34.764099 #11335]  INFO -- :   Rendered home/index.html.erb within layouts/application (9.4ms)
+I, [2015-03-14T14:22:34.768284 #11335]  INFO -- : Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-14T15:40:56.962920 #11341]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-14 15:40:56 -0500
+I, [2015-03-14T15:40:56.976841 #11341]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-14T15:40:56.999908 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (15.5ms)
+I, [2015-03-14T15:40:57.005121 #11341]  INFO -- : Completed 200 OK in 28ms (Views: 21.2ms | ActiveRecord: 2.3ms)
+I, [2015-03-14T16:34:29.887852 #11343]  INFO -- : Started GET "/" for 182.118.60.63 at 2015-03-14 16:34:29 -0500
+I, [2015-03-14T16:34:29.892886 #11343]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-14T16:34:29.897897 #11343]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.5ms)
+I, [2015-03-14T16:34:29.900710 #11343]  INFO -- : Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-14T22:04:50.960493 #11335]  INFO -- : Started GET "/" for 192.99.170.80 at 2015-03-14 22:04:50 -0500
+I, [2015-03-14T22:04:50.974694 #11335]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-14T22:04:50.988007 #11335]  INFO -- :   Rendered home/index.html.erb within layouts/application (7.0ms)
+I, [2015-03-14T22:04:50.991314 #11335]  INFO -- : Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T11:39:46.203134 #11335]  INFO -- : Started GET "/" for 61.240.144.64 at 2015-03-15 11:39:46 -0500
+I, [2015-03-15T11:39:46.212940 #11335]  INFO -- : Processing by HomeController#index as */*
+I, [2015-03-15T11:39:46.221973 #11335]  INFO -- :   Rendered home/index.html.erb within layouts/application (4.0ms)
+I, [2015-03-15T11:39:46.229120 #11335]  INFO -- : Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T11:48:33.152945 #11343]  INFO -- : Started GET "/" for 38.99.82.201 at 2015-03-15 11:48:33 -0500
+I, [2015-03-15T11:48:33.163069 #11343]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T11:48:33.171919 #11343]  INFO -- :   Rendered home/index.html.erb within layouts/application (4.5ms)
+I, [2015-03-15T11:48:33.177983 #11343]  INFO -- : Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T11:48:34.529730 #11341]  INFO -- : Started GET "/login" for 38.99.82.201 at 2015-03-15 11:48:34 -0500
+I, [2015-03-15T11:48:34.539301 #11341]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-15T11:48:34.555348 #11341]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (9.0ms)
+I, [2015-03-15T11:48:34.559301 #11341]  INFO -- : Completed 200 OK in 20ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T12:07:29.549218 #11337]  INFO -- : Started GET "/" for 38.99.82.199 at 2015-03-15 12:07:29 -0500
+I, [2015-03-15T12:07:29.567018 #11337]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T12:07:29.579393 #11337]  INFO -- :   Rendered home/index.html.erb within layouts/application (4.9ms)
+I, [2015-03-15T12:07:29.585497 #11337]  INFO -- : Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T12:07:30.936056 #11335]  INFO -- : Started GET "/login" for 38.99.82.199 at 2015-03-15 12:07:30 -0500
+I, [2015-03-15T12:07:30.946657 #11335]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-15T12:07:30.965852 #11335]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (9.3ms)
+I, [2015-03-15T12:07:30.972525 #11335]  INFO -- : Completed 200 OK in 25ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T12:47:55.703303 #11341]  INFO -- : Started GET "/" for 174.139.31.149 at 2015-03-15 12:47:55 -0500
+I, [2015-03-15T12:47:55.712057 #11341]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T12:47:55.718600 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.1ms)
+I, [2015-03-15T12:47:55.721528 #11341]  INFO -- : Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T15:07:49.844537 #11335]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 15:07:49 -0500
+I, [2015-03-15T15:07:49.851208 #11335]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T15:07:49.947942 #11335]  INFO -- :   Rendered home/index.html.erb within layouts/application (90.7ms)
+I, [2015-03-15T15:07:49.950664 #11335]  INFO -- : Completed 200 OK in 99ms (Views: 93.6ms | ActiveRecord: 1.3ms)
+I, [2015-03-15T15:32:03.442828 #11341]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 15:32:03 -0500
+I, [2015-03-15T15:32:03.472442 #11341]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T15:32:03.524775 #11341]  INFO -- :   Rendered home/index.html.erb within layouts/application (37.4ms)
+I, [2015-03-15T15:32:03.533089 #11341]  INFO -- : Completed 200 OK in 60ms (Views: 49.7ms | ActiveRecord: 3.1ms)
+I, [2015-03-15T19:28:50.757936 #11335]  INFO -- : Started GET "/" for 76.74.97.4 at 2015-03-15 19:28:50 -0500
+I, [2015-03-15T19:28:50.772083 #11335]  INFO -- : Processing by HomeController#index as */*
+I, [2015-03-15T19:28:50.781918 #11335]  INFO -- :   Rendered home/index.html.erb within layouts/application (5.1ms)
+I, [2015-03-15T19:28:50.783841 #11335]  INFO -- : Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T21:58:17.996149 #11343]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 21:58:17 -0500
+I, [2015-03-15T21:58:18.018557 #11343]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T21:58:18.036399 #11343]  INFO -- :   Rendered home/index.html.erb within layouts/application (11.2ms)
+I, [2015-03-15T21:58:18.041074 #11343]  INFO -- : Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 2.6ms)
+I, [2015-03-15T22:07:19.897611 #11337]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 22:07:19 -0500
+I, [2015-03-15T22:07:19.938131 #11337]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T22:07:20.019646 #11337]  INFO -- :   Rendered home/index.html.erb within layouts/application (59.8ms)
+I, [2015-03-15T22:07:20.023293 #11337]  INFO -- : Completed 200 OK in 85ms (Views: 62.9ms | ActiveRecord: 4.5ms)
+I, [2015-03-15T22:07:25.128994 #11343]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-15 22:07:25 -0500
+I, [2015-03-15T22:07:25.148278 #11343]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-15T22:07:25.148661 #11343]  INFO -- :   Parameters: {"authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo="}
+I, [2015-03-15T22:07:25.182795 #11343]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-15T22:07:25.185565 #11343]  INFO -- : Completed 302 Found in 36ms (ActiveRecord: 3.0ms)
+I, [2015-03-15T22:07:25.254470 #11337]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 22:07:25 -0500
+I, [2015-03-15T22:07:25.257552 #11337]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T22:07:25.264838 #11337]  INFO -- :   Rendered home/index.html.erb within layouts/application (3.6ms)
+I, [2015-03-15T22:07:25.267713 #11337]  INFO -- : Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T22:07:26.324786 #11335]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-15 22:07:26 -0500
+I, [2015-03-15T22:07:26.336590 #11335]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-15T22:07:26.354552 #11335]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (10.4ms)
+I, [2015-03-15T22:07:26.359037 #11335]  INFO -- : Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T22:07:35.905384 #11341]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-15 22:07:35 -0500
+I, [2015-03-15T22:07:35.916401 #11341]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-15T22:07:35.916941 #11341]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-15T22:07:36.029613 #11341]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-15T22:07:36.029986 #11341]  INFO -- : Completed 302 Found in 113ms (ActiveRecord: 1.7ms)
+I, [2015-03-15T22:07:36.095279 #11343]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-15 22:07:36 -0500
+I, [2015-03-15T22:07:36.102817 #11343]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-15T22:07:36.116142 #11343]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-15T22:07:36.127778 #11343]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (18.9ms)
+I, [2015-03-15T22:07:36.130104 #11343]  INFO -- : Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+I, [2015-03-15T22:12:52.770238 #31572]  INFO -- : Started DELETE "/logout" for 98.23.163.20 at 2015-03-15 22:12:52 -0500
+I, [2015-03-15T22:12:52.799003 #31572]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2015-03-15T22:12:52.799227 #31572]  INFO -- :   Parameters: {"authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo="}
+I, [2015-03-15T22:12:52.850212 #31572]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-15T22:12:52.850958 #31572]  INFO -- : Completed 302 Found in 51ms (ActiveRecord: 4.0ms)
+I, [2015-03-15T22:12:52.924092 #31581]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 22:12:52 -0500
+I, [2015-03-15T22:12:52.955013 #31581]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T22:12:52.971791 #31581]  INFO -- :   Rendered home/index.html.erb within layouts/application (4.8ms)
+I, [2015-03-15T22:12:52.974030 #31581]  INFO -- : Completed 200 OK in 19ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T22:12:53.417542 #31576]  INFO -- : Started GET "/login" for 98.23.163.20 at 2015-03-15 22:12:53 -0500
+I, [2015-03-15T22:12:53.432965 #31576]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-15T22:12:53.466008 #31576]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (21.8ms)
+I, [2015-03-15T22:12:53.477629 #31576]  INFO -- : Completed 200 OK in 44ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T22:13:00.504885 #31574]  INFO -- : Started POST "/login" for 98.23.163.20 at 2015-03-15 22:13:00 -0500
+I, [2015-03-15T22:13:00.529823 #31574]  INFO -- : Processing by SessionsController#create as HTML
+I, [2015-03-15T22:13:00.530086 #31574]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "session"=>{"email"=>"kevinbird15@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2015-03-15T22:13:00.744437 #31574]  INFO -- : Redirected to http://wi-pro.us/
+I, [2015-03-15T22:13:00.744966 #31574]  INFO -- : Completed 302 Found in 215ms (ActiveRecord: 3.0ms)
+I, [2015-03-15T22:13:00.809896 #31574]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 22:13:00 -0500
+I, [2015-03-15T22:13:00.814776 #31574]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T22:13:00.827376 #31574]  INFO -- :   Rendered home/index.html.erb within layouts/application (6.0ms)
+I, [2015-03-15T22:13:00.833001 #31574]  INFO -- : Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.5ms)
+I, [2015-03-15T22:18:39.360004 #31576]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 22:18:39 -0500
+I, [2015-03-15T22:18:39.383320 #31576]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T22:18:39.446813 #31576]  INFO -- :   Rendered home/index.html.erb within layouts/application (51.7ms)
+I, [2015-03-15T22:18:39.450272 #31576]  INFO -- : Completed 200 OK in 66ms (Views: 55.9ms | ActiveRecord: 5.2ms)
+I, [2015-03-15T22:18:54.733111 #31880]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 22:18:54 -0500
+I, [2015-03-15T22:18:54.748777 #31880]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T22:18:54.769719 #31880]  INFO -- :   Rendered home/index.html.erb within layouts/application (11.6ms)
+I, [2015-03-15T22:18:54.771894 #31880]  INFO -- : Completed 200 OK in 23ms (Views: 14.2ms | ActiveRecord: 1.1ms)
+I, [2015-03-15T22:19:33.978266 #31880]  INFO -- : Started GET "/hexes" for 98.23.163.20 at 2015-03-15 22:19:33 -0500
+I, [2015-03-15T22:19:33.981334 #31880]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-15T22:19:33.996453 #31880]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.8ms)
+I, [2015-03-15T22:19:34.014016 #31880]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (27.9ms)
+I, [2015-03-15T22:19:34.015303 #31880]  INFO -- : Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 1.0ms)
+I, [2015-03-15T22:21:40.922378 #31878]  INFO -- : Started GET "/" for 98.23.163.20 at 2015-03-15 22:21:40 -0500
+I, [2015-03-15T22:21:40.939826 #31878]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T22:21:40.964191 #31878]  INFO -- :   Rendered home/index.html.erb within layouts/application (13.8ms)
+I, [2015-03-15T22:21:40.966586 #31878]  INFO -- : Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 1.2ms)
+I, [2015-03-15T22:21:46.189511 #31886]  INFO -- : Started GET "/checkout" for 98.23.163.20 at 2015-03-15 22:21:46 -0500
+I, [2015-03-15T22:21:46.222050 #31886]  INFO -- : Processing by CheckoutController#index as HTML
+I, [2015-03-15T22:21:46.277324 #31886]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.9ms)
+I, [2015-03-15T22:21:46.392879 #31886]  INFO -- :   Rendered checkout/index.html.erb within layouts/application (142.9ms)
+I, [2015-03-15T22:21:46.400206 #31886]  INFO -- : Completed 200 OK in 178ms (Views: 151.2ms | ActiveRecord: 6.3ms)
+I, [2015-03-15T23:10:26.723594 #31878]  INFO -- : Started GET "/" for 137.48.181.175 at 2015-03-15 23:10:26 -0500
+I, [2015-03-15T23:10:26.748852 #31878]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T23:10:26.771722 #31878]  INFO -- :   Rendered home/index.html.erb within layouts/application (16.6ms)
+I, [2015-03-15T23:10:26.775237 #31878]  INFO -- : Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T23:13:18.355371 #31880]  INFO -- : Started GET "/" for 137.48.181.175 at 2015-03-15 23:13:18 -0500
+I, [2015-03-15T23:13:18.363184 #31880]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T23:13:18.371038 #31880]  INFO -- :   Rendered home/index.html.erb within layouts/application (5.2ms)
+I, [2015-03-15T23:13:18.372778 #31880]  INFO -- : Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T23:13:28.420501 #31886]  INFO -- : Started GET "/" for 137.48.181.175 at 2015-03-15 23:13:28 -0500
+I, [2015-03-15T23:13:28.428753 #31886]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-15T23:13:28.441332 #31886]  INFO -- :   Rendered home/index.html.erb within layouts/application (7.0ms)
+I, [2015-03-15T23:13:28.442827 #31886]  INFO -- : Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-16T00:13:04.069378 #31878]  INFO -- : Started GET "/login" for 38.99.82.216 at 2015-03-16 00:13:04 -0500
+I, [2015-03-16T00:13:04.085625 #31878]  INFO -- : Processing by SessionsController#new as HTML
+I, [2015-03-16T00:13:04.157288 #31878]  INFO -- :   Rendered sessions/new.html.erb within layouts/application (61.3ms)
+I, [2015-03-16T00:13:04.161038 #31878]  INFO -- : Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-16T00:26:56.089705 #31880]  INFO -- : Started POST "/hexes" for 98.23.163.20 at 2015-03-16 00:26:56 -0500
+I, [2015-03-16T00:26:56.096570 #31880]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-16T00:26:56.096821 #31880]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsrUjTNHxD4Bme4lReWK9yynxdCESs3O6kcOo2p5aPo=", "hex"=>{"deviceid"=>"2", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x0000000321b6e8 @tempfile=#<Tempfile:/tmp/RackMultipart20150316-31880-1csqkqy>, @original_filename="Toggle.hex", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"hex[attachment]\"; filename=\"Toggle.hex\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Program!"}
+I, [2015-03-16T00:26:56.194583 #31880]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (6.1ms)
+I, [2015-03-16T00:26:56.201452 #31880]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (75.8ms)
+I, [2015-03-16T00:26:56.204856 #31880]  INFO -- : Completed 200 OK in 108ms (Views: 80.1ms | ActiveRecord: 2.0ms)
