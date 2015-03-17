@@ -10,7 +10,9 @@
     <%= f.label "What is the Serial Number on the device?"%></br>
     <%= f.text_field :wiproid%>
     </br>
-    <%= f.label "Which group would you like to associate this device with?"%></br>
+    <%= f.label "Which group would you like to associate this device with?"%>
+    <a href="/groups">Add Group!</a>
+    </br>
     <%= f.collection_select(:groupid, Group.all, :id, :name) %>
     </br>
     </br>
