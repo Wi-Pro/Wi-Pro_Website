@@ -10,14 +10,14 @@
     <%#= render 'shared/hexes_error_messages' %>
     <%if logged_in? %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
-    <%= f.collection_select(:checkoutid, availwp, availwp[0], availwp[1])%>
+    <%#= f.collection_select(:checkoutid, availwp.to_a, availwp[0], availwp[1])%>
+    <%= f.select_tag(:checkoutid, options_for_select(availwp.to_a))%>
     <a href="/wiproids">Add Wi-Pro!</a>
     <%end%>
     </br>
     </br>
     <%= f.submit "Checkout!", class: "btn btn-primary" %>
   <% end %>
-
   </br>
   </br>
   <h2>Welcome to the Checkout Page!</h2>
