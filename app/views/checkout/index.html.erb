@@ -1,8 +1,8 @@
 <div class="well">
-
+  <%availwp = Hash.new%>
   <%@list.each do |l|%>
     <%Wiproid.where(groupid: Group.find(l.groupid)).each do |w|%>
-      <%Availwp[w.id] = w.wiproid%>
+      <%availwp[w.id] = w.wiproid%>
     <%end%>
     </br>
   <%end%>
