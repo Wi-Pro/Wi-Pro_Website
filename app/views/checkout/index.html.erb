@@ -11,7 +11,7 @@
     <%= f.submit "Checkout!", class: "btn btn-primary" %>
   <% end %>
   <%@list.each do |w|%>
-    <%=w.groupid%>
+    <%=Group.find(w.groupid).name%>
     </br>
   <%end%>
   </br>
