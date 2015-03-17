@@ -10,7 +10,10 @@
     </br>
     <%= f.submit "Checkout!", class: "btn btn-primary" %>
   <% end %>
-  <%=@list.groupid%>
+  <%@list.each do |w|%>
+    <%=w.groupid%>
+    </br>
+  <%end%>
   </br>
   </br>
   <h2>Welcome to the Checkout Page!</h2>
