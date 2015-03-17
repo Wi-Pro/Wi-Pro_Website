@@ -11,7 +11,7 @@
     <%if logged_in? %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
     <%= f.collection_select(:checkoutid, availwp, availwp[0], availwp[1])%>
-    <a href="/wiproids">Add Device!</a>
+    <a href="/wiproids">Add Wi-Pro!</a>
     <%end%>
     </br>
     </br>
