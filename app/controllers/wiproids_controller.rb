@@ -28,6 +28,6 @@ class WiproidsController < ApplicationController
   end
 private
   def wiproid_params
-    params.require(:wiproid).permit(:name, :wiproid)
+    params.require(:wiproid).permit(:name, :wiproid, :groupid)
   end
 end
