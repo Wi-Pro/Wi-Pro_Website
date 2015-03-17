@@ -2,7 +2,7 @@
 
   <%@list.each do |l|%>
     <%Wiproid.where(groupid: Group.find(l.groupid)).each do |w|%>
-      <%availwp[w.id] = w.wiproid%>
+      <%Availwp[w.id] = w.wiproid%>
     <%end%>
     </br>
   <%end%>
