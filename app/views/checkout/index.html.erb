@@ -1,5 +1,5 @@
 <div class="well">
-  availwp = Hash.new
+
   <%@list.each do |l|%>
     <%Wiproid.where(groupid: Group.find(l.groupid)).each do |w|%>
       <%availwp[w.id] = w.wiproid%>
