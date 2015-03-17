@@ -10,8 +10,10 @@
     </br>
     <%= f.submit "Checkout!", class: "btn btn-primary" %>
   <% end %>
-  <%@list.each do |w|%>
-    <%=Group.find(w.groupid).name%>
+  <%@list.each do |l|%>
+    <%Wiproid.where(Group.find(l.groupid)).each do |w|%>
+      <%=w.wiproid%>
+    <%end%>
     </br>
   <%end%>
   </br>
