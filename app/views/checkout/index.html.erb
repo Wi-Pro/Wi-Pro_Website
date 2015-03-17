@@ -1,21 +1,22 @@
 <div class="well">
-  <%= form_for(@user) do |f| %>
-    <%#= render 'shared/hexes_error_messages' %>
-    <%if logged_in? %>
-    <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
-    <%= f.collection_select(:checkoutid, Wiproid.all, :wiproid, :name)%>
-    <a href="/wiproids">Add Device!</a>
-    <%end%>
-    </br>
-    </br>
-    <%= f.submit "Checkout!", class: "btn btn-primary" %>
-  <% end %>
   <%@list.each do |l|%>
     <%Wiproid.where(groupid: Group.find(l.groupid)).each do |w|%>
       <%=w.wiproid%>
     <%end%>
     </br>
   <%end%>
+  <%= form_for(@user) do |f| %>
+    <%#= render 'shared/hexes_error_messages' %>
+    <%if logged_in? %>
+    <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
+    <%= f.collection_select(:checkoutid, Wiproid.where(groupid: Group.find(l.groupid)), :wiproid, :name)%>
+    <a href="/wiproids">Add Device!</a>
+    <%end%>
+    </br>
+    </br>
+    <%= f.submit "Checkout!", class: "btn btn-primary" %>
+  <% end %>
+
   </br>
   </br>
   <h2>Welcome to the Checkout Page!</h2>
