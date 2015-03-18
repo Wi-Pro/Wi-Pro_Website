@@ -1,6 +1,6 @@
 class CheckoutController < ApplicationController
   def index
-    @user = User.update.where(id: current_user.id).find(current_user.id)
+    @user = User.where(id: current_user.id).find(current_user.id)
     @list = Membership.where(userid: current_user.id)
     availwp = Hash.new
   end
