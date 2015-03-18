@@ -1,7 +1,7 @@
 <div class="well">
   <h2>Welcome to the Memberships Page!</h2>
   <%= form_for @membership do |f| %>
-    <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
+    <%= f.label "Which Member do you want to add?"%></br>
     <%=f.collection_select(:groupid, @groups, :id, :name)%>
     <%=f.collection_select(:userid, @users, :id, :name)%>
     <a href="/groups">Add Group!</a>
