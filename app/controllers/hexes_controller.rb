@@ -14,7 +14,8 @@ class HexesController < ApplicationController
   def create
     @hex = Hex.new(hex_params)
     if @hex.save
-      redirect_to hexes_path, success: "Programming Initiated!"
+      flash[:success] = "Programming Initiated!"
+      redirect_to hexes_path
     else
       render "index"
     end
