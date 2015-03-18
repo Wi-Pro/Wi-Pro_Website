@@ -6,7 +6,7 @@ class Hex < ActiveRecord::Base
     :file_size => {
       :maximum => 64.kilobytes.to_i
     }
-  validates :wiproid, presence: true, length: {is: 10}
+  #validates :wiproid, presence: true, length: {is: 10}
   validates :deviceid, presence: true
 
 end
