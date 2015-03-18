@@ -15,7 +15,7 @@ class WiproidsController < ApplicationController
     @wiproid = Wiproid.new(wiproid_params)
     @wiproid.userid = current_user.id
     if @wiproid.save
-      redirect_to "/hexes", success: "The WiPro #{@wiproid.name} has been added"
+      redirect_to "/", success: "The WiPro #{@wiproid.name} has been added"
     else
       render "index"
     end
