@@ -10,7 +10,7 @@
     <%#= render 'shared/hexes_error_messages' %>
     <%if logged_in? %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
-    <%= f.collection_select(:checkoutid, availwp, availwp.first, availwp.last)%>
+    <%= f.collection_select(:checkoutid, Wiproid.all, :id, :wiproid)%>
     <%#= f.select_tag(:checkoutid, options_for_select(availwp.to_a))%>
     <%#= f.select(:checkoutid) do %>
       <%# availwp.to_a.each do |c| -%>
