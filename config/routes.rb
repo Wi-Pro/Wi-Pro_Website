@@ -9,8 +9,8 @@ Myapp::Application.routes.draw do
   post 'login' => 'sessions#create'
   post 'data' => 'data#index'
   get 'data' => 'data#index'
-  post 'checkout' => 'checkout#index'
-  get 'checkout' => 'checkout#index'
+  #post 'checkout' => 'checkout#index'
+  #get 'checkout' => 'checkout#index'
   delete 'logout' => 'sessions#destroy'
 
   resources :hexes
@@ -18,6 +18,7 @@ Myapp::Application.routes.draw do
   resources :users
   resources :groups
   resources :memberships
+  resources :checkout
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   #resources :hexes, only: [:index, :new, :create, :destroy]
