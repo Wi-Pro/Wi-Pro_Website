@@ -5,12 +5,13 @@
   </script>
 <% end %>
 <div class="well">
+  <h2>Welcome to the Wi-Pro Registration Page!</h2>
   <%= form_for @wiproid do |f| %>
     <%= render 'shared/wiproids_error_messages' %>
-    <%= f.label "What is the Serial Number on the device?"%></br>
+    <%= f.label "What is the Serial Number on the Wi-Pro?"%></br>
     <%= f.text_field :wiproid%>
     </br>
-    <%= f.label "Which group would you like to associate this device with?"%>
+    <%= f.label "Which group would you like to associate this Wi-Pro with?"%>
     <a href="/groups">Add Group!</a>
     </br>
     <%= f.collection_select(:groupid, Group.all, :id, :name) %>
