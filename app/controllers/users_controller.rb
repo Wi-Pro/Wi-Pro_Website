@@ -34,7 +34,7 @@ class UsersController < ApplicationController
       flash[:success] = "Profile updated"
       redirect_to @user
     else
-      flash[:alert] = "Error Didn't Update"
+      flash[:danger] = "Error Didn't Update"
       redirect_to "/"
     end
   end
