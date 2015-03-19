@@ -30,7 +30,8 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @user.update_attributes(checkout_params)
+    @user.update_attributes(checkout_params)
+    if @user.save
       flash[:success] = "Profile updated"
       redirect_to @user
     else
@@ -47,5 +48,5 @@ class UsersController < ApplicationController
   end
   def checkout_params
     params.require(:user).permit(:checkoutid)
-    end
+  end
 end
