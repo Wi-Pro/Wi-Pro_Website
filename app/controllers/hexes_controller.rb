@@ -1,7 +1,7 @@
 class HexesController < ApplicationController
   def index
     @hex = Hex.new
-    @checkout = Checkout.where(userid: current_user.id)
+    @checkout = Checkout.where(userid: current_user.id).where('updated_at > ?', 5.minutes.ago)
   end
 
   def admin
