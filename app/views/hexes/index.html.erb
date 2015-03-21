@@ -19,5 +19,7 @@
     </br>
     <%= f.submit "Program!", class: "btn btn-primary" %>
   <% end %>
-  <%=@checkout%>
+  <%@checkout.each do |c|%>
+    <%=c.wiproid%>
+  <%end%>
 </div>
