@@ -18,6 +18,6 @@ class CheckoutsController < ApplicationController
   private
 
   def checkout_params
-    params.require(:user).permit(:userid, :wiproid)
+    params.require(:checkout).permit(:userid, :wiproid)
   end
 end
