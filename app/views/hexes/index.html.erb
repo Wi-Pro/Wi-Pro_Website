@@ -10,9 +10,7 @@
   <h2>Program Device</h2>
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
-    </br>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
-    </br>
     <%= f.label "What device are you programming?"%></br>
     <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
     </br>
