@@ -11,7 +11,7 @@ class CheckoutsController < ApplicationController
       flash[:success] = "Checked out!"
       redirect_to "/hexes"
     else
-      render 'index'
+      redirect_to "/checkouts"
     end
   end
 
