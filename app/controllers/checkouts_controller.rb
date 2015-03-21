@@ -1,4 +1,4 @@
-class CheckoutController < ApplicationController
+class CheckoutsController < ApplicationController
   def index
     @list = Membership.where(userid: current_user.id)
     @checkout = Checkout.new
