@@ -2,6 +2,7 @@ class CheckoutsController < ApplicationController
   def index
     @list = Membership.where(userid: current_user.id)
     @checkout = Checkout.new
+    @checkouts = Checkout.where('updated_at > ?', 30.minutes.ago)
   end
 
   def create
