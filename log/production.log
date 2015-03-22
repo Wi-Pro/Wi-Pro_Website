@@ -34392,3 +34392,141 @@ I, [2015-03-21T20:35:38.430688 #9007]  INFO -- : Processing by HexesController#i
 I, [2015-03-21T20:35:38.435826 #9007]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
 I, [2015-03-21T20:35:38.439052 #9007]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (4.2ms)
 I, [2015-03-21T20:35:38.440356 #9007]  INFO -- : Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.8ms)
+I, [2015-03-21T21:25:51.889582 #9013]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:25:51 -0500
+I, [2015-03-21T21:25:51.895833 #9013]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:25:51.907497 #9013]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.2ms)
+I, [2015-03-21T21:25:51.912881 #9013]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (7.3ms)
+I, [2015-03-21T21:25:51.914915 #9013]  INFO -- : Completed 200 OK in 19ms (Views: 10.2ms | ActiveRecord: 1.9ms)
+I, [2015-03-21T21:25:55.325860 #9009]  INFO -- : Started GET "/" for 98.23.163.218 at 2015-03-21 21:25:55 -0500
+I, [2015-03-21T21:25:55.340456 #9009]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-21T21:25:55.360431 #9009]  INFO -- :   Rendered home/index.html.erb within layouts/application (10.5ms)
+I, [2015-03-21T21:25:55.363598 #9009]  INFO -- : Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 2.2ms)
+I, [2015-03-21T21:31:04.984741 #10574]  INFO -- : Started GET "/" for 98.23.163.218 at 2015-03-21 21:31:04 -0500
+I, [2015-03-21T21:31:05.012615 #10574]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-03-21T21:31:05.054256 #10574]  INFO -- :   Rendered home/index.html.erb within layouts/application (23.2ms)
+I, [2015-03-21T21:31:05.058363 #10574]  INFO -- : Completed 200 OK in 45ms (Views: 28.4ms | ActiveRecord: 2.2ms)
+I, [2015-03-21T21:31:08.356774 #10581]  INFO -- : Started GET "/checkouts" for 98.23.163.218 at 2015-03-21 21:31:08 -0500
+I, [2015-03-21T21:31:08.413018 #10581]  INFO -- : Processing by CheckoutsController#index as HTML
+I, [2015-03-21T21:31:08.538885 #10581]  INFO -- :   Rendered checkouts/index.html.erb within layouts/application (64.0ms)
+I, [2015-03-21T21:31:08.543579 #10581]  INFO -- : Completed 200 OK in 130ms (Views: 71.2ms | ActiveRecord: 5.1ms)
+I, [2015-03-21T21:31:14.011941 #10577]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:31:14 -0500
+I, [2015-03-21T21:31:14.067652 #10577]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:31:14.170103 #10577]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.4ms)
+I, [2015-03-21T21:31:14.207336 #10577]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (63.4ms)
+I, [2015-03-21T21:31:14.212796 #10577]  INFO -- : Completed 200 OK in 145ms (Views: 71.6ms | ActiveRecord: 7.3ms)
+I, [2015-03-21T21:31:14.410500 #10581]  INFO -- : Started GET "/checkouts" for 98.23.163.218 at 2015-03-21 21:31:14 -0500
+I, [2015-03-21T21:31:14.416761 #10581]  INFO -- : Processing by CheckoutsController#index as HTML
+I, [2015-03-21T21:31:14.431809 #10581]  INFO -- :   Rendered checkouts/index.html.erb within layouts/application (8.5ms)
+I, [2015-03-21T21:31:14.434486 #10581]  INFO -- : Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 1.4ms)
+I, [2015-03-21T21:31:34.878705 #10574]  INFO -- : Started POST "/checkouts" for 98.23.163.218 at 2015-03-21 21:31:34 -0500
+I, [2015-03-21T21:31:34.883390 #10574]  INFO -- : Processing by CheckoutsController#create as HTML
+I, [2015-03-21T21:31:34.883518 #10574]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "checkout"=>{"wiproid"=>"4"}, "commit"=>"Checkout!"}
+I, [2015-03-21T21:31:34.903629 #10574]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-21T21:31:34.903891 #10574]  INFO -- : Completed 302 Found in 20ms (ActiveRecord: 8.0ms)
+I, [2015-03-21T21:31:34.960174 #10572]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:31:34 -0500
+I, [2015-03-21T21:31:34.978300 #10572]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:31:35.018890 #10572]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.6ms)
+I, [2015-03-21T21:31:35.041409 #10572]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (33.7ms)
+I, [2015-03-21T21:31:35.044196 #10572]  INFO -- : Completed 200 OK in 66ms (Views: 37.3ms | ActiveRecord: 2.8ms)
+I, [2015-03-21T21:35:50.648923 #10577]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:35:50 -0500
+I, [2015-03-21T21:35:50.653986 #10577]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:35:50.662630 #10577]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-21T21:35:50.678055 #10577]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (18.3ms)
+I, [2015-03-21T21:35:50.680617 #10577]  INFO -- : Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 1.6ms)
+I, [2015-03-21T21:36:09.442780 #10574]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:36:09 -0500
+I, [2015-03-21T21:36:09.447609 #10574]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:36:09.479541 #10574]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.6ms)
+I, [2015-03-21T21:36:09.539519 #10574]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (81.1ms)
+I, [2015-03-21T21:36:09.541660 #10574]  INFO -- : Completed 200 OK in 94ms (Views: 85.3ms | ActiveRecord: 2.2ms)
+I, [2015-03-21T21:36:37.280296 #10581]  INFO -- : Started POST "/hexes" for 98.23.163.218 at 2015-03-21 21:36:37 -0500
+I, [2015-03-21T21:36:37.306651 #10581]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-21T21:36:37.307004 #10581]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "hex"=>{"deviceid"=>"2", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000005b2e288 @tempfile=#<Tempfile:/tmp/RackMultipart20150321-10581-1uql93i>, @original_filename="Toggle.hex", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"hex[attachment]\"; filename=\"Toggle.hex\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Program!"}
+I, [2015-03-21T21:36:37.350292 #10581]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (3.3ms)
+I, [2015-03-21T21:36:37.361615 #10581]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (24.6ms)
+I, [2015-03-21T21:36:37.362029 #10581]  INFO -- : Completed 500 Internal Server Error in 55ms
+F, [2015-03-21T21:36:37.365875 #10581] FATAL -- : 
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:     </br>
+    27:     <%= f.submit "Program!", class: "btn btn-primary" %>
+    28:   <% end %>
+    29:   <%@checkout.each do |c|%>
+    30:     <%=c.wiproid%>
+    31:   <%end%>
+    32: </div>
+  app/views/hexes/index.html.erb:29:in `_app_views_hexes_index_html_erb__4198823942822034931_47037960'
+  app/controllers/hexes_controller.rb:21:in `create'
+
+
+I, [2015-03-21T21:37:57.727967 #10572]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:37:57 -0500
+I, [2015-03-21T21:37:57.738481 #10572]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:37:57.757997 #10572]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.2ms)
+I, [2015-03-21T21:37:57.767244 #10572]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (15.2ms)
+I, [2015-03-21T21:37:57.770340 #10572]  INFO -- : Completed 200 OK in 31ms (Views: 18.4ms | ActiveRecord: 2.4ms)
+I, [2015-03-21T21:37:57.982315 #10577]  INFO -- : Started GET "/checkouts" for 98.23.163.218 at 2015-03-21 21:37:57 -0500
+I, [2015-03-21T21:37:58.032765 #10577]  INFO -- : Processing by CheckoutsController#index as HTML
+I, [2015-03-21T21:37:58.069459 #10577]  INFO -- :   Rendered checkouts/index.html.erb within layouts/application (27.3ms)
+I, [2015-03-21T21:37:58.071745 #10577]  INFO -- : Completed 200 OK in 39ms (Views: 31.1ms | ActiveRecord: 2.1ms)
+I, [2015-03-21T21:38:17.232118 #10824]  INFO -- : Started GET "/checkouts" for 98.23.163.218 at 2015-03-21 21:38:17 -0500
+I, [2015-03-21T21:38:17.251262 #10824]  INFO -- : Processing by CheckoutsController#index as HTML
+I, [2015-03-21T21:38:17.315016 #10824]  INFO -- :   Rendered checkouts/index.html.erb within layouts/application (37.9ms)
+I, [2015-03-21T21:38:17.317305 #10824]  INFO -- : Completed 200 OK in 66ms (Views: 41.2ms | ActiveRecord: 2.4ms)
+I, [2015-03-21T21:38:20.135811 #10828]  INFO -- : Started POST "/checkouts" for 98.23.163.218 at 2015-03-21 21:38:20 -0500
+I, [2015-03-21T21:38:20.168649 #10828]  INFO -- : Processing by CheckoutsController#create as HTML
+I, [2015-03-21T21:38:20.168939 #10828]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "checkout"=>{"wiproid"=>"1"}, "commit"=>"Checkout!"}
+I, [2015-03-21T21:38:20.240462 #10828]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-21T21:38:20.241075 #10828]  INFO -- : Completed 302 Found in 72ms (ActiveRecord: 18.8ms)
+I, [2015-03-21T21:38:20.459479 #10826]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:38:20 -0500
+I, [2015-03-21T21:38:20.487709 #10826]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:38:20.557557 #10826]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.2ms)
+I, [2015-03-21T21:38:20.589393 #10826]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (79.3ms)
+I, [2015-03-21T21:38:20.593772 #10826]  INFO -- : Completed 200 OK in 106ms (Views: 84.0ms | ActiveRecord: 4.7ms)
+I, [2015-03-21T21:38:33.088367 #10832]  INFO -- : Started POST "/hexes" for 98.23.163.218 at 2015-03-21 21:38:33 -0500
+I, [2015-03-21T21:38:33.104270 #10832]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-21T21:38:33.104475 #10832]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "hex"=>{"deviceid"=>"1", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000003290128 @tempfile=#<Tempfile:/tmp/RackMultipart20150321-10832-1o8i8dn>, @original_filename="Toggle.hex", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"hex[attachment]\"; filename=\"Toggle.hex\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Program!"}
+I, [2015-03-21T21:38:33.168089 #10832]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (2.0ms)
+I, [2015-03-21T21:38:33.176276 #10832]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (33.3ms)
+I, [2015-03-21T21:38:33.178802 #10832]  INFO -- : Completed 200 OK in 74ms (Views: 35.6ms | ActiveRecord: 3.4ms)
+I, [2015-03-21T21:39:04.128349 #10826]  INFO -- : Started POST "/hexes" for 98.23.163.218 at 2015-03-21 21:39:04 -0500
+I, [2015-03-21T21:39:04.130433 #10826]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-21T21:39:04.130554 #10826]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "hex"=>{"deviceid"=>"2", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000001f53628 @tempfile=#<Tempfile:/tmp/RackMultipart20150321-10826-1lduowy>, @original_filename="Toggle.hex", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"hex[attachment]\"; filename=\"Toggle.hex\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Program!"}
+I, [2015-03-21T21:39:04.145657 #10826]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-21T21:39:04.146126 #10826]  INFO -- : Completed 302 Found in 15ms (ActiveRecord: 5.9ms)
+I, [2015-03-21T21:39:04.194397 #10832]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:39:04 -0500
+I, [2015-03-21T21:39:04.196509 #10832]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:39:04.200260 #10832]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-21T21:39:04.202413 #10832]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (4.7ms)
+I, [2015-03-21T21:39:04.212242 #10832]  INFO -- : Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.5ms)
+I, [2015-03-21T21:42:33.523983 #10828]  INFO -- : Started POST "/hexes" for 98.23.163.218 at 2015-03-21 21:42:33 -0500
+I, [2015-03-21T21:42:33.532533 #10828]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-21T21:42:33.532966 #10828]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "hex"=>{"deviceid"=>"2", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000002e06670 @tempfile=#<Tempfile:/tmp/RackMultipart20150321-10828-e6hauo>, @original_filename="Toggle.hex", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"hex[attachment]\"; filename=\"Toggle.hex\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Program!"}
+I, [2015-03-21T21:42:33.592187 #10828]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-21T21:42:33.592703 #10828]  INFO -- : Completed 302 Found in 59ms (ActiveRecord: 18.4ms)
+I, [2015-03-21T21:42:33.644389 #10824]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:42:33 -0500
+I, [2015-03-21T21:42:33.649843 #10824]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:42:33.683397 #10824]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (1.4ms)
+I, [2015-03-21T21:42:33.695392 #10824]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (36.5ms)
+I, [2015-03-21T21:42:33.698109 #10824]  INFO -- : Completed 200 OK in 48ms (Views: 41.4ms | ActiveRecord: 2.0ms)
+I, [2015-03-21T21:43:03.311459 #10828]  INFO -- : Started POST "/hexes" for 98.23.163.218 at 2015-03-21 21:43:03 -0500
+I, [2015-03-21T21:43:03.317899 #10828]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-21T21:43:03.318233 #10828]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "hex"=>{"deviceid"=>"2", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000000020ad898 @tempfile=#<Tempfile:/tmp/RackMultipart20150321-10828-dutja9>, @original_filename="Toggle.hex", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"hex[attachment]\"; filename=\"Toggle.hex\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Program!"}
+I, [2015-03-21T21:43:03.349606 #10828]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-21T21:43:03.350076 #10828]  INFO -- : Completed 302 Found in 32ms (ActiveRecord: 13.6ms)
+I, [2015-03-21T21:43:03.405152 #10832]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:43:03 -0500
+I, [2015-03-21T21:43:03.411810 #10832]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:43:03.429052 #10832]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.6ms)
+I, [2015-03-21T21:43:03.438668 #10832]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (21.7ms)
+I, [2015-03-21T21:43:03.441842 #10832]  INFO -- : Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 1.9ms)
+I, [2015-03-21T21:43:39.297362 #10826]  INFO -- : Started POST "/hexes" for 98.23.163.218 at 2015-03-21 21:43:39 -0500
+I, [2015-03-21T21:43:39.300521 #10826]  INFO -- : Processing by HexesController#create as HTML
+I, [2015-03-21T21:43:39.300873 #10826]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"SucRswKBV+MwfrdzKZ+crYhJtHNUx0J/f8vZNC8em4M=", "hex"=>{"deviceid"=>"2", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000000013956b0 @tempfile=#<Tempfile:/tmp/RackMultipart20150321-10826-1d6nj7e>, @original_filename="Toggle.hex", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"hex[attachment]\"; filename=\"Toggle.hex\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Program!"}
+I, [2015-03-21T21:43:39.353421 #10826]  INFO -- : Redirected to http://wi-pro.us/hexes
+I, [2015-03-21T21:43:39.354032 #10826]  INFO -- : Completed 302 Found in 53ms (ActiveRecord: 6.9ms)
+I, [2015-03-21T21:43:39.406198 #10824]  INFO -- : Started GET "/hexes" for 98.23.163.218 at 2015-03-21 21:43:39 -0500
+I, [2015-03-21T21:43:39.411335 #10824]  INFO -- : Processing by HexesController#index as HTML
+I, [2015-03-21T21:43:39.419388 #10824]  INFO -- :   Rendered shared/_hexes_error_messages.html.erb (0.1ms)
+I, [2015-03-21T21:43:39.423629 #10824]  INFO -- :   Rendered hexes/index.html.erb within layouts/application (9.7ms)
+I, [2015-03-21T21:43:39.425588 #10824]  INFO -- : Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.9ms)
+I, [2015-03-21T21:43:39.610895 #10824]  INFO -- : Started GET "/checkouts" for 98.23.163.218 at 2015-03-21 21:43:39 -0500
+I, [2015-03-21T21:43:39.614606 #10824]  INFO -- : Processing by CheckoutsController#index as HTML
+I, [2015-03-21T21:43:39.624745 #10824]  INFO -- :   Rendered checkouts/index.html.erb within layouts/application (5.5ms)
+I, [2015-03-21T21:43:39.626674 #10824]  INFO -- : Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.9ms)

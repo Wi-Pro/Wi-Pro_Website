@@ -616,3 +616,7 @@ Migrating to CreateDevices (20150322022306)
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150322022306"]]
   [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "checkouts" WHERE "checkouts"."userid" = 1 AND (updated_at > '2015-03-22 02:24:11.885609')[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "checkouts" WHERE "checkouts"."userid" = 1 AND (updated_at > '2015-03-22 01:39:23.203425')
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "checkouts" WHERE "checkouts"."userid" = 1 AND (updated_at > '2015-03-21 18:09:31.168852')[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "checkouts" WHERE "checkouts"."userid" = 1 AND (updated_at > '2015-03-22 01:59:42.980200')
