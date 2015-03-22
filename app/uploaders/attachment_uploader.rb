@@ -2,8 +2,7 @@ class AttachmentUploader < CarrierWave::Uploader::Base
   storage :file
 
   def store_dir
-    userid = $globaluserid
-    hex = Wiproid.find(Checkout.where(userid: userid).last.wiproid)
+    hex = Wiproid.find(Checkout.where("userid = ?", current_user.id).last.wiproid)
     "uploads/#{model.class.to_s.underscore}/#{hex.wiproid}"
   end
 
