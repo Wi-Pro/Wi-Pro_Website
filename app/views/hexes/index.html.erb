@@ -6,6 +6,13 @@
   <meta http-equiv="refresh" content="0;url=/login">
 <% end %>
 
+<% if (Checkout.where(userid: current_user.id).where('updated_at > ?', 5.minutes.ago).count == 0) %>
+  <script language="javascript"><!--
+  location.replace("checkouts")
+  //-->
+  </script>
+<% end %>
+
 <div class="well">
   <h2>Program Device</h2>
   <%= form_for @hex, html: { multipart: true } do |f| %>
