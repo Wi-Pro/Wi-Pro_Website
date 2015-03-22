@@ -2,6 +2,7 @@ class HexesController < ApplicationController
   def index
     @hex = Hex.new
     @devices = Device.all
+    $globaluserid = current_user.id
   end
 
   def admin
