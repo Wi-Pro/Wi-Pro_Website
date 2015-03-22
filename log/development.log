@@ -593,3 +593,26 @@ Migrating to CreateCheckouts (20150321085756)
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150321085756"]]
   [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mCheckout Load (3.9ms)[0m  [1mSELECT "checkouts".* FROM "checkouts"[0m
+  [1m[35mCheckout Load (0.5ms)[0m  SELECT "checkouts".* FROM "checkouts"
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (11.3ms)[0m  INSERT INTO "checkouts" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Sat, 21 Mar 2015 21:02:51 UTC +00:00], ["updated_at", Sat, 21 Mar 2015 21:02:51 UTC +00:00]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mCheckout Load (0.4ms)[0m  SELECT "checkouts".* FROM "checkouts"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "checkouts" SET "userid" = ?, "wiproid" = ?, "updated_at" = ? WHERE "checkouts"."id" = 1  [["userid", 1], ["wiproid", 1111111111], ["updated_at", Sat, 21 Mar 2015 21:03:28 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mCheckout Load (19.5ms)[0m  SELECT "checkouts".* FROM "checkouts"
+  [1m[36mWiproid Load (0.4ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" DESC LIMIT 1[0m
+  [1m[36mCheckout Load (3.1ms)[0m  [1mSELECT "checkouts".* FROM "checkouts"[0m
+  [1m[36mWiproid Load (6.4ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[36mWiproid Load (0.3ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" ASC LIMIT 1[0m
+  [1m[35mWiproid Load (0.7ms)[0m  SELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" ASC LIMIT 1
+  [1m[36mWiproid Load (0.4ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" DESC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDevices (20150322022306)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "devices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "signature" integer, "flash_size" integer, "pin_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150322022306"]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
