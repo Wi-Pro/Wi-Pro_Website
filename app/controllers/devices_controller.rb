@@ -13,7 +13,7 @@ class DevicesController < ApplicationController
 
   def create
     @device = Device.new(device_params)
-    @device.signature = @device.signature.hex
+    #@device.signature = @device.signature.hex
     if @device.save
       flash[:success] = "The device #{@device.name} has been added"
       redirect_to "/"
