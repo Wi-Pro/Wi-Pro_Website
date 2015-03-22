@@ -14,6 +14,7 @@ class HexesController < ApplicationController
   end
 
   def create
+    $globaluserid = @current_user.id
     @hex = Hex.new(hex_params)
     if @hex.save
       flash[:success] = "Programming Initiated!"
