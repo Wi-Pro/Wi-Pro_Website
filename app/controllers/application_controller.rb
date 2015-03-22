@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
       if user && user.authenticated?(cookies[:remember_token])
         log_in user
         @current_user = user
-        Params[:userid] = @current_user.id
+        $globaluserid = @current_user.id
       end
     end
   end
