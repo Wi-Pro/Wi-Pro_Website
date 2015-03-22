@@ -4,6 +4,7 @@ Myapp::Application.routes.draw do
   get "home/index"
   get 'hexes/admin' => 'hexes#admin'
   get 'wiproids/admin' => 'wiproids#admin'
+  get 'devices/admin' => 'devices#admin'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
