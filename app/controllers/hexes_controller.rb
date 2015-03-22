@@ -1,6 +1,7 @@
 class HexesController < ApplicationController
   def index
     @hex = Hex.new
+    @devices = Device.all
   end
 
   def admin

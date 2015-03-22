@@ -19,7 +19,8 @@
     <%= render 'shared/hexes_error_messages' %>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
     <%= f.label "What device are you programming?"%></br>
-    <%= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
+    <%= f.collection_select(:deviceid, @devices, :id, :name)%>
+    <%#= f.select(:deviceid, options_for_select([['ATMega324p', 1],['ATTiny2313', 2]], 2))%>
     </br>
     <%= f.label "What hex file do you want to use?" %></br>
     <%= f.file_field :attachment %>
