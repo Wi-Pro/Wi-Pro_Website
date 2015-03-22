@@ -3,7 +3,7 @@ class AttachmentUploader < CarrierWave::Uploader::Base
 
   def store_dir
     userid = $globaluserid
-    checkout = Checkout.where("userid = ?", userid).last.wiproid
+    checkout = Checkout.where("userid = ?", current_user.id).last.wiproid
     hex = Wiproid.find(checkout)
     "uploads/#{model.class.to_s.underscore}/#{hex.wiproid}"
   end
