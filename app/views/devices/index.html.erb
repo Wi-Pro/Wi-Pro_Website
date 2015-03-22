@@ -1,0 +1,19 @@
+<div class="well">
+  <h2>Welcome to the Add Device Page!</h2>
+  <%= form_for @device do |f| %>
+    <%= f.label "What is the device name?"%></br>
+    <%=f.text_field :name%>
+    </br>
+    <%= f.label "What is the device signature?"%></br>
+    <%=f.text_field :signature%>
+    </br>
+    <%= f.label "What is the device flash size?"%></br>
+    <%=f.text_field :flash_size%>
+    <%= f.label "What is the device pin count?"%></br>
+    <%=f.text_field :pin_count%>
+    <%= f.submit "Add Device!", class: "btn btn-primary" %>
+  <% end %>
+  </br>
+  </br>
+  <p>This is the section that you will add new devices.  All of the information requested can be located in the datasheet of the associated device.</p>
+</div>
