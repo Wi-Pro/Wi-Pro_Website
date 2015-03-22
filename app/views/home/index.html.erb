@@ -3,19 +3,13 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <% if !logged_in? %>
-    <script language="javascript"><!--
-    location.replace("login")
-    //-->
-    </script>
-  <% end %>
 </head>
 
 <div class="well">
 <h1>Homepage</h1>
   <% if !logged_in? %>
   </br>
-  <h4>The first thing that you are going to want to do is <b><a href="/signup">Sign Up</a></b> for an account.</h4>
+  <h4>The first thing that you are going to want to do is <b><a href="/signup">Sign Up</a></b> for an account or <b><a href="/login">Log in</a></b>.</h4>
   <% end %>
   </br>
   <h4>Once you have an account, you should go to the <b><a href="/groups">Groups</a></b> Page.  Here you will create a group to add Wi-Pros to.</h4>
