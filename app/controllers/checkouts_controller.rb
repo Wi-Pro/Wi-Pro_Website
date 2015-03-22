@@ -3,6 +3,7 @@ class CheckoutsController < ApplicationController
     @list = Membership.where(userid: current_user.id)
     @checkout = Checkout.new
     @checkouts = Checkout.where('updated_at > ?', 30.minutes.ago)
+    $globaluserid = @current_user.id
   end
 
   def create
