@@ -1,0 +1,22 @@
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Signature</th>
+      <th>Flash Size</th>
+      <th>Pin Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @devices.each do |device| %>
+      <tr>
+        <td><%= device.id %></td>
+        <td><%= device.name %></td>
+        <td><%= device.signature %></td>
+        <td><%= device.flash_size %></td>
+        <td><%= device.pin_count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
