@@ -17,6 +17,8 @@
   <h2>Program Device</h2>
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
+    <%=f.label "Wi-Pro Checked out:"%>
+    <%=f.text_field :wiproid, readonly: true %>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
     <%= f.label "What device are you programming?"%></br>
     <%= f.collection_select(:deviceid, @devices, :id, :name)%>
