@@ -22,7 +22,9 @@ class WiproidsController < ApplicationController
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex`
       #FileUtils.touch("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex")
       #hex_file.close
-      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
+      flag_file = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
+      flag_file.write("0 0")
+      flag_file.close
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt`
       #flags_file.close
       File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt", "w+")
