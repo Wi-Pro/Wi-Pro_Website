@@ -18,14 +18,14 @@ class WiproidsController < ApplicationController
       directory_name = "/home/rails/public/uploads/hex/#{@wiproid.wiproid}"
       Dir.mkdir(directory_name) unless File.exists?(directory_name)
       flash[:success] = "The WiPro #{@wiproid.wiproid} has been added"
-      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex", "r+")
+      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex", "w+")
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex`
       #FileUtils.touch("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex")
       #hex_file.close
-      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "r+")
+      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt`
       #flags_file.close
-      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt", "r+")
+      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt", "w+")
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt`
       #device_file.close
       redirect_to "/"
