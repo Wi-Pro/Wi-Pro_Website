@@ -1,12 +1,18 @@
 <div class="well">
   <h2>Welcome to the Checkout Page!</h2>
   <%#availwp = Hash.new%>
+  <%@id_list = Array.new%>
   <%@final_list = Array.new%>
+  <%@final_hash = Hash.new%>
   <%@list.each do |l|%>
-    <%@final_list = @final_list + Wiproid.where(groupid: Group.find(l.groupid)).pluck(:wiproid)%>
+    <%@id_list = @final_list + Wiproid.where(groupid: Group.find(l.groupid)).pluck(:id)%>
     </br>
   <%end%>
-  <%@final_list = @final_list.uniq.sort%>
+  <%@id_list = @id_list.uniq.sort%>
+  <%@id_list.each do |id|%>
+    <%@final_hash[id] = Wiproid.find(id).wiproid%>
+  <%end%>
+  <%=@final_hash%>
   <%= form_for @checkout do |f| %>
     <%#= render 'shared/hexes_error_messages' %>
     <%if logged_in? %>
