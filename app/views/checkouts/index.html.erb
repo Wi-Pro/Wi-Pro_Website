@@ -1,6 +1,7 @@
 <div class="well">
   <h2>Welcome to the Checkout Page!</h2>
   <%#availwp = Hash.new%>
+  <%@final_list = Array.new%>
   <%@list.each do |l|%>
     <%@final_list = @final_list + Wiproid.where(groupid: Group.find(l.groupid)).pluck(:wiproid)%>
     </br>
