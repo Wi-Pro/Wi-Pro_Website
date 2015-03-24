@@ -1,0 +1,1 @@
+Name: ATmega644P, Signature: 1E960A, flash: 65536, pins: 40
