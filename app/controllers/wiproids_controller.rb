@@ -20,7 +20,7 @@ class WiproidsController < ApplicationController
       flash[:success] = "The WiPro #{@wiproid.wiproid} has been added"
       #File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex", "r+")
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex`
-      FileUtils.touch('/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex')
+      FileUtils.touch("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex")
       #hex_file.close
       #File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "r+")
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt`
