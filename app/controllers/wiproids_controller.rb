@@ -15,6 +15,8 @@ class WiproidsController < ApplicationController
     @wiproid = Wiproid.new(wiproid_params)
     @wiproid.userid = current_user.id
     if @wiproid.save
+      directory_name = "/home/rails/public/uploads/hex/#{@wiproid.wiproid}"
+      Dir.mkdir(directory_name) unless File.exists?(directory_name)
       flash[:success] = "The WiPro #{@wiproid.wiproid} has been added"
       #File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex", "r+")
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex`
