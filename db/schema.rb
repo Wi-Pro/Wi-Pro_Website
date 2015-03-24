@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150322022306) do
 
   create_table "devices", force: true do |t|
     t.string   "name"
-    t.integer  "signature"
+    t.string   "signature"
     t.integer  "flash_size"
     t.integer  "pin_count"
     t.datetime "created_at"
