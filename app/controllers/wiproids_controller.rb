@@ -16,12 +16,12 @@ class WiproidsController < ApplicationController
     @wiproid.userid = current_user.id
     if @wiproid.save
       flash[:success] = "The WiPro #{@wiproid.wiproid} has been added"
-      hex_file = File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex", "w+")
-      hex_file.close
-      flags_file = File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
-      flags_file.close
-      device_file = File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt", "w+")
-      device_file.close
+      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex", "w+")
+      #hex_file.close
+      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
+      #flags_file.close
+      File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt", "w+")
+      #device_file.close
       redirect_to "/"
     else
       render "index"
