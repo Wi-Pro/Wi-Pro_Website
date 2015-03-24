@@ -23,7 +23,7 @@ class WiproidsController < ApplicationController
       #FileUtils.touch("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/default.hex")
       #hex_file.close
       flag_file = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
-      flag_file.write("0 0")
+      flag_file.write("0 0")#Programming and SSID Scan are the two flags
       flag_file.close
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt`
       #flags_file.close
