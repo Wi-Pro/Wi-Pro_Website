@@ -1,2 +1,14 @@
-<h1>Ssid#index</h1>
-<p>Find me in app/views/ssid/index.html.erb</p>
+<h1>Wireless Information</h1>
+<%= form_for @ssid do |f| %>
+  <%= f.label "What is the Wi-Pro ID on this Wi-Pro?"%></br>
+  <%=f.text_field :wiproid%>
+  </br>
+  <%= f.label "Please choose the network to connect to:"%></br>
+  <%=f.text_field :ssid%>
+  </br>
+  <%= f.label "Please enter the password for this network:"%></br>
+  <%=f.text_field :password%>
+  </br>
+  </br>
+  <%= f.submit "Connect!", class: "btn btn-primary" %>
+<% end %>
