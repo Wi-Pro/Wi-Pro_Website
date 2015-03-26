@@ -1,5 +1,4 @@
 Myapp::Application.routes.draw do
-  get "ssid/index"
   get "sessions/new"
   get "users/new"
   get "home/index"
@@ -22,6 +21,7 @@ Myapp::Application.routes.draw do
   resources :memberships
   resources :checkouts
   resources :devices
+  resources :ssids
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   #resources :hexes, only: [:index, :new, :create, :destroy]
