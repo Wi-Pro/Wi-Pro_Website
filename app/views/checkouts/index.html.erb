@@ -10,14 +10,14 @@
   <%end%>
   <%@id_list = @id_list.uniq.sort%>
   <%@id_list.each do |id|%>
-    <%@final_hash[id] = Wiproid.find(id).wiproid%>
+    <%@final_hash[Wiproid.find(id).wiproid] = id%>
   <%end%>
-  <%=@final_hash.values.uniq.sort!%>
+  <%=@final_hash%>
   <%= form_for @checkout do |f| %>
     <%#= render 'shared/hexes_error_messages' %>
     <%if logged_in? %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
-    <%=f.select :wiproid, options_from_collection_for_select(@final_hash, :first, :last)%>
+    <%=f.select :wiproid, options_from_collection_for_select(@final_hash, :last, :first)%>
     <%#= f.collection_select(:wiproid, Wiproid.all, :id, :wiproid)%>
     <%#= f.select_tag(:checkoutid, options_for_select(availwp.to_a))%>
     <%#= f.select(:checkoutid) do %>
