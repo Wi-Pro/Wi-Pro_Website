@@ -1,4 +1,4 @@
-class SsidController < ApplicationController
+class SsidsController < ApplicationController
   def index
     @ssid = Ssid.new
   end
