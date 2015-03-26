@@ -1,0 +1,1 @@
+Name: ATmega164P, Signature: 1E940A, flash: 16384, pins: 40

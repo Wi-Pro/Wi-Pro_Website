@@ -666,3 +666,42 @@ Migrating to CreateDevices (20150322022306)
   [1m[35mDevice Load (0.3ms)[0m  SELECT "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT 1  [["id", 3]]
   [1m[36mDevice Load (0.6ms)[0m  [1mSELECT "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT 1[0m  [["id", 3]]
   [1m[35mDevice Load (0.2ms)[0m  SELECT "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mWiproid Load (0.4ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" DESC LIMIT 1[0m
+  [1m[35mWiproid Load (0.4ms)[0m  SELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" DESC LIMIT 1
+  [1m[36mMembership Load (3.5ms)[0m  [1mSELECT "memberships".* FROM "memberships" WHERE "memberships"."userid" = 1[0m
+  [1m[35mMembership Load (0.5ms)[0m  SELECT "memberships".* FROM "memberships" WHERE "memberships"."userid" = 1
+  [1m[36mWiproid Load (0.4ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" DESC LIMIT 1[0m
+  [1m[35mWiproid Load (2.0ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 1 ORDER BY "wiproids"."id" ASC LIMIT 1000
+  [1m[36mWiproid Load (0.6ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 1 ORDER BY "wiproids"."id" ASC LIMIT 1000[0m
+  [1m[35mWiproid Load (1.5ms)[0m  SELECT "wiproids".* FROM "wiproids" ORDER BY "wiproids"."id" ASC LIMIT 1000
+  [1m[36mWiproid Load (0.6ms)[0m  [1mSELECT "wiproids".* FROM "wiproids"[0m
+  [1m[35mWiproid Load (1.1ms)[0m  SELECT DISTINCT "wiproids".* FROM "wiproids"
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from irb_binding at (irb):18)
+  [1m[36mWiproid Load (2.0ms)[0m  [1mSELECT "wiproids".* FROM "wiproids"[0m
+  [1m[35mWiproid Load (0.9ms)[0m  SELECT "wiproids".* FROM "wiproids"
+  [1m[36m (1.1ms)[0m  [1mSELECT "wiproids"."groupid" FROM "wiproids"[0m
+  [1m[35mWiproid Load (0.8ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 1
+  [1m[36mWiproid Load (0.9ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 1[0m
+  [1m[35mWiproid Load (0.6ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 1
+  [1m[36mWiproid Load (0.5ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 1[0m
+  [1m[35mWiproid Load (1.0ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 2
+  [1m[36mWiproid Load (0.7ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 2[0m
+  [1m[35mWiproid Load (0.4ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."groupid" = 2
+  [1m[36m (0.6ms)[0m  [1mSELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 2[0m
+  [1m[35m (0.5ms)[0m  SELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1[0m
+  [1m[35m (1.4ms)[0m  SELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1
+  [1m[36m (0.4ms)[0m  [1mSELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1[0m
+  [1m[35m (0.4ms)[0m  SELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1
+  [1m[36m (0.8ms)[0m  [1mSELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1[0m
+  [1m[35m (0.9ms)[0m  SELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1
+  [1m[36m (0.5ms)[0m  [1mSELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 2[0m
+  [1m[35m (1.0ms)[0m  SELECT "wiproids"."wiproid" FROM "wiproids" WHERE "wiproids"."groupid" = 1
+  [1m[36mCheckout Load (0.4ms)[0m  [1mSELECT "checkouts".* FROM "checkouts" ORDER BY "checkouts"."id" DESC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSsids (20150326062248)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "ssids" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "wiproid" integer, "ssid" varchar(255), "connected" boolean, "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150326062248"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

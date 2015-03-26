@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wiproid: 1
+  ssid: MyString
+  connected: false
+  password: MyString
+
+two:
+  wiproid: 1
+  ssid: MyString
+  connected: false
+  password: MyString
