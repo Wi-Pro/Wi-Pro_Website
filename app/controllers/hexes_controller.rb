@@ -3,7 +3,7 @@ class HexesController < ApplicationController
     @hex = Hex.new
     @devices = Device.all
     $globaluserid = current_user.id
-    unless Checkout.where("userid = ?", current_user.id).last.wiproid.blank?
+    if Checkout.where("userid = ?", current_user.id).last
       checkout = Checkout.where("userid = ?", current_user.id).last.wiproid
       @wiproid = Wiproid.find(checkout)
     end
