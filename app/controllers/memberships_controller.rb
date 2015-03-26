@@ -10,7 +10,7 @@ class MembershipsController < ApplicationController
       username = User.find(@membership.userid)
       groupname = Group.find(@membership.groupid)
       flash[:success] = "#{username.name} has been added to #{groupname.name}"
-      redirect_to "/memberships"
+      redirect_to "/" #I think it makes more sense to send them back here, but for flow we send them back home to keep reading instructions
     else
       render "index"
     end
