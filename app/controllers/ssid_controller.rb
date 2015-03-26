@@ -16,4 +16,3 @@ private
     params.require(:ssid).permit(:wiproid, :ssid, :password)
   end
 end
-end
