@@ -12,7 +12,7 @@ class SsidsController < ApplicationController
     end
   end
   def refresh
-    render "index"
+    redirect_to "/ssids"
   end
 private
   def ssid_params
