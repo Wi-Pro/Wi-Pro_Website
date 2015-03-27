@@ -3,7 +3,8 @@
   <%= f.label "What is the Wi-Pro ID on this Wi-Pro?"%></br>
   <%=f.text_field :wiproid%>
   </br>
-  <%= f.label "Please choose the network to connect to:"%><a href='/ssids'>Update Networks!</a></br>
+  <%= f.label "Please choose the network to connect to:"%>
+  <%= button_to 'Update List!', action: 'refresh'%></br>
   <%=f.text_field :ssid%>
   </br>
   <%= f.label "Please enter the password for this network:"%></br>

@@ -11,6 +11,9 @@ class SsidsController < ApplicationController
       render "index"
     end
   end
+  def refresh
+    render "index"
+  end
 private
   def ssid_params
     params.require(:ssid).permit(:wiproid, :ssid, :password)
