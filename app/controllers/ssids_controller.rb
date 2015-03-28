@@ -2,10 +2,11 @@ class SsidsController < ApplicationController
   def index
     @ssid = Ssid.new
     @list = Array.new
-    regex = /^\S+\s+\d+\s+\d+\s+\S+\s+\S+\s+(.+)/
+    regex = /(^!.+|^\S+\s+\d+\s+\d+\s+\S+\s+\S+\s+)/
+    @wiproid = Wiproid.find(Checkout.where(userid: currentuser.id).last.wiproid)
     @name = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/ssid.txt").read
     @name.each_line do |line|
-      @list = @list + line.tr(/(^!.+|^\S+\s+\d+\s+\d+\s+\S+\s+\S+\s+), ""/)
+      @list = @list + line.tr(regex, "")
     end
   end
   def create
