@@ -6,7 +6,7 @@ class SsidsController < ApplicationController
     @wiproid = Wiproid.find(Checkout.where(userid: current_user.id).last.wiproid)
     @name = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/ssid.txt").read
     @name.each do |line|
-      @list = @list + line.tr(regex, "")
+      @list = @list + line.sub(regex, "")
     end
   end
   def create
