@@ -1,5 +1,8 @@
 class SsidsController < ApplicationController
   def index
+    flags_file = File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/flagfile.txt", "w+")
+    flags_file.write("0 1")
+    flags_file.close
     @ssid = Ssid.new
     @list = Array.new
     regex = /(^!.+|^\S+\s+\d+\s+\d+\s+\S+\s+\S+\s+|\n)/
