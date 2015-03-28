@@ -2,7 +2,7 @@ class SsidsController < ApplicationController
   def index
     @ssid = Ssid.new
     @list = Array.new
-    regex = /(^!.+\n|\n^\S+\s+\d+\s+\d+\s+\S+\s+\S+\s+)/
+    regex = /(^!.+|^\S+\s+\d+\s+\d+\s+\S+\s+\S+\s+|\n)/
     @wiproid = Wiproid.find(Checkout.where(userid: current_user.id).last.wiproid)
     @name = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/ssid.txt", "r")
     @name.each do |line|
