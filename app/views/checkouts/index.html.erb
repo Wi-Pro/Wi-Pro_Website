@@ -5,7 +5,7 @@
   <%@final_list = Array.new%>
   <%@final_hash = Hash.new%>
   <%@list.each do |l|%>
-    <%@id_list = @final_list + Wiproid.where(groupid: Group.find(l.groupid)).pluck(:id)%>
+    <%@id_list = @id_list + Wiproid.where(groupid: Group.find(l.groupid).id).pluck(:id)%>
     </br>
   <%end%>
   <%@id_list = @id_list.uniq.sort%>
