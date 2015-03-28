@@ -12,7 +12,6 @@
   <%@id_list.each do |id|%>
     <%@final_hash[Wiproid.find(id).wiproid] = id%>
   <%end%>
-  <%=@final_hash%>
   <%= form_for @checkout do |f| %>
     <%#= render 'shared/hexes_error_messages' %>
     <%if logged_in? %>
