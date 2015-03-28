@@ -3,7 +3,7 @@ class SsidsController < ApplicationController
     @ssid = Ssid.new
     @list = Array.new
     regex = /(^!.+|^\S+\s+\d+\s+\d+\s+\S+\s+\S+\s+)/
-    @wiproid = Wiproid.find(Checkout.where(userid: currentuser.id).last.wiproid)
+    @wiproid = Wiproid.find(Checkout.where(userid: current_user.id).last.wiproid)
     @name = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/ssid.txt").read
     @name.each_line do |line|
       @list = @list + line.tr(regex, "")
