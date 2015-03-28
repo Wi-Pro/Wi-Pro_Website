@@ -4,9 +4,8 @@
   <%=f.text_field :wiproid%>
   </br>
   <%= f.label "Please choose the network to connect to:"%></br>
-  <a href='/ssids' class="btn btn-mini btn-primary">Update Networks!</a></br>
   <%#=f.text_field :ssid%>
-  <%= f.select(:ssid, @list)%>
+  <%= f.select(:ssid, @list)%><a href='/ssids' class="btn btn-mini btn-primary">Update Networks!</a>
   </br>
   <%= f.label "Please enter the password for this network:"%></br>
   <%=f.text_field :password%>
@@ -14,5 +13,3 @@
   </br>
   <%= f.submit "Connect!", class: "btn btn-primary" %>
 <% end %>
-<%= @list %>
-<%= @name %>
