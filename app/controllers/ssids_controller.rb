@@ -8,6 +8,7 @@ class SsidsController < ApplicationController
     @name.each do |line|
       line.sub!(regex, "")
     end
+    @name.close
   end
   def create
     @ssid = Ssid.new(ssid_params)
