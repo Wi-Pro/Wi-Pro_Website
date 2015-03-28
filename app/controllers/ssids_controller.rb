@@ -20,6 +20,9 @@ class SsidsController < ApplicationController
   def create
     @ssid = Ssid.new(ssid_params)
     if @ssid.save
+      ssid_file = File.open("/home/rails/public/uploads/hex/#{@ssid.wiproid}/wifi.txt", "w+")
+      ssid_file.write("SSID: #{@ssid.ssid}, Password: #{@ssid.password}")
+      ssid_file.close
       flash[:success] = "Wireless Network Saved!"
       redirect_to "/"
     else
