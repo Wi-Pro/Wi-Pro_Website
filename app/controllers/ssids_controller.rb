@@ -10,6 +10,7 @@ class SsidsController < ApplicationController
       @list.push(line.tr("\n", ""))
     end
     @list.reject! { |r| r.empty? }
+    @list.uniq!
   end
   def create
     @ssid = Ssid.new(ssid_params)
