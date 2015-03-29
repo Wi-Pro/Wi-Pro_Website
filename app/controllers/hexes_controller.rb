@@ -19,8 +19,8 @@ class HexesController < ApplicationController
 
   def chunker f_in, out_pref
     chunksize = 8_000
-    FileUtils.rm("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref}*")
-    #File.delete("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref}*")
+    #FileUtils.rm("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref/[0-9]}.hex")
+    File.delete("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref/[0-9]}.hex")
     File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{f_in}","r") do |fh_in|
       until fh_in.eof?
         File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref}#{"%01d"%(fh_in.pos/chunksize)}.hex","w") do |fh_out|
