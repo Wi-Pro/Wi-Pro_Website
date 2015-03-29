@@ -17,6 +17,17 @@ class HexesController < ApplicationController
     @hex = Hex.new
   end
 
+  def chunker f_in, out_pref
+    chunksize = 8_000
+    File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{f_in}","r") do |fh_in|
+      until fh_in.eof?
+        File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref}_#{"%05d"%(fh_in.pos/chunksize)}.txt","w") do |fh_out|
+          fh_out << fh_in.read(chunksize)
+        end
+      end
+    end
+  end
+
   def create
     @hex = Hex.new(hex_params)
     if @hex.save
@@ -28,6 +39,7 @@ class HexesController < ApplicationController
       flags_file.write("1 0")
       flags_file.close
       system("split /public/uploads/hex/#{@hex.wiproid}/default.hex -b 8000 -a 1 -d split")
+      chunker "default.hex", "split"
       redirect_to hexes_path
     else
       render "index"
