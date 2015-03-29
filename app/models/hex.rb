@@ -4,7 +4,7 @@ class Hex < ActiveRecord::Base
   validates :attachment,
     presence: true,
     :file_size => {
-      :maximum => Device.find(Hex.last.deviceid).flash_size
+      :maximum => Device.find(@hex.deviceid).flash_size
     }
   #validates :wiproid, presence: true, length: {is: 10}
   validates :deviceid, presence: true
