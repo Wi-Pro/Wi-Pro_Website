@@ -6,8 +6,10 @@
 <% end %>
 <h1>Wireless Information</h1>
 <%= form_for @ssid do |f| %>
+  <%if Checkout.where("userid = ?", current_user.id).last%>
   <%= f.label "What is the Wi-Pro ID on this Wi-Pro?"%></br>
   <%=f.text_field :wiproid, readonly: true, value: @wiproid.wiproid%>
+  <%end%>
   </br>
   <%= f.label "Please choose the network to connect to:"%></br>
   <%#=f.text_field :ssid%>
