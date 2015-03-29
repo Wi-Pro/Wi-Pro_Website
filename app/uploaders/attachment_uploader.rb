@@ -15,6 +15,11 @@ class AttachmentUploader < CarrierWave::Uploader::Base
   end
 
   def size_range
-    0...65535
+    flash_size = Device.find(Hex.last.deviceid).flash_size
+    if flash_size > 65535
+      0...65535
+    else
+      0...flash_size
+    end
   end
 end

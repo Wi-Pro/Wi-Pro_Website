@@ -1,3 +1,9 @@
+<% if (Checkout.where(userid: current_user.id).where('updated_at > ?', 5.minutes.ago).count == 0) %>
+  <script language="javascript"><!--
+  location.replace("checkouts")
+  //-->
+  </script>
+<% end %>
 <h1>Wireless Information</h1>
 <%= form_for @ssid do |f| %>
   <%= f.label "What is the Wi-Pro ID on this Wi-Pro?"%></br>
