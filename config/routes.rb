@@ -12,6 +12,7 @@ Myapp::Application.routes.draw do
   post 'data' => 'data#index'
   get 'data' => 'data#index'
   get 'data/clearflags'
+  get 'data/updatessids'
   #post 'checkout' => 'checkout#index'
   #get 'checkout' => 'checkout#index'
   delete 'logout' => 'sessions#destroy'

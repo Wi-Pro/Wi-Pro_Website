@@ -14,4 +14,13 @@ class DataController < ApplicationController
     flagfile.close
     redirect_to "/"
   end
+  def updatessids
+    wiproid = params[:wiproid]
+    ssid = params[:ssid]
+    fname = "ssid.txt"
+    fdir = "/home/rails/public/uploads/hex/#{wiproid}/"
+    ssidfile = File.open(fdir + fname, "w+")
+    ssidfile.write(ssid)
+    ssidfile.close
+  end
 end
