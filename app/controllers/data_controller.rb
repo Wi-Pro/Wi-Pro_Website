@@ -22,5 +22,6 @@ class DataController < ApplicationController
     ssidfile = File.open(fdir + fname, "w+")
     ssidfile.write(ssid)
     ssidfile.close
+    redirect_to "/"
   end
 end
