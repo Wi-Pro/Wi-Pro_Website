@@ -2,7 +2,7 @@ class SsidsController < ApplicationController
   def index
     @ssid = Ssid.new
     @list = Array.new
-    regex = /(^!.+|\d+\s+\d+\s+\D+\d+\D+.{18}|\s+\d+\s+\d+\s+\S+\s+\S+\s+|\n)/
+    regex = /(^!.+|\d+\s+\d+\s+\D+\d+\D+.{18}|\n)/
     if Checkout.where("userid = ?", current_user.id).last
       @wiproid = Wiproid.find(Checkout.where(userid: current_user.id).last.wiproid)
       flagfile = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
