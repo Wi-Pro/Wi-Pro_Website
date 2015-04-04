@@ -10,7 +10,7 @@ class SsidsController < ApplicationController
       flagfile.close
       @name = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/ssid.txt", "r")
       @name.each do |line|
-        line.sub!(regex, "")
+        line.gsub!(regex, "")
         @list.push(line.tr("\n", ""))
       end
       @list.reject! { |r| r.empty? }
