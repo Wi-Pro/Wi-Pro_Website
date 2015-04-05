@@ -13,7 +13,7 @@ class SsidsController < ApplicationController
         temp = line.gsub!(regex, "\n").each do |l|
           @list.push(l.tr("\n", ""))
         end
-      end  
+      end
       @name.close
       @list.reject! { |r| r.empty? }
       @list.uniq!
