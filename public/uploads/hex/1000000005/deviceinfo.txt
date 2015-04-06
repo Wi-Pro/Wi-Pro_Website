@@ -1,1 +1,0 @@
-Name: ATmega324P, Signature: 1E9508, flash: 32768, pins: 40

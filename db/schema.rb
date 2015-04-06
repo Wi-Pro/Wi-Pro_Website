@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150326062248) do
+ActiveRecord::Schema.define(version: 20150406073621) do
 
   create_table "checkouts", force: true do |t|
     t.integer  "userid"
     t.integer  "wiproid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "devicepreferences", force: true do |t|
+    t.integer  "deviceid"
+    t.integer  "userid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -84,6 +91,12 @@ ActiveRecord::Schema.define(version: 20150326062248) do
     t.string   "remember_digest"
     t.integer  "devicepreference"
     t.integer  "checkoutid"
+  end
+
+  create_table "wiproavails", force: true do |t|
+    t.integer  "wiproid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "wiproids", force: true do |t|
