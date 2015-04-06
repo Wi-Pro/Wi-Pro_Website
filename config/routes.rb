@@ -13,6 +13,7 @@ Myapp::Application.routes.draw do
   get 'data' => 'data#index'
   get 'data/clearflags'
   get 'data/updatessids'
+  get 'data/ping'
   get 'help' => 'help#index'
   #post 'checkout' => 'checkout#index'
   #get 'checkout' => 'checkout#index'

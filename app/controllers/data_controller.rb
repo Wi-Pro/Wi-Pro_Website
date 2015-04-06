@@ -24,4 +24,15 @@ class DataController < ApplicationController
     ssidfile.close
     redirect_to "/"
   end
+  def ping
+    wiproid = params[:wiproid]
+    @ping = Wiproavail.where("wiproid = ?", wiproid).last
+    if(@ping == nil)
+      @ping = Wiproavail.new
+      @ping.wiproid = wiproid
+    end
+    if @ping.save
+      redirect_to "/"
+    end
+  end
 end
