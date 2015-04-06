@@ -40,7 +40,7 @@ class HexesController < ApplicationController
     @hex = Hex.new(hex_params)
     @devpref = Devicepreference.where("userid = ?", current_user.id).last
     if(@devpref = nil)
-      @devpref = Devicepreference.new
+      @devpref = Devicepreference.new(dev_params)
     end
     @devpref.deviceid = @hex.deviceid
     #@devpref.userid = current_user.id
