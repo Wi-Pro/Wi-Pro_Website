@@ -39,7 +39,7 @@ class HexesController < ApplicationController
   def create
     @hex = Hex.new(hex_params)
     @devpref = Devicepreference.where("userid = ?", current_user.id).last
-    if(@devpref = nil)
+    if(@devpref == nil)
       @devpref = Devicepreference.new(dev_params)
     end
     @devpref.deviceid = @hex.deviceid
