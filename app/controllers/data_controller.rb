@@ -31,6 +31,7 @@ class DataController < ApplicationController
       @ping = Wiproavail.new
       @ping.wiproid = wiproid
     end
+    @ping.touch
     if @ping.save
       redirect_to "/"
     end
