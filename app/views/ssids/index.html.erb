@@ -4,7 +4,8 @@
   //-->
   </script>
 <% end %>
-<h1>Wireless Information</h1>
+<div class="well">
+<h2>Add Wi-Fi Information</h2>
 <%= form_for @ssid do |f| %>
   <%if Checkout.where("userid = ?", current_user.id).last%>
   <%= f.label "What is the Wi-Pro ID on this Wi-Pro?"%></br>
@@ -22,3 +23,4 @@
   </br>
   <%= f.submit "Connect!", class: "btn btn-primary" %>
 <% end %>
+</div>
