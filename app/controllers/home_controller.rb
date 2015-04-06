@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     if !logged_in?
       redirect_to "/login"
     else
-      redirect_to "/checkouts"
+      redirect_to "/hexes"
     end
   end
 end
