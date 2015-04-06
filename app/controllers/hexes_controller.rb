@@ -37,9 +37,10 @@ class HexesController < ApplicationController
 
   def create
     @hex = Hex.new(hex_params)
-    @devpref = Devicepreference.new(dev_params)
+    @devpref = Devicepreference.new
     @devpref.deviceid = @hex.deviceid
     @devpref.userid = current_user.id
+    #@devpref = Devicepreference.new(dev_params)
     if @hex.save
       @devpref.save
       flash[:success] = "Programming Initiated!"
@@ -66,7 +67,7 @@ private
   def hex_params
     params.require(:hex).permit(:name, :attachment, :wiproid, :deviceid)
   end
-  def dev_params
-    params.require(:devicepreference).permit(:deviceid, :userid)
-  end
+  #def dev_params
+  #  params.require(:devicepreference).permit(:deviceid, :userid)
+  #end
 end
