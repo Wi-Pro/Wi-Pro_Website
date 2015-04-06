@@ -1,5 +1,5 @@
 <div class="well">
-  <h2>Welcome to the Memberships Page!</h2>
+  <h2>Add Memberships</h2>
   <%= form_for @membership do |f| %>
     <%= f.label "Which Member do you want to add?"%></br>
     <%=f.collection_select(:groupid, @groups, :id, :name)%>
