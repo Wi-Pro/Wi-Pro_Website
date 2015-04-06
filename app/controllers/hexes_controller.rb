@@ -41,9 +41,10 @@ class HexesController < ApplicationController
     @devpref = Devicepreference.where("userid = ?", current_user.id).last
     if(@devpref == nil)
       @devpref = Devicepreference.new
+      @devpref.userid = current_user.id
     end
     @devpref.deviceid = @hex.deviceid
-    #@devpref.userid = current_user.id
+
     #@devpref = Devicepreference.new(dev_params)
     if @hex.save
       @devpref.save
