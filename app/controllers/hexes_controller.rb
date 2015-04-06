@@ -1,6 +1,7 @@
 class HexesController < ApplicationController
   def index
     @hex = Hex.new
+    @devpref = Devicepreference.new
     @devices = Device.all
     $globaluserid = current_user.id
     if Checkout.where("userid = ?", current_user.id).last
@@ -36,7 +37,11 @@ class HexesController < ApplicationController
 
   def create
     @hex = Hex.new(hex_params)
+    @devpref.deviceid = @hex.deviceid
+    @devpref.userid = current_user.id
+    @devpref = Devicepreference.new(dev_params)
     if @hex.save
+      @devpref.save
       flash[:success] = "Programming Initiated!"
       device_file = File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/deviceinfo.txt", "w+")
       device_file.write("Name: #{Device.find(@hex.deviceid).name}, Signature: #{Device.find(@hex.deviceid).signature}, flash: #{Device.find(@hex.deviceid).flash_size}, pins: #{Device.find(@hex.deviceid).pin_count}")
@@ -60,5 +65,8 @@ class HexesController < ApplicationController
 private
   def hex_params
     params.require(:hex).permit(:name, :attachment, :wiproid, :deviceid)
+  end
+  def dev_params
+    params.require(:devicepreference).permit(:deviceid, :userid)
   end
 end
