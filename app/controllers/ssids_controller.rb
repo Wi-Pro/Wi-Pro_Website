@@ -6,7 +6,7 @@ class SsidsController < ApplicationController
     if Checkout.where("userid = ?", current_user.id).last
       @wiproid = Wiproid.find(Checkout.where(userid: current_user.id).last.wiproid)
       flagfile = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt", "w+")
-      flagfile.write("0 1 0")
+      flagfile.write("010")
       flagfile.close
       @name = File.open("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/ssid.txt", "r")
       @name.each do |line|

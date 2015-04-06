@@ -18,7 +18,7 @@ class HexesController < ApplicationController
   end
 
   def chunker f_in, out_pref
-    chunksize = 8_000
+    chunksize = 7_500
     unless File.directory?("/home/rails/public/uploads/hex/#{@hex.wiproid}/hex/")
       FileUtils.mkdir_p("/home/rails/public/uploads/hex/#{@hex.wiproid}/hex/")
     end
@@ -42,7 +42,7 @@ class HexesController < ApplicationController
       device_file.write("Name: #{Device.find(@hex.deviceid).name}, Signature: #{Device.find(@hex.deviceid).signature}, flash: #{Device.find(@hex.deviceid).flash_size}, pins: #{Device.find(@hex.deviceid).pin_count}")
       device_file.close
       flagfile = File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/flagfile.txt", "w+")
-      flagfile.write("1 0")
+      flagfile.write("100")
       flagfile.close
       system("split /public/uploads/hex/#{@hex.wiproid}/default.hex -b 8000 -a 1 -d split")
       chunker "default.hex", "split"

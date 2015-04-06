@@ -10,7 +10,7 @@ class DataController < ApplicationController
     fname = "flagfile.txt"
     fdir = "/home/rails/public/uploads/hex/#{wiproid}/"
     flagfile = File.open(fdir + fname, "w+")
-    flagfile.write("0 0 0")
+    flagfile.write("000")
     flagfile.close
     redirect_to "/"
   end
