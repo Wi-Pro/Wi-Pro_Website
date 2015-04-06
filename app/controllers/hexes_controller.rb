@@ -2,6 +2,7 @@ class HexesController < ApplicationController
   def index
     @hex = Hex.new
     @devpref = Devicepreference.new
+    @device = Devicepreference.where("userid = ?", current_user.id).last
     @devices = Device.all
     $globaluserid = current_user.id
     if Checkout.where("userid = ?", current_user.id).last
