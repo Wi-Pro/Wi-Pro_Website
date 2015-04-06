@@ -37,9 +37,9 @@ class HexesController < ApplicationController
 
   def create
     @hex = Hex.new(hex_params)
+    @devpref = Devicepreference.new(dev_params)
     @devpref.deviceid = @hex.deviceid
     @devpref.userid = current_user.id
-    @devpref = Devicepreference.new(dev_params)
     if @hex.save
       @devpref.save
       flash[:success] = "Programming Initiated!"
