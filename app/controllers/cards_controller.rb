@@ -2,12 +2,13 @@ class CardsController < ApplicationController
   def index
     @deck = Array.new(52)
     letter = ['H', 'C', 'S', 'D']
+    number = ['2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K', 'A']
     i = 1
     j = 0
     suit = 0
     4.times do
       13.times do
-        @deck[j] = i.to_s + letter[suit]
+        @deck[j] = number[j%12+1] + letter[suit]
         j+=1
         i+=1
       end
