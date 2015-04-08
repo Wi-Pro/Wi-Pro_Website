@@ -1,7 +1,7 @@
 class CardsController < ApplicationController
   def index
     @deck = Array.new(52)
-    letter = [H, C, S, D]
+    letter = ['H', 'C', 'S', 'D']
     i = 1
     j = 0
     suit = 0
