@@ -7,7 +7,7 @@ class CardsController < ApplicationController
     suit = 0
     4.times do
       13.times do
-        @deck[j] = i + letter[suit]
+        @deck[j] = i.to_s + letter[suit]
         j+=1
         i+=1
       end
