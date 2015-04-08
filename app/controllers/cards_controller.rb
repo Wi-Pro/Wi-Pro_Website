@@ -6,8 +6,8 @@ class CardsController < ApplicationController
     4.times do
       13.times do
         deck[j] = i
-        j++;
-        i++;
+        j++
+        i++
       end
       i=1
     end
