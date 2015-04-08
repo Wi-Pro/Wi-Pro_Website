@@ -28,13 +28,13 @@ class CardsController < ApplicationController
     end
     i = 1
     j = 0
-    52.times do
-      randnum = rand(51)
-      tempvar1 = @deck[j]
-      tempvar2 = @deck[randnum]
-      @deck[j] = tempvar2
-      @deck[randnum] = tempvar1
-      j+=1
+    500000.times do
+      randnum1 = rand(51)
+      randnum2 = rand(51)
+      tempvar1 = @deck[randnum1]
+      tempvar2 = @deck[randnum2]
+      @deck[randnum1] = tempvar2
+      @deck[randnum2] = tempvar1
     end
   end
 end
