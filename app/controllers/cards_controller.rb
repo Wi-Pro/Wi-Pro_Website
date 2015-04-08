@@ -16,5 +16,16 @@ class CardsController < ApplicationController
       j+=1
       i+=1
     end
+    @orignal_deck = @deck
+    i = 1
+    j = 0
+    52.times do
+      randnum = rand(51)
+      tempvar1 = @deck[j]
+      tempvar2 = @deck[randnum]
+      @deck[j] = tempvar2
+      @deck[randnum] = tempvar1
+      j+=1
+    end
   end
 end
