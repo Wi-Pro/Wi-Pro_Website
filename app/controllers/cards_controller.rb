@@ -16,7 +16,7 @@ class CardsController < ApplicationController
       j+=1
       i+=1
     end
-    @orignal_deck = @deck
+    @original_deck = @deck
     i = 1
     j = 0
     52.times do
