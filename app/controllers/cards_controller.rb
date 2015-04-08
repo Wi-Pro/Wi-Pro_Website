@@ -1,6 +1,7 @@
 class CardsController < ApplicationController
   def index
     @deck = Array.new(52)
+    @original_deck = Array.new(52)
     letter = ['H', 'C', 'S', 'D']
     number = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
     i = 1
