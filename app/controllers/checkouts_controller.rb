@@ -1,9 +1,11 @@
 class CheckoutsController < ApplicationController
   def index
     @list = Membership.where(userid: current_user.id)
+    @availability = Wiproavail.where("updated_at > ?", 5.minutes.ago)
     @checkout = Checkout.new
-    @checkouts = Checkout.where('updated_at > ?', 30.minutes.ago)
+    @checkouts = Checkout.where('updated_at > ?', 30.minutes.ago)#.where("updated_at > ?", )
     $globaluserid = @current_user.id
+    @active = Wiproavail.all
   end
 
   def create

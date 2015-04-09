@@ -31,5 +31,20 @@
   <% end %>
   </br>
   </br>
-  <p>This is the section that you will checkout a device on.</p>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Wi-Pro ID</th>
+        <th>Last Ping</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @devices.each do |device| %>
+        <tr>
+          <td><%= @active.wiproid %></td>
+          <td><%= @active.updated_at %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
