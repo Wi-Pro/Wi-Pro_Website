@@ -42,7 +42,7 @@
       <% @active.each do |active| %>
         <tr>
           <td><%= active.wiproid %></td>
-          <td><%= Time.now - active.updated_at %></td>
+          <td><%= (Time.now - active.updated_at)/60 %> Minutes Ago</td>
         </tr>
       <% end %>
     </tbody>
