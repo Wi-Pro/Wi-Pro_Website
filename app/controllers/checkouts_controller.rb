@@ -1,6 +1,16 @@
 class CheckoutsController < ApplicationController
   def index
     @list = Membership.where(userid: current_user.id)
+    @id_list = Array.new
+    @final_list = Array.new
+    @final_hash = Hash.new
+    @list.each do |l|
+      @id_list = @id_list + Wiproid.where(groupid: Group.find(l.groupid).id).pluck(:id)
+    end
+    @id_list = @id_list.uniq.sort
+    @id_list.each do |id|
+      @final_hash[Wiproid.find(id).wiproid] = id
+    end
     @availability = Wiproavail.where("updated_at > ?", 5.minutes.ago)
     @checkout = Checkout.new
     @checkouts = Checkout.where('updated_at > ?', 30.minutes.ago)#.where("updated_at > ?", )
