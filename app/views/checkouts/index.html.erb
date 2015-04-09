@@ -39,10 +39,10 @@
       </tr>
     </thead>
     <tbody>
-      <% @active.each do |device| %>
+      <% @active.each do |active| %>
         <tr>
-          <td><%= @active.wiproid %></td>
-          <td><%= @active.updated_at %></td>
+          <td><%= active.wiproid %></td>
+          <td><%= active.updated_at %></td>
         </tr>
       <% end %>
     </tbody>
