@@ -15,7 +15,7 @@
 
 <div class="well">
   <h2>Program Device</h2>
-  <%if Checkout.find(@checkout) != nil%>
+  <%if Wiproid.find(@checkout) != nil%>
     <%=Wiproid.find(@checkout).wiproid%>
   <%end%>
   <%= form_for @hex, html: { multipart: true } do |f| %>
