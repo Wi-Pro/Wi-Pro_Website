@@ -15,7 +15,7 @@
 
 <div class="well">
   <%if Wiproid.find(@checkout) != nil%>
-    <h2>Program Device - (<%=Wiproid.find(@checkout).wiproid%>)</h2>
+    <h2>Program Device - (Wi-Pro: <%=Wiproid.find(@checkout).wiproid%> Active: <%= time_ago_in_words( Wiproavail.where("wiproid = ?", Wiproid.find(42).wiproid).last.updated_at, include_seconds: true) %> ago)</h2>
   <%end%>
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
