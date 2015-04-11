@@ -21,7 +21,7 @@
     </thead>
     <tbody>
       <% @active.each do |active| %>
-        <%if (Time.now - active.updated_at) > 120)
+        <%if (Time.now - active.updated_at) > 120%>
           <tr class="danger">
         <%else%>
           <tr class="success">
