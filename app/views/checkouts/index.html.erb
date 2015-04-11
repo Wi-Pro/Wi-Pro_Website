@@ -1,28 +1,9 @@
 <div class="well">
   <h2>Checkout Wi-Pro</h2>
-  <%#availwp = Hash.new%>
-  <%#@id_list = Array.new%>
-  <%#@final_list = Array.new%>
-  <%#@final_hash = Hash.new%>
-  <%#@list.each do |l|%>
-    <%#@id_list = @id_list + Wiproid.where(groupid: Group.find(l.groupid).id).pluck(:id)%>
-  <%#end%>
-  <%#@id_list = @id_list.uniq.sort%>
-  <%#@id_list.each do |id|%>
-    <%#@final_hash[Wiproid.find(id).wiproid] = id%>
-  <%#end%>
   <%= form_for @checkout do |f| %>
-    <%#= render 'shared/hexes_error_messages' %>
     <%if logged_in? %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
     <%=f.select :wiproid, options_from_collection_for_select(@final_hash.sort, :last, :first)%>
-    <%#= f.collection_select(:wiproid, Wiproid.all, :id, :wiproid)%>
-    <%#= f.select_tag(:checkoutid, options_for_select(availwp.to_a))%>
-    <%#= f.select(:checkoutid) do %>
-      <%# availwp.to_a.each do |c| -%>
-        <%#= content_tag(:option, c.first, value: c.last) %>
-      <%# end %>
-    <%# end %>
     <a href="/wiproids">Add Wi-Pro!</a>
     <%end%>
     </br>
@@ -40,10 +21,14 @@
     </thead>
     <tbody>
       <% @active.each do |active| %>
-        <tr>
-          <td><%= active.wiproid %></td>
-          <td><%= time_ago_in_words(active.updated_at, include_seconds: true) %> ago</td>
-        </tr>
+        <%if (Time.now - active.updated_at) > 120)
+          <tr class="danger">
+        <%else%>
+          <tr class="success">
+        <%end%>
+            <td><%= active.wiproid %></td>
+            <td><%= time_ago_in_words(active.updated_at, include_seconds: true) %> ago</td>
+          </tr>
       <% end %>
     </tbody>
   </table>
