@@ -21,7 +21,7 @@
     </thead>
     <tbody>
       <% @active.each do |active| %>
-        <%if(@final_hash.keys.include? "#{active.wiproid}")%>
+        <%if(@final_hash.keys.include? "#{active.wiproid.to_i}")%>
           <%if (Time.now - active.updated_at) > 120%>
             <tr class="danger">
           <%else%>
