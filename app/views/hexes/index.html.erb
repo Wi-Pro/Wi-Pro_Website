@@ -16,7 +16,7 @@
 <div class="well">
   <h2>Program Device</h2>
   <%if Checkout.find(@checkout) != nil%>
-    <%=Checkout.find(@checkout).wiproid%>
+    <%=Wiproid.find(@checkout).wiproid%>
   <%end%>
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
