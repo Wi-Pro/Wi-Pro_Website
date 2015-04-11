@@ -21,14 +21,16 @@
     </thead>
     <tbody>
       <% @active.each do |active| %>
-        <%if (Time.now - active.updated_at) > 120%>
-          <tr class="danger">
-        <%else%>
-          <tr class="success">
-        <%end%>
+        <%if(@final_hash.keys.include? "#{active.wiproid}")%>
+          <%if (Time.now - active.updated_at) > 120%>
+            <tr class="danger">
+          <%else%>
+            <tr class="success">
+          <%end%>
             <td><%= active.wiproid %></td>
             <td><%= time_ago_in_words(active.updated_at, include_seconds: true) %> ago</td>
           </tr>
+        <%end%>
       <% end %>
     </tbody>
   </table>
