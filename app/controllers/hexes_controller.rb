@@ -6,8 +6,8 @@ class HexesController < ApplicationController
     @devices = Device.all
     $globaluserid = current_user.id
     if Checkout.where("userid = ?", current_user.id).last
-      checkout = Checkout.where("userid = ?", current_user.id).last.wiproid
-      @wiproid = Wiproid.find(checkout)
+      @checkout = Checkout.where("userid = ?", current_user.id).last.wiproid
+      @wiproid = Wiproid.find(@checkout)
     end
   end
 
