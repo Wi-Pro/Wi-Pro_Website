@@ -15,7 +15,9 @@
 
 <div class="well">
   <h2>Program Device</h2>
-  <%=@checkout%>
+  <%if Checkout.find(@checkout) != nil%>
+    <%=Checkout.find(@checkout).wiproid%>
+  <%end%>
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
     <%#if Checkout.where("userid = ?", current_user.id).last%>
