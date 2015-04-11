@@ -12,7 +12,16 @@ class DataController < ApplicationController
     flagfile = File.open(fdir + fname, "w+")
     flagfile.write("000")
     flagfile.close
-    redirect_to "/"
+    @ping = Wiproavail.where("wiproid = ?", wiproid).last
+    if(@ping == nil)
+      @ping = Wiproavail.new
+      @ping.wiproid = wiproid
+    else
+      @ping.touch
+    end
+    if @ping.save
+      redirect_to "/"
+    end
   end
   def updatessids
     wiproid = params[:wiproid]
