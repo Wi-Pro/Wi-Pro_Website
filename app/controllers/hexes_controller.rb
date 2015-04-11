@@ -21,15 +21,15 @@ class HexesController < ApplicationController
 
   def chunker f_in, out_pref
     chunksize = 7_500
-    unless File.directory?("/home/rails/public/uploads/hex/#{@hex.wiproid}/hex/")
-      FileUtils.mkdir_p("/home/rails/public/uploads/hex/#{@hex.wiproid}/hex/")
+    unless File.directory?("/home/rails/public/uploads/hex/#{@hex.wiproid}/split/")
+      FileUtils.mkdir_p("/home/rails/public/uploads/hex/#{@hex.wiproid}/split/")
     end
     #FileUtils.rm("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref/[0-9]}.hex")
     #File.delete("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{out_pref}")
-    FileUtils.rm_rf(Dir.glob("/home/rails/public/uploads/hex/#{@hex.wiproid}/hex/*"))
+    FileUtils.rm_rf(Dir.glob("/home/rails/public/uploads/hex/#{@hex.wiproid}/split/*"))
     File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/#{f_in}","r") do |fh_in|
       until fh_in.eof?
-        File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/hex/#{out_pref}#{"%01d"%(fh_in.pos/chunksize)}.hex","w") do |fh_out|
+        File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/split/#{out_pref}#{"%01d"%(fh_in.pos/chunksize)}.hex","w") do |fh_out|
           fh_out << fh_in.read(chunksize)
         end
       end
