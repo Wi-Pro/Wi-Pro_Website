@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150406073621) do
+ActiveRecord::Schema.define(version: 20150412053637) do
 
   create_table "checkouts", force: true do |t|
     t.integer  "userid"
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 20150406073621) do
     t.string   "remember_digest"
     t.integer  "devicepreference"
     t.integer  "checkoutid"
+    t.boolean  "admin"
   end
 
   create_table "wiproavails", force: true do |t|

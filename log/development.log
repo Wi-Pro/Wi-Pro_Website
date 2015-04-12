@@ -804,3 +804,59 @@ Migrating to CreateDevicepreferences (20150406073621)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150406073621"]]
   [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mDevicepreference Load (1.7ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences"[0m
+  [1m[36mDevicepreference Load (1.7ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences"[0m
+  [1m[36mDevicepreference Load (4.2ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences"[0m
+  [1m[35mDevicepreference Load (1.2ms)[0m  SELECT "devicepreferences".* FROM "devicepreferences"
+  [1m[36mDevicepreference Load (3.0ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences"[0m
+  [1m[36mDevicepreference Load (1.6ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences" WHERE (8)[0m
+  [1m[35mDevicepreference Load (0.3ms)[0m  SELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 8)
+  [1m[36mDevicepreference Load (0.7ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 8) ORDER BY "devicepreferences"."id" DESC LIMIT 1[0m
+  [1m[36mDevicepreference Load (1.5ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences" WHERE (8)[0m
+  [1m[35mDevicepreference Load (0.4ms)[0m  SELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 8)
+  [1m[36mDevicepreference Load (0.5ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 9)[0m
+  [1m[35mDevicepreference Load (0.7ms)[0m  SELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 10)
+  [1m[36mDevicepreference Load (0.7ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 11)[0m
+  [1m[35mDevicepreference Load (0.4ms)[0m  SELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 12)
+  [1m[36mDevicepreference Load (0.3ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences" WHERE (userid = 13)[0m
+  [1m[35mDevicepreference Load (0.8ms)[0m  SELECT "devicepreferences".* FROM "devicepreferences"
+  [1m[36mDevicepreference Load (5.0ms)[0m  [1mSELECT "devicepreferences".* FROM "devicepreferences"[0m
+  [1m[36mWiproavail Load (3.8ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails"[0m
+  [1m[35mWiproavail Load (0.7ms)[0m  SELECT "wiproavails".* FROM "wiproavails"
+  [1m[36mWiproavail Load (0.7ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails"[0m
+  [1m[36mWiproavail Load (2.7ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails"[0m
+  [1m[36mWiproavail Load (5.4ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails"[0m
+  [1m[35mWiproavail Load (0.8ms)[0m  SELECT "wiproavails".* FROM "wiproavails" ORDER BY "wiproavails"."id" ASC LIMIT 1
+  [1m[36mWiproavail Load (0.8ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails" ORDER BY "wiproavails"."id" ASC LIMIT 1[0m
+  [1m[36mMembership Load (6.3ms)[0m  [1mSELECT "memberships".* FROM "memberships" WHERE "memberships"."userid" = 7[0m
+  [1m[35mGroup Load (6.2ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.2ms)[0m  [1mSELECT "wiproids"."id" FROM "wiproids" WHERE "wiproids"."groupid" = 8[0m
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT "wiproids"."id" FROM "wiproids" WHERE "wiproids"."groupid" = 9[0m
+  [1m[35mWiproid Load (6.0ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 30]]
+  [1m[36mWiproid Load (0.5ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1[0m  [["id", 31]]
+  [1m[35mWiproid Load (0.2ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 32]]
+  [1m[36mWiproid Load (0.2ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mWiproid Load (0.3ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 36]]
+  [1m[36mWiproid Load (0.2ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1[0m  [["id", 37]]
+  [1m[35mWiproid Load (0.3ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 38]]
+  [1m[36mWiproavail Load (1.9ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails"[0m
+  [1m[36mCheckout Load (0.4ms)[0m  [1mSELECT "checkouts".* FROM "checkouts" WHERE (userid = 8) ORDER BY "checkouts"."id" DESC LIMIT 1[0m
+  [1m[35mCheckout Load (0.5ms)[0m  SELECT "checkouts".* FROM "checkouts" WHERE (userid = 8) ORDER BY "checkouts"."id" DESC LIMIT 1
+  [1m[36mWiproid Load (0.3ms)[0m  [1mSELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1[0m  [["id", 42]]
+  [1m[36mWiproavail Load (5.4ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails"[0m
+  [1m[35mWiproid Load (16.9ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 42]]
+  [1m[36mWiproavail Load (0.8ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails" WHERE (wiproid = 1000000000)[0m
+  [1m[35mWiproid Load (0.2ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 42]]
+  [1m[36mWiproavail Load (0.2ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails" WHERE (wiproid = 1000000000) ORDER BY "wiproavails"."id" ASC LIMIT 1[0m
+  [1m[35mWiproid Load (0.6ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 42]]
+  [1m[36mWiproavail Load (0.5ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails" WHERE (wiproid = 1000000000) ORDER BY "wiproavails"."id" DESC LIMIT 1[0m
+  [1m[35mWiproid Load (0.4ms)[0m  SELECT "wiproids".* FROM "wiproids" WHERE "wiproids"."id" = ? LIMIT 1  [["id", 42]]
+  [1m[36mWiproavail Load (0.5ms)[0m  [1mSELECT "wiproavails".* FROM "wiproavails" WHERE (wiproid = 1000000000) ORDER BY "wiproavails"."id" DESC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAdminToUsers (20150412053637)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150412053637"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

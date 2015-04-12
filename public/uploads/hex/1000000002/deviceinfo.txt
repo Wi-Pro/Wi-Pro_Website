@@ -1,1 +1,1 @@
-Name: ATmega644P, Signature: 1E960A, flash: 65536, pins: 40
+Name: ATmega324P, Signature: 1E9508, flash: 32768, pins: 40
