@@ -26,9 +26,9 @@ class UsersController < ApplicationController
 
   def edit
     userid = params[:uid]
-    @user = User.find(userid)
-    @user.admin = true
-    if @user.save
+    @admin = Administrator.new
+    @admin.userid = userid
+    if @admin.save
       flash[:success] = "Administrative Rights Granted!"
       redirect_to "/"
     else
