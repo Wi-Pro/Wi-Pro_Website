@@ -26,6 +26,9 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    @user.update(admin: true)
+    flash[:success] = "Administrative Rights Granted!"
+    redirect_to "/"
   end
 
   def update
