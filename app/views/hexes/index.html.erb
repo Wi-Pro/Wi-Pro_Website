@@ -21,7 +21,7 @@
   <%= form_for @hex, html: { multipart: true } do |f| %>
     <%= render 'shared/hexes_error_messages' %>
     <%#if Checkout.where("userid = ?", current_user.id).last%>
-    <%#=f.label "Wi-Pro Checked out:"%></br>
+    <%#=f.label "Wi-Pro Checked out:"%>
     <%#=f.text_field :wiproid, readonly: true, value: Wiproid.find(Checkout.where("userid = ?", current_user.id).last.wiproid).wiproid %>
     <%#end%>
     <%#= f.select(:wiproid, options_for_select(@wiprolist))%>
