@@ -5,7 +5,7 @@ class HexesController < ApplicationController
     @device = Devicepreference.where("userid = ?", current_user.id).last
     @devices = Device.all
     $globaluserid = current_user.id
-    if Checkout.where("userid = ?", current_user.id).last.wiproid == nil
+    if Checkout.where("userid = ?", current_user.id).last == nil
       redirect_to "/checkouts"
     else
       @checkout = Checkout.where("userid = ?", current_user.id).last.wiproid
