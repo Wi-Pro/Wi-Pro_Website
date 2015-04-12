@@ -33,7 +33,7 @@ class UsersController < ApplicationController
       redirect_to "/"
     else
       flash[:danger] = "Error!"
-      redirect_to "/"
+      redirect_to "/help"
     end
   end
 
