@@ -1,5 +1,6 @@
 require 'file_size_validator'
 class Hex < ActiveRecord::Base
+  belongs_to :group
   mount_uploader :attachment, AttachmentUploader # Tells rails to use this uploader for this model.
   validates :attachment,
     presence: true,
