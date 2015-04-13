@@ -51,7 +51,6 @@ class HexesController < ApplicationController
       @devpref.userid = current_user.id
     end
     @devpref.deviceid = @hex.deviceid
-
     #@devpref = Devicepreference.new(dev_params)
     if @hex.save
       @devpref.save
@@ -62,7 +61,7 @@ class HexesController < ApplicationController
       flagfile = File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/flagfile.txt", "w+")
       flagfile.write("100")
       flagfile.close
-      system("split /public/uploads/hex/#{@hex.wiproid}/default.hex -b 8000 -a 1 -d split")
+      #system("split /public/uploads/hex/#{@hex.wiproid}/default.hex -b 8000 -a 1 -d split")
       chunker "default.hex", "split"
       redirect_to hexes_path
     else
