@@ -4,7 +4,9 @@
     <%if logged_in? %>
     <%= f.label "Which Wi-Pro do you want to checkout?"%></br>
     <%=f.select :wiproid, options_from_collection_for_select(@final_hash.sort, :last, :first)%>
-    <a href="/wiproids">Add Wi-Pro!</a>
+    <% if Administrator.uniq.pluck(:userid).include?(current_user.id) %>
+      <a href="/wiproids">Add Wi-Pro!</a>
+    <%end%>
     <%end%>
     </br>
     </br>
