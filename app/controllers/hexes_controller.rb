@@ -6,7 +6,12 @@ class HexesController < ApplicationController
     @devices = Device.all
     $globaluserid = current_user.id
     if Checkout.where("userid = ?", current_user.id).last == nil
-      redirect_to "/checkouts"
+      first_time = Checkout.new
+      first_time.userid = current_user.id
+      first_time.wiproid = 42
+      if first_time.save
+        redirect_to "/checkouts"
+      end
     else
       @checkout = Checkout.where("userid = ?", current_user.id).last.wiproid
       @wiproid = Wiproid.find(@checkout)
