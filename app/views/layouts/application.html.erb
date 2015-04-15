@@ -20,7 +20,7 @@
     $(".flash").fadeTo(500, 0).slideUp(500, function(){
         $(this).remove();
     });
-  }, 3000);
+  }, 2000);
   </script>
   <% if logged_in? %>
     <div align="right">Welcome <%=current_user.name%>! <%= link_to "(Not #{current_user.name}?)", logout_path, method: "delete" %></div>
