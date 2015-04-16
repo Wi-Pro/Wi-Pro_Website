@@ -1,9 +1,9 @@
-<% if !logged_in? %>
+<% if !Administrator.uniq.pluck(:userid).include?(current_user.id) %>
   <script language="javascript"><!--
-  location.replace("login")
+  location.replace("/help")
   //-->
   </script>
-<% end %>
+<%end%>
 <div class="well">
   <h2>Register Wi-Pro</h2>
   <%= form_for @wiproid do |f| %>

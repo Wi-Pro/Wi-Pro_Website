@@ -1,3 +1,9 @@
+<% if !Administrator.uniq.pluck(:userid).include?(current_user.id) %>
+  <script language="javascript"><!--
+  location.replace("/help")
+  //-->
+  </script>
+<%end%>
 <div class="well">
   <h2>Add Memberships</h2>
   <%= form_for @membership do |f| %>

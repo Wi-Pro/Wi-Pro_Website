@@ -17,6 +17,7 @@ Myapp::Application.routes.draw do
   get 'data/ping'
   get 'help' => 'help#index'
   get 'cards' => 'cards#index'
+  get 'program' => 'hexes#index'
   #post 'checkout' => 'checkout#index'
   #get 'checkout' => 'checkout#index'
   delete 'logout' => 'sessions#destroy'
