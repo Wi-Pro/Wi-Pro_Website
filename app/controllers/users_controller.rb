@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @member = Membership.new
   end
 
   def create
