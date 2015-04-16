@@ -4,9 +4,11 @@ class CheckoutsController < ApplicationController
     @id_list = Array.new
     @final_list = Array.new
     @final_hash = Hash.new
-    @list.each do |l|
-      @id_list = @id_list + Wiproid.where(groupid: Group.find(l.groupid).id).pluck(:id)
+    @group_list = Membership.where("userid = ?", current_user.id).pluck(:groupid)
+    @group_list.each do |l|
+      @id_list = @id_list + Wiproid.where("groupid = ?", l).pluck(:id)
     end
+    #@group_list = Membership.where("userid = ?", current_user.id).pluck(:groupid)
     @id_list = @id_list.uniq.sort
     @id_list.each do |id|
       @final_hash[Wiproid.find(id).wiproid] = id
