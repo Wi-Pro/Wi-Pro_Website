@@ -31,18 +31,10 @@ class WiproidsController < ApplicationController
       ssid_file.close
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/flagfile.txt`
       #flags_file.close
-      @ping = Wiproavail.where("wiproid = ?", @wiproid.wiproid).last
-      if(@ping == nil)
-        @ping = Wiproavail.new
-        @ping.wiproid = @wiproid.wiproid
-      else
-        @ping.touch
-      end
-      @ping.save
       File.new("/home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt", "w+")
       #`touch /home/rails/public/uploads/hex/#{@wiproid.wiproid}/deviceinfo.txt`
       #device_file.close
-      redirect_to "/"
+      redirect_to "/data/ping?wiproid=#{@wiproid.wiproid}"
     else
       render "index"
     end
