@@ -32,7 +32,7 @@
     <ul class="nav nav-tabs">
       <% if logged_in? %>
       <% if Administrator.uniq.pluck(:userid).include?(current_user.id) %>
-          <li><a href="/hexes">Program Wi-Pro</a></li>
+          <li><a href="/program">Program Wi-Pro</a></li>
           <li><a href="/wiproids">Register Wi-Pro</a></li>
           <li><a href="/groups">Add Group</a></li>
           <li><a href="/memberships">Add Members</a></li>
@@ -40,7 +40,7 @@
           <li><a href="/ssids">Wireless Connection</a></li>
           <li><a href="/help">Help</a></li>
         <%else%>
-          <li><a href="/hexes">Program Wi-Pro</a></li>
+          <li><a href="/program">Program Wi-Pro</a></li>
           <li><a href="/ssids">Wireless Connection</a></li>
           <li><a href="/help">Help</a></li>
         <%end%>

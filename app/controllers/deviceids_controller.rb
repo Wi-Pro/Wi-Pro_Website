@@ -14,7 +14,7 @@ class DeviceidsController < ApplicationController
   def create
     @wiproid = Wiproid.new(wiproid_params)
     if @wiproid.save
-      redirect_to "/hexes", success: "The WiPro #{@wiproid.name} has been added"
+      redirect_to "/program", success: "The WiPro #{@wiproid.name} has been added"
     else
       render "new"
     end
