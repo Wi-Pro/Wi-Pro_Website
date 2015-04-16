@@ -14,8 +14,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       #@member = Membership.new(member_params)
-      @member.groupid = 14 #add every new user to the demo group.
-      @member.userid = @user.id
+      @member = Membership.create(groupid: 14, userid: @user.id)#adds every new user to the demo group
       @member.save!
       log_in @user
       flash[:success] = "Welcome #{@user.name}!"
