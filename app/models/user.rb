@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   attr_accessor :remember_token
   before_save { email.downcase! }
-  before_save { name.titleize! }
+  #before_save { name.titleize! }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   VALID_NAME_REGEX = /(^[a-zA-z]+ [a-zA-Z]+)/
   validates :name, presence: true,
