@@ -36,7 +36,8 @@
       <% end %>
     </tbody>
   </table>
-  Current Groups: <%@group_list.each do |g|%>
+  <u>Current Groups</u></br>
+                  <%@group_list.each do |g|%>
                     <%=Group.find(g).name%></br>
                   <%end%>
 </div>
