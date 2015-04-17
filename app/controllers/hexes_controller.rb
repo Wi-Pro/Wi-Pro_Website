@@ -8,7 +8,7 @@ class HexesController < ApplicationController
     if Checkout.where("userid = ?", current_user.id).last == nil
       first_time = Checkout.new
       first_time.userid = current_user.id
-      first_time.wiproid = 42
+      first_time.wiproid = 1
       if first_time.save
         redirect_to "/checkouts"
       end
