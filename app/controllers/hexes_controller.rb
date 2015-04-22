@@ -56,7 +56,7 @@ class HexesController < ApplicationController
       @devpref.save
       flash[:success] = "Programming Initiated!"
       device_file = File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/deviceinfo.txt", "w+")
-      device_file.write("Name: #{Device.find(@hex.deviceid).name}, Signature: #{Device.find(@hex.deviceid).signature}, flash: #{Device.find(@hex.deviceid).flash_size}, pins: #{Device.find(@hex.deviceid).pin_count}")
+      device_file.write("#{Device.find(@hex.deviceid).id}")
       device_file.close
       flagfile = File.open("/home/rails/public/uploads/hex/#{@hex.wiproid}/flagfile.txt", "w+")
       flagfile.write("100")

@@ -8,7 +8,7 @@
 <h2>Add Wi-Fi Information</h2>
 <%= form_for @ssid do |f| %>
   <%if Checkout.where("userid = ?", current_user.id).last%>
-  <%= f.label "What is the Wi-Pro ID on this Wi-Pro?"%></br>
+  <%= f.label "Wi-Pro ID"%></br>
   <%=f.text_field :wiproid, readonly: true, value: @wiproid.wiproid%>
   <%end%>
   </br>
