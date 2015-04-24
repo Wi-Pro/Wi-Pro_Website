@@ -63,10 +63,9 @@ class HexesController < ApplicationController
       flagfile.close
       #system("split /public/uploads/hex/#{@hex.wiproid}/default.hex -b 8000 -a 1 -d split")
       chunker "default.hex", "split"
-      @checkout = Checkout.where("userid = ?", current_user.id).last.wiproid
-      @wiproid = Wiproid.find(@checkout)
-      @wiproid.touch
-      @wiproid.save
+      @checkout = Checkout.where("userid = ?", current_user.id).last
+      @checkout.touch
+      @checkout.save
       redirect_to hexes_path
     else
       render "index"
