@@ -1,4 +1,4 @@
-class CardsController
+class CardsController < ApplicationController
   def index
     @deck = Array.new(52)
     @original_deck = Array.new(52)
